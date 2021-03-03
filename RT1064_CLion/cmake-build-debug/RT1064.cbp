@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RT1064"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT1064.elf">
+				<Option output="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/RT1064.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DCPU_MIMXRT1064DVL6A"/>
+					<Add option="-DSKIP_SYSCLK_INIT"/>
+					<Add option="-DXIP_EXTERNAL_FLASH=1"/>
+					<Add option="-DXIP_BOOT_HEADER_DCD_ENABLE=1"/>
+					<Add option="-DXIP_BOOT_HEADER_ENABLE=1"/>
+					<Add option="-DPRINTF_FLOAT_ENABLE=1"/>
+					<Add option="-DSCANF_FLOAT_ENABLE=1"/>
+					<Add option="-DPRINTF_ADVANCED_ENABLE=1"/>
+					<Add option="-DSCANF_ADVANCED_ENABLE=1"/>
+					<Add option="-DFSL_DRIVER_TRANSFER_DOUBLE_WEAK_IRQ=0"/>
+					<Add option="-DUSB_STACK_BM"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/CMSIS/Include"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/cmsis_drivers"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/lists"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/uart"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/deceive"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/inc"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/port"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/phy"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/osa"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/include"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/str"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/debug_console"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/USER"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064.elf"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT1064.elf/fast">
+				<Option output="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/RT1064.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DCPU_MIMXRT1064DVL6A"/>
+					<Add option="-DSKIP_SYSCLK_INIT"/>
+					<Add option="-DXIP_EXTERNAL_FLASH=1"/>
+					<Add option="-DXIP_BOOT_HEADER_DCD_ENABLE=1"/>
+					<Add option="-DXIP_BOOT_HEADER_ENABLE=1"/>
+					<Add option="-DPRINTF_FLOAT_ENABLE=1"/>
+					<Add option="-DSCANF_FLOAT_ENABLE=1"/>
+					<Add option="-DPRINTF_ADVANCED_ENABLE=1"/>
+					<Add option="-DSCANF_ADVANCED_ENABLE=1"/>
+					<Add option="-DFSL_DRIVER_TRANSFER_DOUBLE_WEAK_IRQ=0"/>
+					<Add option="-DUSB_STACK_BM"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/CMSIS/Include"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/cmsis_drivers"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/lists"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/uart"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/deceive"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/inc"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/port"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/phy"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/osa"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/include"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/str"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/debug_console"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_sd_disk"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE"/>
+					<Add directory="D:/Freescale_Vision_Group_16/RT1064_CLion/USER"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT1064.elf/fast"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/RT1064_flexspi_nor.ld">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/USER/main.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/USER/main.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/lists/generic_list.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/lists/generic_list.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager/serial_manager.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager/serial_manager.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager/serial_port_uart.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/serial_manager/serial_port_uart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/components/uart/lpuart_adapter.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/deceive/system_MIMXRT1064.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/deceive/system_MIMXRT1064.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_adc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_adc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_adc_etc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_adc_etc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_aipstz.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_aipstz.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_aoi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_aoi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_bee.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_bee.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_cache.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_cache.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_clock.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_clock.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_cmp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_cmp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_common.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_common.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_csi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_csi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dcdc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dcdc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dcp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dcp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dmamux.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_dmamux.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_elcdif.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_elcdif.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_enc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_enc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_enet.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_enet.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_ewm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_ewm.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexcan.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexcan.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_camera.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_camera.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2c_master.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2c_master.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2s.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2s.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2s_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_i2s_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_spi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_spi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_spi_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_spi_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_uart.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_uart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_uart_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexio_uart_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexram.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexram.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexspi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_flexspi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpio.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpio.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpt.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_gpt.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_kpp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_kpp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpi2c.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpi2c.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpi2c_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpi2c_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpspi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpspi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpspi_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpspi_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpuart.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpuart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpuart_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_lpuart_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_ocotp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_ocotp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pit.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pit.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pmu.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pmu.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pwm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pwm.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pxp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_pxp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_qtmr.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_qtmr.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_rtwdog.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_rtwdog.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_sai.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_sai.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_sai_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_sai_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_semc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_semc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_snvs_hp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_snvs_hp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_snvs_lp.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_snvs_lp.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_spdif.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_spdif.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_spdif_edma.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_spdif_edma.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_src.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_src.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_tempmon.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_tempmon.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_trng.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_trng.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_tsc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_tsc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_usdhc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_usdhc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_wdog.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_wdog.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_xbara.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_xbara.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_xbarb.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/drives/fsl_xbarb.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/diskio.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/diskio.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/ff.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/ff.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/ffsystem.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/ffunicode.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/src/fsl_sd.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_cdc_acm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_cdc_acm.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_ch9.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_ch9.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_class.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_class.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_dci.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_dci.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_descriptor.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_descriptor.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_ehci.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/device/usb_device_ehci.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/osa/usb_osa_bm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/osa/usb_osa_bm.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/phy/usb_phy.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/usb/phy/usb_phy.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/debug_console/fsl_debug_console.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/debug_console/fsl_debug_console.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_assert.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_notifier.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_notifier.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_sbrk.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_shell.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/fsl_shell.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/str/fsl_str.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/utilities/str/fsl_str.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/fsl_flexspi_nor_boot.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/nxp_libraries/xip/fsl_flexspi_nor_boot.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/board.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/board.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/clock_config.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/clock_config.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/pin_mux.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/board/pin_mux.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common/SEEKFREE_PRINTF.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common/SEEKFREE_PRINTF.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common/common.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/common/common.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/oled.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/oled.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_adc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_adc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_camera.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_camera.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_csi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_csi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_flash.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_flash.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_gpio.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_gpio.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_iic.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_iic.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_iomuxc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_iomuxc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_pit.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_pit.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_pwm.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_pwm.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_qtimer.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_qtimer.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_rom_api.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_rom_api.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_sdcard.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_sdcard.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_spi.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_spi.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_systick.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_systick.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_uart.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_uart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_usb_cdc.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_usb_cdc.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_vector.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_libraries/zf_vector.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_18TFT.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_18TFT.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_FONT.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_FONT.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_FUN.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_FUN.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_ICM20602.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_ICM20602.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IIC.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IIC.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IPS114_SPI.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IPS114_SPI.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_L3G4200D.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_L3G4200D.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MMA8451.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MMA8451.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MPU6050.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MPU6050.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MT9V03X.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MT9V03X.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_NRF24L01.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_NRF24L01.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_OLED.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_OLED.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_SCC8660.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_SCC8660.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_SCC8660_CSI.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_VIRSCO.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_VIRSCO.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_W25QXXJV.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_W25QXXJV.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_WIRELESS.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/seekfree_peripheral/SEEKFREE_WIRELESS.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/startup_MIMXRT1064.S">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

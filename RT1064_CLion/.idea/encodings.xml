@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CODE/ADC.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CODE/ADC.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CODE/PID.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/nxp_libraries/startup/IAR-ARM/startup_MIMXRT1064.s" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_libraries/headfile.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_adc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_adc.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_pwm.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_peripheral/SEEKFREE_SCC8660.c" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
