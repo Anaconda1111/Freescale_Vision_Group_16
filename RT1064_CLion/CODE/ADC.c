@@ -9,6 +9,8 @@
 #define ADC_PIN_CONF SPEED_100MHZ | DSE_R0_6 //配置ADC引脚默认配置
 
 uint16 Inductance_ADCValue[InductanceNum][SamplingNum];
+uint16 Inductance_MAXValue[InductanceNum] = {3600, 3600, 3600, 3600, 7200};
+uint16 MiddleInductance = 0;
 void User_ADC_Init(ADCN_enum ADCn, ADCPIN_enum ADCPIN, ADCRES_enum resolution) {
   switch (ADCPIN) {
   case ADCInput1:
@@ -67,4 +69,72 @@ void Get_InductanceValue() {
     Inductance_ADCValue[3][i] = User_ADC_Convert(ADC_2, ADCInput4);
     Inductance_ADCValue[4][i] = User_ADC_Convert(ADC_2, ADCInput5);
   }
+}
+
+float InductanceValueHandler() {
+  Get_InductanceValue();
+
+  //将电感值最大最小值去掉
+  for (int i = 0; i < InductanceNum; ++i) {
+    uint8 MAX_index = 0, MIN_index = 0;
+    uint16 MAX_Value = 0, MIN_Value = 3600;
+    for (int j = 0; j < SamplingNum; ++j) {
+      if (Inductance_ADCValue[i][j] > MAX_Value) {
+        MAX_Value = Inductance_ADCValue[i][j];
+        MAX_index = j;
+      }
+      if (Inductance_ADCValue[i][j] < MIN_Value) {
+        MIN_Value = Inductance_ADCValue[i][j];
+        MIN_index = j;
+      }
+    }
+    Inductance_ADCValue[i][MAX_index] = 0;
+    Inductance_ADCValue[i][MIN_index] = 0;
+  }
+
+  //电感值求和：掐头去尾
+  uint16 InductanceValue_Sum[InductanceNum] = {0};
+  for (int i = 0; i < InductanceNum; ++i) {
+    for (int j = 0; j < InductanceNum; ++j) {
+      InductanceValue_Sum[i] += Inductance_ADCValue[i][j];
+    }
+  }
+
+  //电感值均值
+  uint16 InductanceValue_Average[InductanceNum] = {0};
+  for (int i = 0; i < InductanceNum; ++i) {
+    InductanceValue_Average[i] = InductanceValue_Sum[i] / (SamplingNum - 2);
+  }
+
+  //电感值归一化：
+  float InductanceValue_Normal[InductanceNum] = {0};
+  for (int i = 0; i < InductanceNum; ++i) {
+    InductanceValue_Normal[i] =
+        (float)InductanceValue_Average[i] / (float)Inductance_MAXValue[i];
+  }
+  MiddleInductance = InductanceValue_Normal[4]; //中间电感值做检测环岛用
+
+  float InductanceV1, InductanceV2;
+
+  InductanceV1 =
+      FastSqrt(InductanceValue_Normal[0] * InductanceValue_Normal[0] +
+               InductanceValue_Normal[1] * InductanceValue_Normal[1]);
+
+  InductanceV2 =
+      FastSqrt(InductanceValue_Normal[2] * InductanceValue_Normal[2] +
+               InductanceValue_Normal[3] * InductanceValue_Normal[3]);
+
+  float Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) /
+                         (InductanceV1 + InductanceV2) * 100);
+
+  return Current_Value;
+}
+
+float FastSqrt(float x) {
+  float a = x;
+  unsigned int i = *(unsigned int *)&x;
+  i = (i + 0x3f76cf62) >> 1UL;
+  x = *(float *)&i;
+  x = (x + a / x) * 0.5f;
+  return x;
 }

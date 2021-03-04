@@ -96,6 +96,10 @@ fsl_clock.h
 fsl_reset.h
 ../nxp_libraries/drives/fsl_reset.h
 
+../nxp_libraries/drives/fsl_pwm.h
+fsl_common.h
+../nxp_libraries/drives/fsl_common.h
+
 ../seekfree_libraries/common/common.h
 math.h
 -
@@ -114,6 +118,12 @@ MIMXRT1064.h
 common.h
 ../seekfree_libraries/common.h
 
+../seekfree_libraries/zf_pwm.h
+common.h
+../seekfree_libraries/common.h
+fsl_pwm.h
+../seekfree_libraries/fsl_pwm.h
+
 D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.c
 ADC.h
 D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
@@ -125,6 +135,36 @@ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_iomuxc.h
 D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
 zf_adc.h
 D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_adc.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.c
+PWM.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h
+fsl_pwm.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/fsl_pwm.h
+port.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
+zf_iomuxc.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_iomuxc.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h
+zf_pwm.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_pwm.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.c
+Steer.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
+ADC.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+PWM.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h
+zf_pwm.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_pwm.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
+PID.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
 
 D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
 

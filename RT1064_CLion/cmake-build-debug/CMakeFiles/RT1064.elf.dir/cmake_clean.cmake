@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj"
+  "CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
   "CMakeFiles/RT1064.elf.dir/USER/main.c.obj"
   "CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj"

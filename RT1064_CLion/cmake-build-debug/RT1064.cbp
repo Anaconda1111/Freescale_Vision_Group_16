@@ -170,6 +170,12 @@
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.c">
 			<Option target="RT1064.elf"/>
 		</Unit>

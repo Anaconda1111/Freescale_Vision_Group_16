@@ -196,6 +196,33 @@ CODE/PID.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PID.c.s
 .PHONY : CODE/PID.c.s
 
+CODE/PWM.obj: CODE/PWM.c.obj
+
+.PHONY : CODE/PWM.obj
+
+# target to build an object file
+CODE/PWM.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+.PHONY : CODE/PWM.c.obj
+
+CODE/PWM.i: CODE/PWM.c.i
+
+.PHONY : CODE/PWM.i
+
+# target to preprocess a source file
+CODE/PWM.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.i
+.PHONY : CODE/PWM.c.i
+
+CODE/PWM.s: CODE/PWM.c.s
+
+.PHONY : CODE/PWM.s
+
+# target to generate assembly for a file
+CODE/PWM.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.s
+.PHONY : CODE/PWM.c.s
+
 CODE/Steer.obj: CODE/Steer.c.obj
 
 .PHONY : CODE/Steer.obj
@@ -4108,6 +4135,9 @@ help:
 	@echo ... CODE/PID.obj
 	@echo ... CODE/PID.i
 	@echo ... CODE/PID.s
+	@echo ... CODE/PWM.obj
+	@echo ... CODE/PWM.i
+	@echo ... CODE/PWM.s
 	@echo ... CODE/Steer.obj
 	@echo ... CODE/Steer.i
 	@echo ... CODE/Steer.s

@@ -171,18 +171,26 @@ Discarded input sections
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .text.Get_InductanceValue
                 0x00000000       0x60 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .text.FastSqrt
+                0x00000000       0x24 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .text.InductanceValueHandler
+                0x00000000      0x18c CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .bss.Inductance_ADCValue
                 0x00000000       0x32 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_info    0x00000000     0x1f6a CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_abbrev  0x00000000      0x39c CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_loc     0x00000000      0x441 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .bss.MiddleInductance
+                0x00000000        0x2 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .data.Inductance_MAXValue
+                0x00000000        0xa CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_info    0x00000000     0x221b CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_abbrev  0x00000000      0x3fd CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_loc     0x00000000      0x6a6 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .debug_aranges
-                0x00000000       0x30 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_ranges  0x00000000       0x20 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_line    0x00000000      0x50a CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_str     0x00000000     0x14ee CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+                0x00000000       0x40 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_ranges  0x00000000       0x60 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_line    0x00000000      0x750 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_str     0x00000000     0x15c6 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_frame   0x00000000       0x68 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_frame   0x00000000       0xb8 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
@@ -204,28 +212,52 @@ Discarded input sections
  .debug_frame   0x00000000       0x54 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
+ .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .rodata.User_PWMInit.str1.4
+                0x00000000       0x39 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .text.User_PWMInit
+                0x00000000      0x210 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .text.User_PWMDuty
+                0x00000000       0x84 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .rodata.__func__.12077
+                0x00000000        0xd CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_info    0x00000000     0x1fe8 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_abbrev  0x00000000      0x346 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_loc     0x00000000      0x721 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_aranges
+                0x00000000       0x28 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_ranges  0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_line    0x00000000      0x621 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_str     0x00000000     0x15c4 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_frame   0x00000000       0x64 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .text.Steer_PIDStruct_Init
                 0x00000000        0xc CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .text.SteerCtrl
-                0x00000000       0x2c CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .bss.SteerPWM  0x00000000        0x2 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+                0x00000000       0x44 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .bss.SteerPWMDuty
+                0x00000000        0x2 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .bss.Steer_Filter_Parameter
                 0x00000000       0x10 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .bss.Steer_PID_Parameter
                 0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_info    0x00000000     0x143a CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_abbrev  0x00000000      0x296 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_loc     0x00000000       0x4a CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_info    0x00000000     0x1926 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_abbrev  0x00000000      0x2c6 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_loc     0x00000000       0x64 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_ranges  0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_line    0x00000000      0x34a CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_str     0x00000000     0x1341 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_line    0x00000000      0x36d CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_str     0x00000000     0x153a CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_frame   0x00000000       0x38 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_frame   0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
@@ -8298,6 +8330,7 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
+LOAD CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/USER/main.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj

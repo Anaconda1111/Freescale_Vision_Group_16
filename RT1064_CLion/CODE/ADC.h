@@ -23,4 +23,6 @@ typedef enum {
 
 void User_ADC_Init(ADCN_enum ADCn, ADCPIN_enum ADCPIN, ADCRES_enum resolution);
 uint16 User_ADC_Convert(ADCN_enum ADCn, ADCPIN_enum ADCPIN);
+float InductanceValueHandler();
+float FastSqrt(float x);
 #endif // RT1064_CODE_ADC_H_

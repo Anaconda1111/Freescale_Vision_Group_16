@@ -28,6 +28,28 @@ CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/port.h
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.c
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.h
 
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_version.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/core_cm7.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/deceive/MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/deceive/MIMXRT1064_features.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/deceive/fsl_device_registers.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/drives/fsl_clock.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/drives/fsl_common.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../nxp_libraries/drives/fsl_pwm.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../seekfree_libraries/common/common.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../seekfree_libraries/zf_iomuxc.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../seekfree_libraries/zf_pwm.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../CODE/PWM.c
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../CODE/PWM.h
+CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../CODE/port.h
+
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -40,12 +62,16 @@ CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/deceive/MIMXRT1064.
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/deceive/MIMXRT1064_features.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/deceive/fsl_device_registers.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/drives/fsl_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/drives/fsl_clock.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/drives/fsl_common.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/drives/fsl_pwm.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../seekfree_libraries/common/common.h
+CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../seekfree_libraries/zf_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../seekfree_libraries/zf_pwm.h
+CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/ADC.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/PID.h
+CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/PWM.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.c
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.h
 
