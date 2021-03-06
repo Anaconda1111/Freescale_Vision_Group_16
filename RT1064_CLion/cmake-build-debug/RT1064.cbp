@@ -164,6 +164,12 @@
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.c">
 			<Option target="RT1064.elf"/>
 		</Unit>
@@ -180,6 +186,18 @@
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/isr.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/isr.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h">

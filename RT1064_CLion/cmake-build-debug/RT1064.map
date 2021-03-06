@@ -165,8 +165,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .text.User_ADC_Init
-                0x00000000       0x98 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .text.User_ADC_Convert
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .text.Get_InductanceValue
@@ -174,25 +172,56 @@ Discarded input sections
  .text.FastSqrt
                 0x00000000       0x24 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .text.InductanceValueHandler
-                0x00000000      0x18c CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+                0x00000000      0x188 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .bss.InductanceValue_Normal
+                0x00000000       0x14 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .bss.Inductance_ADCValue
                 0x00000000       0x32 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .bss.MiddleInductance
                 0x00000000        0x2 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .data.Inductance_MAXValue
                 0x00000000        0xa CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_info    0x00000000     0x221b CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_abbrev  0x00000000      0x3fd CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_loc     0x00000000      0x6a6 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_info    0x00000000     0x1873 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_abbrev  0x00000000      0x3aa CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_loc     0x00000000      0x31a CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .debug_aranges
-                0x00000000       0x40 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_ranges  0x00000000       0x60 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_line    0x00000000      0x750 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_str     0x00000000     0x15c6 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+                0x00000000       0x38 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_ranges  0x00000000       0x58 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_line    0x00000000      0x6c8 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_str     0x00000000     0x1466 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
- .debug_frame   0x00000000       0xb8 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .debug_frame   0x00000000       0x9c CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+ .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .text.Motor_PIDStruct_Init
+                0x00000000        0x8 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .text.GetDifferentSpeed
+                0x00000000        0x4 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .text.MotorCtrl
+                0x00000000       0x50 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .bss.Motor_GO_L_Filter
+                0x00000000       0x10 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .bss.Motor_GO_L_PWM
+                0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .bss.Motor_GO_R_Filter
+                0x00000000       0x10 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .bss.Motor_GO_R_PWM
+                0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_info    0x00000000     0x15de CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_abbrev  0x00000000      0x2d9 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_loc     0x00000000      0x122 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_aranges
+                0x00000000       0x30 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_ranges  0x00000000       0x20 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_line    0x00000000      0x397 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_str     0x00000000     0x13ce CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .debug_frame   0x00000000       0x4c CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
  .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
  .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
@@ -218,19 +247,21 @@ Discarded input sections
  .rodata.User_PWMInit.str1.4
                 0x00000000       0x39 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .text.User_PWMInit
-                0x00000000      0x210 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+                0x00000000      0x1f0 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .text.User_PWMDuty
-                0x00000000       0x84 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .rodata.__func__.12077
+                0x00000000       0x7c CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .rodata.PWMPTR
+                0x00000000       0x14 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .rodata.__func__.12001
                 0x00000000        0xd CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .debug_info    0x00000000     0x1fe8 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .debug_abbrev  0x00000000      0x346 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .debug_loc     0x00000000      0x721 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_info    0x00000000     0x2826 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_abbrev  0x00000000      0x341 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_loc     0x00000000      0x76d CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .debug_ranges  0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .debug_line    0x00000000      0x621 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
- .debug_str     0x00000000     0x15c4 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_line    0x00000000      0x620 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
+ .debug_str     0x00000000     0x20dd CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .debug_frame   0x00000000       0x64 CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  .ARM.attributes
@@ -248,18 +279,33 @@ Discarded input sections
                 0x00000000       0x10 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .bss.Steer_PID_Parameter
                 0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_info    0x00000000     0x1926 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_info    0x00000000     0x1574 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_abbrev  0x00000000      0x2c6 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_loc     0x00000000       0x64 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_ranges  0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_line    0x00000000      0x36d CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
- .debug_str     0x00000000     0x153a CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .debug_str     0x00000000     0x13ac CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .debug_frame   0x00000000       0x3c CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+ .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .debug_info    0x00000000      0x9de CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .debug_abbrev  0x00000000      0x1df CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .debug_aranges
+                0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .debug_line    0x00000000      0x290 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .debug_str     0x00000000      0x68c CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .ARM.attributes
+                0x00000000       0x39 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
@@ -843,11 +889,6 @@ Discarded input sections
                 0x00000000       0x8a CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .text.CSI_TransferGetFullBuffer
                 0x00000000       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .text.CSI_DriverIRQHandler
-                0x00000000       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .bss.s_csiHandle
-                0x00000000        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .bss.s_csiIsr  0x00000000        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .rodata.__func__.11002
                 0x00000000       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .rodata.__func__.11023
@@ -860,18 +901,6 @@ Discarded input sections
                 0x00000000       0x12 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .rodata.__func__.11096
                 0x00000000       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_info    0x00000000     0x2936 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_abbrev  0x00000000      0x4e9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_loc     0x00000000      0xb71 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_aranges
-                0x00000000       0xc8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_ranges  0x00000000      0x118 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_line    0x00000000      0xc80 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_str     0x00000000     0x2184 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .debug_frame   0x00000000      0x210 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
- .ARM.attributes
-                0x00000000       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .text          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj
  .data          0x00000000        0x0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj
  .bss           0x00000000        0x0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj
@@ -6321,7 +6350,7 @@ Discarded input sections
  .text.adc_iomuxc
                 0x00000000      0x134 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .text.adc_init
-                0x00000000       0x48 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
+                0x00000000       0x50 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .text.adc_convert
                 0x00000000       0x38 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .rodata.adc_mean_filter.str1.4
@@ -6329,19 +6358,19 @@ Discarded input sections
  .text.adc_mean_filter
                 0x00000000       0x48 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .data.ADCN     0x00000000        0xc CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .rodata.__func__.11902
+ .rodata.__func__.11903
                 0x00000000        0xb CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .rodata.__func__.11908
+ .rodata.__func__.11910
                 0x00000000        0x9 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .rodata.__func__.11924
+ .rodata.__func__.11926
                 0x00000000       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .debug_info    0x00000000     0x245e CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
+ .debug_info    0x00000000     0x247a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .debug_abbrev  0x00000000      0x3a0 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .debug_loc     0x00000000      0x41e CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
+ .debug_loc     0x00000000      0x443 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .debug_aranges
                 0x00000000       0x38 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .debug_ranges  0x00000000       0x28 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
- .debug_line    0x00000000      0x509 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
+ .debug_line    0x00000000      0x50a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .debug_str     0x00000000     0x1b07 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
  .debug_frame   0x00000000       0x8c CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj
@@ -6552,16 +6581,16 @@ Discarded input sections
  .rodata.iomuxc_pinconf.str1.4
                 0x00000000       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .text.iomuxc_pinconf
-                0x00000000     0x2b08 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
+                0x00000000     0x2b14 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .rodata.__func__.11866
                 0x00000000        0xf CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
- .debug_info    0x00000000    0x144c0 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
+ .debug_info    0x00000000    0x144ed CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_abbrev  0x00000000      0x369 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_loc     0x00000000    0x15c5a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_aranges
                 0x00000000       0x20 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_ranges  0x00000000       0x28 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
- .debug_line    0x00000000     0x7734 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
+ .debug_line    0x00000000     0x76e2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_str     0x00000000      0xf98 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
  .debug_frame   0x00000000       0x28 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj
@@ -6913,13 +6942,13 @@ Discarded input sections
  .data.UARTN    0x00000000       0x24 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .rodata.__func__.12153
                 0x00000000        0xc CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
- .debug_info    0x00000000     0x2bbb CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
+ .debug_info    0x00000000     0x2bbe CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_abbrev  0x00000000      0x41b CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_loc     0x00000000      0xbfb CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_aranges
                 0x00000000       0x68 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_ranges  0x00000000       0x88 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
- .debug_line    0x00000000      0x906 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
+ .debug_line    0x00000000      0x7f2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_str     0x00000000     0x1f58 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .comment       0x00000000       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
  .debug_frame   0x00000000       0xfc CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj
@@ -8329,9 +8358,12 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+LOAD CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
+LOAD CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+LOAD CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/USER/main.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj
 LOAD CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
@@ -8524,7 +8556,7 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
                 0x70002000                __isr_vector
                 0x70002400                . = ALIGN (0x4)
 
-.text           0x70002400     0x4cf4
+.text           0x70002400     0x4d74
                 0x70002400                . = ALIGN (0x4)
  *(.text)
  .text          0x70002400       0x40 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -8544,7 +8576,6 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
                 0x70002504                PWM3_2_IRQHandler
                 0x70002504                GPIO2_Combined_0_15_IRQHandler
                 0x70002504                GPIO1_INT2_IRQHandler
-                0x70002504                CSI_IRQHandler
                 0x70002504                SNVS_LP_WRAPPER_IRQHandler
                 0x70002504                ENC2_IRQHandler
                 0x70002504                PWM2_2_IRQHandler
@@ -8641,7 +8672,6 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
                 0x70002504                GPIO1_Combined_0_15_IRQHandler
                 0x70002504                ADC2_IRQHandler
                 0x70002504                GPIO1_INT3_IRQHandler
-                0x70002504                PIT_IRQHandler
                 0x70002504                DCP_IRQHandler
                 0x7000251c                DMA0_DMA16_IRQHandler
                 0x70002520                DMA1_DMA17_IRQHandler
@@ -8759,547 +8789,556 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
  .text          0x70003440       0xdc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-strlen.o)
                 0x70003440                strlen
  *(.text*)
- .text.main     0x7000351c        0x2 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
-                0x7000351c                main
+ .text.CSI_IRQHandler
+                0x7000351c        0xc CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+                0x7000351c                CSI_IRQHandler
+ .text.PIT_IRQHandler
+                0x70003528       0x5c CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+                0x70003528                PIT_IRQHandler
+ .text.main     0x70003584        0x2 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+                0x70003584                main
  .text.SerialManager_StartWriting
-                0x7000351e       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- *fill*         0x70003542        0x2 
+                0x70003586       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ *fill*         0x700035aa        0x2 
  .text.SerialManager_Write
-                0x70003544       0x6c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+                0x700035ac       0x6c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
  .text.SerialManager_WriteBlocking
-                0x700035b0        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
-                0x700035b0                SerialManager_WriteBlocking
+                0x70003618        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+                0x70003618                SerialManager_WriteBlocking
  .text.Serial_UartWrite
-                0x700035b8       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
-                0x700035b8                Serial_UartWrite
+                0x70003620       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+                0x70003620                Serial_UartWrite
  .text.HAL_UartSendBlocking
-                0x70003604       0x5c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
-                0x70003604                HAL_UartSendBlocking
+                0x7000366c       0x5c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+                0x7000366c                HAL_UartSendBlocking
  .text.SystemInitHook
-                0x70003660        0x2 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
-                0x70003660                SystemInitHook
- *fill*         0x70003662        0x2 
+                0x700036c8        0x2 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+                0x700036c8                SystemInitHook
+ *fill*         0x700036ca        0x2 
  .text.SystemInit
-                0x70003664      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
-                0x70003664                SystemInit
+                0x700036cc      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+                0x700036cc                SystemInit
+ .text.CSI_DriverIRQHandler
+                0x700037fc       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+                0x700037fc                CSI_DriverIRQHandler
  .text.EDMA_GetChannelStatusFlags
-                0x70003794       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003794                EDMA_GetChannelStatusFlags
+                0x70003818       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003818                EDMA_GetChannelStatusFlags
  .text.EDMA_HandleIRQ
-                0x700037e0       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x700037e0                EDMA_HandleIRQ
+                0x70003864       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003864                EDMA_HandleIRQ
  .text.DMA0_DMA16_DriverIRQHandler
-                0x700038b0       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x700038b0                DMA0_DMA16_DriverIRQHandler
+                0x70003934       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003934                DMA0_DMA16_DriverIRQHandler
  .text.DMA1_DMA17_DriverIRQHandler
-                0x700038ec       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x700038ec                DMA1_DMA17_DriverIRQHandler
+                0x70003970       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003970                DMA1_DMA17_DriverIRQHandler
  .text.DMA2_DMA18_DriverIRQHandler
-                0x70003928       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003928                DMA2_DMA18_DriverIRQHandler
+                0x700039ac       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x700039ac                DMA2_DMA18_DriverIRQHandler
  .text.DMA3_DMA19_DriverIRQHandler
-                0x70003964       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003964                DMA3_DMA19_DriverIRQHandler
+                0x700039e8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x700039e8                DMA3_DMA19_DriverIRQHandler
  .text.DMA4_DMA20_DriverIRQHandler
-                0x700039a0       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x700039a0                DMA4_DMA20_DriverIRQHandler
+                0x70003a24       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003a24                DMA4_DMA20_DriverIRQHandler
  .text.DMA5_DMA21_DriverIRQHandler
-                0x700039dc       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x700039dc                DMA5_DMA21_DriverIRQHandler
+                0x70003a60       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003a60                DMA5_DMA21_DriverIRQHandler
  .text.DMA6_DMA22_DriverIRQHandler
-                0x70003a18       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003a18                DMA6_DMA22_DriverIRQHandler
+                0x70003a9c       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003a9c                DMA6_DMA22_DriverIRQHandler
  .text.DMA7_DMA23_DriverIRQHandler
-                0x70003a54       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003a54                DMA7_DMA23_DriverIRQHandler
+                0x70003ad8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003ad8                DMA7_DMA23_DriverIRQHandler
  .text.DMA8_DMA24_DriverIRQHandler
-                0x70003a90       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003a90                DMA8_DMA24_DriverIRQHandler
+                0x70003b14       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003b14                DMA8_DMA24_DriverIRQHandler
  .text.DMA9_DMA25_DriverIRQHandler
-                0x70003acc       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003acc                DMA9_DMA25_DriverIRQHandler
+                0x70003b50       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003b50                DMA9_DMA25_DriverIRQHandler
  .text.DMA10_DMA26_DriverIRQHandler
-                0x70003b08       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003b08                DMA10_DMA26_DriverIRQHandler
+                0x70003b8c       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003b8c                DMA10_DMA26_DriverIRQHandler
  .text.DMA11_DMA27_DriverIRQHandler
-                0x70003b44       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003b44                DMA11_DMA27_DriverIRQHandler
+                0x70003bc8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003bc8                DMA11_DMA27_DriverIRQHandler
  .text.DMA12_DMA28_DriverIRQHandler
-                0x70003b80       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003b80                DMA12_DMA28_DriverIRQHandler
+                0x70003c04       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003c04                DMA12_DMA28_DriverIRQHandler
  .text.DMA13_DMA29_DriverIRQHandler
-                0x70003bbc       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003bbc                DMA13_DMA29_DriverIRQHandler
+                0x70003c40       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003c40                DMA13_DMA29_DriverIRQHandler
  .text.DMA14_DMA30_DriverIRQHandler
-                0x70003bf8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003bf8                DMA14_DMA30_DriverIRQHandler
+                0x70003c7c       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003c7c                DMA14_DMA30_DriverIRQHandler
  .text.DMA15_DMA31_DriverIRQHandler
-                0x70003c34       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
-                0x70003c34                DMA15_DMA31_DriverIRQHandler
+                0x70003cb8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x70003cb8                DMA15_DMA31_DriverIRQHandler
  .text.ENET_GetInstance
-                0x70003c70       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                0x70003c70                ENET_GetInstance
+                0x70003cf4       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70003cf4                ENET_GetInstance
  .text.ENET_CommonFrame0IRQHandler
-                0x70003cac       0x70 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                0x70003cac                ENET_CommonFrame0IRQHandler
+                0x70003d30       0x70 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70003d30                ENET_CommonFrame0IRQHandler
  .text.ENET_1588_Timer_IRQHandler
-                0x70003d1c       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                0x70003d1c                ENET_1588_Timer_IRQHandler
+                0x70003da0       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70003da0                ENET_1588_Timer_IRQHandler
  .text.ENET_DriverIRQHandler
-                0x70003d34       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                0x70003d34                ENET_DriverIRQHandler
+                0x70003db8       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70003db8                ENET_DriverIRQHandler
  .text.ENET2_DriverIRQHandler
-                0x70003d44       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                0x70003d44                ENET2_DriverIRQHandler
+                0x70003dc8       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70003dc8                ENET2_DriverIRQHandler
  .text.CAN1_DriverIRQHandler
-                0x70003d54       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
-                0x70003d54                CAN1_DriverIRQHandler
+                0x70003dd8       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x70003dd8                CAN1_DriverIRQHandler
  .text.CAN2_DriverIRQHandler
-                0x70003d8c       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
-                0x70003d8c                CAN2_DriverIRQHandler
+                0x70003e10       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x70003e10                CAN2_DriverIRQHandler
  .text.CAN3_DriverIRQHandler
-                0x70003dc4       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
-                0x70003dc4                CAN3_DriverIRQHandler
+                0x70003e48       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x70003e48                CAN3_DriverIRQHandler
  .text.FLEXIO_CommonIRQHandler
-                0x70003dfc       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
-                0x70003dfc                FLEXIO_CommonIRQHandler
+                0x70003e80       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+                0x70003e80                FLEXIO_CommonIRQHandler
  .text.FLEXIO1_DriverIRQHandler
-                0x70003e34        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
-                0x70003e34                FLEXIO1_DriverIRQHandler
+                0x70003eb8        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+                0x70003eb8                FLEXIO1_DriverIRQHandler
  .text.FLEXIO2_DriverIRQHandler
-                0x70003e3c        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
-                0x70003e3c                FLEXIO2_DriverIRQHandler
+                0x70003ec0        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+                0x70003ec0                FLEXIO2_DriverIRQHandler
  .text.FLEXIO3_DriverIRQHandler
-                0x70003e44        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
-                0x70003e44                FLEXIO3_DriverIRQHandler
+                0x70003ec8        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+                0x70003ec8                FLEXIO3_DriverIRQHandler
  .text.LPI2C_CommonIRQHandler
-                0x70003e4c       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x70003ed0       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .text.LPI2C1_DriverIRQHandler
-                0x70003e94       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
-                0x70003e94                LPI2C1_DriverIRQHandler
+                0x70003f18       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x70003f18                LPI2C1_DriverIRQHandler
  .text.LPI2C2_DriverIRQHandler
-                0x70003ea4       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
-                0x70003ea4                LPI2C2_DriverIRQHandler
+                0x70003f28       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x70003f28                LPI2C2_DriverIRQHandler
  .text.LPI2C3_DriverIRQHandler
-                0x70003eb4       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
-                0x70003eb4                LPI2C3_DriverIRQHandler
+                0x70003f38       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x70003f38                LPI2C3_DriverIRQHandler
  .text.LPI2C4_DriverIRQHandler
-                0x70003ec4       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
-                0x70003ec4                LPI2C4_DriverIRQHandler
+                0x70003f48       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x70003f48                LPI2C4_DriverIRQHandler
  .text.LPSPI_CommonIRQHandler
-                0x70003ed4       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70003f58       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .text.LPSPI1_DriverIRQHandler
-                0x70003ef8       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
-                0x70003ef8                LPSPI1_DriverIRQHandler
+                0x70003f7c       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70003f7c                LPSPI1_DriverIRQHandler
  .text.LPSPI2_DriverIRQHandler
-                0x70003f2c       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
-                0x70003f2c                LPSPI2_DriverIRQHandler
+                0x70003fb0       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70003fb0                LPSPI2_DriverIRQHandler
  .text.LPSPI3_DriverIRQHandler
-                0x70003f60       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
-                0x70003f60                LPSPI3_DriverIRQHandler
+                0x70003fe4       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70003fe4                LPSPI3_DriverIRQHandler
  .text.LPSPI4_DriverIRQHandler
-                0x70003f94       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
-                0x70003f94                LPSPI4_DriverIRQHandler
+                0x70004018       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70004018                LPSPI4_DriverIRQHandler
  .text.LPUART_WriteBlocking
-                0x70003fc8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70003fc8                LPUART_WriteBlocking
+                0x7000404c       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x7000404c                LPUART_WriteBlocking
  .text.LPUART1_DriverIRQHandler
-                0x70004004       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70004004                LPUART1_DriverIRQHandler
+                0x70004088       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x70004088                LPUART1_DriverIRQHandler
  .text.LPUART2_DriverIRQHandler
-                0x70004020       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70004020                LPUART2_DriverIRQHandler
+                0x700040a4       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x700040a4                LPUART2_DriverIRQHandler
  .text.LPUART3_DriverIRQHandler
-                0x7000403c       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x7000403c                LPUART3_DriverIRQHandler
+                0x700040c0       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x700040c0                LPUART3_DriverIRQHandler
  .text.LPUART4_DriverIRQHandler
-                0x70004058       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70004058                LPUART4_DriverIRQHandler
+                0x700040dc       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x700040dc                LPUART4_DriverIRQHandler
  .text.LPUART5_DriverIRQHandler
-                0x70004074       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70004074                LPUART5_DriverIRQHandler
+                0x700040f8       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x700040f8                LPUART5_DriverIRQHandler
  .text.LPUART6_DriverIRQHandler
-                0x70004090       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x70004090                LPUART6_DriverIRQHandler
+                0x70004114       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x70004114                LPUART6_DriverIRQHandler
  .text.LPUART7_DriverIRQHandler
-                0x700040ac       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x700040ac                LPUART7_DriverIRQHandler
+                0x70004130       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x70004130                LPUART7_DriverIRQHandler
  .text.LPUART8_DriverIRQHandler
-                0x700040c8       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
-                0x700040c8                LPUART8_DriverIRQHandler
+                0x7000414c       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x7000414c                LPUART8_DriverIRQHandler
  .text.SAI1_DriverIRQHandler
-                0x700040e4       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
-                0x700040e4                SAI1_DriverIRQHandler
+                0x70004168       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x70004168                SAI1_DriverIRQHandler
  .text.SAI2_DriverIRQHandler
-                0x7000416c       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
-                0x7000416c                SAI2_DriverIRQHandler
+                0x700041f0       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x700041f0                SAI2_DriverIRQHandler
  .text.SAI3_TX_DriverIRQHandler
-                0x700041f4       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
-                0x700041f4                SAI3_TX_DriverIRQHandler
+                0x70004278       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x70004278                SAI3_TX_DriverIRQHandler
  .text.SAI3_RX_DriverIRQHandler
-                0x7000422c       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
-                0x7000422c                SAI3_RX_DriverIRQHandler
+                0x700042b0       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x700042b0                SAI3_RX_DriverIRQHandler
  .text.SPDIF_DriverIRQHandler
-                0x70004264       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
-                0x70004264                SPDIF_DriverIRQHandler
+                0x700042e8       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+                0x700042e8                SPDIF_DriverIRQHandler
  .text.USDHC1_DriverIRQHandler
-                0x70004298       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
-                0x70004298                USDHC1_DriverIRQHandler
+                0x7000431c       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+                0x7000431c                USDHC1_DriverIRQHandler
  .text.USDHC2_DriverIRQHandler
-                0x700042b4       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
-                0x700042b4                USDHC2_DriverIRQHandler
+                0x70004338       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+                0x70004338                USDHC2_DriverIRQHandler
  .text.SDMMCEVENT_GetInstance
-                0x700042d0       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+                0x70004354       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
  .text.SysTick_Handler
-                0x700042ec       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
-                0x700042ec                SysTick_Handler
+                0x70004370       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+                0x70004370                SysTick_Handler
  .text.SDMMCEVENT_Notify
-                0x700042fc       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
-                0x700042fc                SDMMCEVENT_Notify
+                0x70004380       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+                0x70004380                SDMMCEVENT_Notify
  .text.SDMMCHOST_NofiyCardInsertStatus
-                0x70004310       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+                0x70004394       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
  .text.GPIO3_Combined_0_15_IRQHandler
-                0x70004344       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
-                0x70004344                GPIO3_Combined_0_15_IRQHandler
+                0x700043c8       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+                0x700043c8                GPIO3_Combined_0_15_IRQHandler
  .text.USB_DeviceControl
-                0x70004384       0x1a CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+                0x70004408       0x1a CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
  .text.USB_DeviceResetNotification
-                0x7000439e       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+                0x70004422       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
  .text.USB_DeviceNotification
-                0x700043e6       0x6e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+                0x7000446a       0x6e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
  .text.USB_DeviceNotificationTrigger
-                0x70004454       0x22 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
-                0x70004454                USB_DeviceNotificationTrigger
+                0x700044d8       0x22 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+                0x700044d8                USB_DeviceNotificationTrigger
  .text.USB_DeviceEhciFillSetupBuffer
-                0x70004476       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x700044fa       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .text.USB_DeviceEhciInterruptReset
-                0x700044ca       0x5e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x7000454e       0x5e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .text.USB_DeviceEhciCancelControlPipe
-                0x70004528      0x10e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x700045ac      0x10e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .text.USB_DeviceEhciInterruptTokenDone
-                0x70004636      0x29e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x700046ba      0x29e CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .text.USB_DeviceEhciInterruptPortChange
-                0x700048d4       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x70004958       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .text.USB_DeviceEhciIsrFunction
-                0x70004928       0x44 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
-                0x70004928                USB_DeviceEhciIsrFunction
+                0x700049ac       0x44 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x700049ac                USB_DeviceEhciIsrFunction
  .text.DbgConsole_SendData
-                0x7000496c       0x50 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
-                0x7000496c                DbgConsole_SendData
+                0x700049f0       0x50 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+                0x700049f0                DbgConsole_SendData
  .text.DbgConsole_PrintCallback
-                0x700049bc       0x3a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- *fill*         0x700049f6        0x2 
+                0x70004a40       0x3a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ *fill*         0x70004a7a        0x2 
  .text.DbgConsole_Printf
-                0x700049f8       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
-                0x700049f8                DbgConsole_Printf
+                0x70004a7c       0x3c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+                0x70004a7c                DbgConsole_Printf
  .text.__assert_func
-                0x70004a34       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
-                0x70004a34                __assert_func
+                0x70004ab8       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+                0x70004ab8                __assert_func
  .text.ConvertRadixNumToString
-                0x70004a50      0x112 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- *fill*         0x70004b62        0x6 
+                0x70004ad4      0x112 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ *fill*         0x70004be6        0x2 
  .text.ConvertFloatRadixNumToString
-                0x70004b68      0x1d0 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+                0x70004be8      0x1d0 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
  .text.StrFormatPrintf
-                0x70004d38      0x680 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
-                0x70004d38                StrFormatPrintf
+                0x70004db8      0x680 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+                0x70004db8                StrFormatPrintf
  .text.NMI_Handler
-                0x700053b8        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053b8                NMI_Handler
+                0x70005438        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x70005438                NMI_Handler
  .text.HardFault_Handler
-                0x700053ba        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053ba                HardFault_Handler
+                0x7000543a        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x7000543a                HardFault_Handler
  .text.MemManage_Handler
-                0x700053bc        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053bc                MemManage_Handler
+                0x7000543c        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x7000543c                MemManage_Handler
  .text.BusFault_Handler
-                0x700053be        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053be                BusFault_Handler
+                0x7000543e        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x7000543e                BusFault_Handler
  .text.UsageFault_Handler
-                0x700053c0        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053c0                UsageFault_Handler
+                0x70005440        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x70005440                UsageFault_Handler
  .text.SVC_Handler
-                0x700053c2        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053c2                SVC_Handler
+                0x70005442        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x70005442                SVC_Handler
  .text.DebugMon_Handler
-                0x700053c4        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053c4                DebugMon_Handler
+                0x70005444        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x70005444                DebugMon_Handler
  .text.PendSV_Handler
-                0x700053c6        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
-                0x700053c6                PendSV_Handler
+                0x70005446        0x2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x70005446                PendSV_Handler
  .text.USB_OTG1_IRQHandler
-                0x700053c8       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
-                0x700053c8                USB_OTG1_IRQHandler
+                0x70005448       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+                0x70005448                USB_OTG1_IRQHandler
  .text.USB_OTG2_IRQHandler
-                0x700053d8       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
-                0x700053d8                USB_OTG2_IRQHandler
- .text.modf     0x700053e8       0xb0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
-                0x700053e8                modf
- .text.pow      0x70005498      0x1a4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
-                0x70005498                pow
- *fill*         0x7000563c        0x4 
+                0x70005458       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+                0x70005458                USB_OTG2_IRQHandler
+ .text.modf     0x70005468       0xb0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
+                0x70005468                modf
+ .text.pow      0x70005518      0x1a4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
+                0x70005518                pow
+ *fill*         0x700056bc        0x4 
  .text.__ieee754_pow
-                0x70005640      0xbb4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
-                0x70005640                __ieee754_pow
+                0x700056c0      0xbb4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
+                0x700056c0                __ieee754_pow
  .text.__ieee754_sqrt
-                0x700061f4      0x188 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
-                0x700061f4                __ieee754_sqrt
- .text.fabs     0x7000637c       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
-                0x7000637c                fabs
- .text.finite   0x70006390       0x18 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
-                0x70006390                finite
- .text.nan      0x700063a8       0x10 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
-                0x700063a8                nan
- .text.rint     0x700063b8      0x124 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
-                0x700063b8                rint
- *fill*         0x700064dc        0x4 
- .text.scalbn   0x700064e0      0x124 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
-                0x700064e0                scalbn
- .text.__errno  0x70006604        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
-                0x70006604                __errno
- .text.exit     0x70006610       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
-                0x70006610                exit
+                0x70006274      0x188 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
+                0x70006274                __ieee754_sqrt
+ .text.fabs     0x700063fc       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
+                0x700063fc                fabs
+ .text.finite   0x70006410       0x18 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
+                0x70006410                finite
+ .text.nan      0x70006428       0x10 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
+                0x70006428                nan
+ .text.rint     0x70006438      0x124 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
+                0x70006438                rint
+ *fill*         0x7000655c        0x4 
+ .text.scalbn   0x70006560      0x124 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
+                0x70006560                scalbn
+ .text.__errno  0x70006684        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
+                0x70006684                __errno
+ .text.exit     0x70006690       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
+                0x70006690                exit
  .text.__libc_init_array
-                0x70006630       0x48 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
-                0x70006630                __libc_init_array
- .text.memset   0x70006678       0xa0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
-                0x70006678                memset
+                0x700066b0       0x48 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
+                0x700066b0                __libc_init_array
+ .text.memset   0x700066f8       0xa0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
+                0x700066f8                memset
  .text.startup.register_fini
-                0x70006718       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
+                0x70006798       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x7000672c       0xcc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
-                0x7000672c                __call_exitprocs
- .text.atexit   0x700067f8        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
-                0x700067f8                atexit
+                0x700067ac       0xcc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
+                0x700067ac                __call_exitprocs
+ .text.atexit   0x70006878        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
+                0x70006878                atexit
  .text.__libc_fini_array
-                0x70006804       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
-                0x70006804                __libc_fini_array
+                0x70006884       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
+                0x70006884                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x70006830        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x70006830                __retarget_lock_acquire_recursive
+                0x700068b0        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x700068b0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x70006834        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x70006834                __retarget_lock_release_recursive
+                0x700068b4        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x700068b4                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x70006838       0x8c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)
-                0x70006838                __register_exitproc
+                0x700068b8       0x8c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)
+                0x700068b8                __register_exitproc
  *(.rodata)
  *(.rodata*)
  .rodata.SerialManager_Write.str1.4
-                0x700068c4       0x87 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- *fill*         0x7000694b        0x1 
+                0x70006944       0x87 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ *fill*         0x700069cb        0x1 
  .rodata.__func__.10961
-                0x7000694c       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+                0x700069cc       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
  .rodata.Serial_UartInit.str1.4
-                0x70006960       0x85 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+                0x700069e0       0x85 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
  .rodata.Serial_UartWrite.str1.4
-                0x700069e5        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- *fill*         0x700069e5        0x3 
+                0x70006a65        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ *fill*         0x70006a65        0x3 
  .rodata.__func__.10994
-                0x700069e8       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- *fill*         0x700069f9        0x3 
+                0x70006a68       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ *fill*         0x70006a79        0x3 
  .rodata.HAL_UartInit.str1.4
-                0x700069fc       0xd6 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+                0x70006a7c       0xd6 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
                                  0xde (size before relaxing)
- *fill*         0x70006ad2        0x2 
+ *fill*         0x70006b52        0x2 
  .rodata.HAL_UartReceiveBlocking.str1.4
-                0x70006ad4        0x5 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+                0x70006b54        0x5 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
                                   0xf (size before relaxing)
- *fill*         0x70006ad9        0x3 
+ *fill*         0x70006b59        0x3 
  .rodata.__func__.11166
-                0x70006adc       0x15 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- *fill*         0x70006af1        0x3 
+                0x70006b5c       0x15 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ *fill*         0x70006b71        0x3 
  .rodata.s_LpuartAdapterBase
-                0x70006af4       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+                0x70006b74       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
  .rodata.EDMA_GetInstance.str1.4
-                0x70006b18       0x6e CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- *fill*         0x70006b86        0x2 
+                0x70006b98       0x6e CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ *fill*         0x70006c06        0x2 
  .rodata.EDMA_InstallTCD.str1.4
-                0x70006b88       0x55 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- *fill*         0x70006bdd        0x3 
+                0x70006c08       0x55 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ *fill*         0x70006c5d        0x3 
  .rodata.EDMA_CreateHandle.str1.4
-                0x70006be0        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- *fill*         0x70006bef        0x1 
+                0x70006c60        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ *fill*         0x70006c6f        0x1 
  .rodata.__func__.11256
-                0x70006bf0       0x1b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- *fill*         0x70006c0b        0x1 
+                0x70006c70       0x1b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ *fill*         0x70006c8b        0x1 
  .rodata.__func__.11347
-                0x70006c0c        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- *fill*         0x70006c1b        0x1 
- .rodata.ENET_SetTxBufferDescriptors.str1.4
-                0x70006c1c       0x59 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
-                                 0x61 (size before relaxing)
- *fill*         0x70006c75        0x3 
- .rodata.ENET_GetInstance.str1.4
-                0x70006c78       0x23 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x70006c8c        0xf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
  *fill*         0x70006c9b        0x1 
+ .rodata.ENET_SetTxBufferDescriptors.str1.4
+                0x70006c9c       0x59 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                                 0x61 (size before relaxing)
+ *fill*         0x70006cf5        0x3 
+ .rodata.ENET_GetInstance.str1.4
+                0x70006cf8       0x23 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ *fill*         0x70006d1b        0x1 
  .rodata.__func__.11137
-                0x70006c9c       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- *fill*         0x70006cad        0x3 
- .rodata.s_enetBases
-                0x70006cb0        0xc CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .rodata.FLEXCAN_Reset.str1.4
-                0x70006cbc       0x71 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x70006d1c       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
  *fill*         0x70006d2d        0x3 
+ .rodata.s_enetBases
+                0x70006d30        0xc CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .rodata.FLEXCAN_Reset.str1.4
+                0x70006d3c       0x71 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006dad        0x3 
  .rodata.CAN1_DriverIRQHandler.str1.4
-                0x70006d30       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006d43        0x1 
+                0x70006db0       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006dc3        0x1 
  .rodata.CAN2_DriverIRQHandler.str1.4
-                0x70006d44       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006d57        0x1 
+                0x70006dc4       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006dd7        0x1 
  .rodata.CAN3_DriverIRQHandler.str1.4
-                0x70006d58       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006d6b        0x1 
+                0x70006dd8       0x13 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006deb        0x1 
  .rodata.__func__.11674
-                0x70006d6c       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006d82        0x2 
+                0x70006dec       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006e02        0x2 
  .rodata.__func__.11678
-                0x70006d84       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006d9a        0x2 
+                0x70006e04       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006e1a        0x2 
  .rodata.__func__.11682
-                0x70006d9c       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- *fill*         0x70006db2        0x2 
+                0x70006e1c       0x16 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ *fill*         0x70006e32        0x2 
  .rodata.LPSPI_CombineWriteData.str1.4
-                0x70006db4       0x5a CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- *fill*         0x70006e0e        0x2 
+                0x70006e34       0x5a CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ *fill*         0x70006e8e        0x2 
  .rodata.LPSPI1_DriverIRQHandler.str1.4
-                0x70006e10       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- *fill*         0x70006e21        0x3 
+                0x70006e90       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ *fill*         0x70006ea1        0x3 
  .rodata.LPSPI2_DriverIRQHandler.str1.4
-                0x70006e24       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- *fill*         0x70006e35        0x3 
+                0x70006ea4       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ *fill*         0x70006eb5        0x3 
  .rodata.LPSPI3_DriverIRQHandler.str1.4
-                0x70006e38       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- *fill*         0x70006e49        0x3 
+                0x70006eb8       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ *fill*         0x70006ec9        0x3 
  .rodata.LPSPI4_DriverIRQHandler.str1.4
-                0x70006e4c       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- *fill*         0x70006e5d        0x3 
+                0x70006ecc       0x11 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ *fill*         0x70006edd        0x3 
  .rodata.__func__.11513
-                0x70006e60       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70006ee0       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .rodata.__func__.11517
-                0x70006e78       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70006ef8       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .rodata.__func__.11521
-                0x70006e90       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70006f10       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .rodata.__func__.11525
-                0x70006ea8       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x70006f28       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .rodata.LPUART_ReadNonBlocking.str1.4
-                0x70006ec0       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x70006f40       0x4c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
                                  0x54 (size before relaxing)
  .rodata.__func__.11202
-                0x70006f0c       0x15 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- *fill*         0x70006f21        0x3 
+                0x70006f8c       0x15 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ *fill*         0x70006fa1        0x3 
  .rodata.SAI_GetInstance.str1.4
-                0x70006f24       0x6d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- *fill*         0x70006f91        0x3 
+                0x70006fa4       0x6d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ *fill*         0x70007011        0x3 
  .rodata.SAI3_TX_DriverIRQHandler.str1.4
-                0x70006f94       0x12 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- *fill*         0x70006fa6        0x2 
+                0x70007014       0x12 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ *fill*         0x70007026        0x2 
  .rodata.SAI3_RX_DriverIRQHandler.str1.4
-                0x70006fa8       0x12 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- *fill*         0x70006fba        0x2 
+                0x70007028       0x12 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ *fill*         0x7000703a        0x2 
  .rodata.__func__.11601
-                0x70006fbc       0x19 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- *fill*         0x70006fd5        0x3 
+                0x7000703c       0x19 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ *fill*         0x70007055        0x3 
  .rodata.__func__.11605
-                0x70006fd8       0x19 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- *fill*         0x70006ff1        0x3 
+                0x70007058       0x19 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ *fill*         0x70007071        0x3 
  .rodata.DbgConsole_SendData.str1.4
-                0x70006ff4       0x7a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- *fill*         0x7000706e        0x2 
+                0x70007074       0x7a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ *fill*         0x700070ee        0x2 
  .rodata.__func__.10955
-                0x70007070       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+                0x700070f0       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
  .rodata.__assert_func.str1.4
-                0x70007084       0x3e CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+                0x70007104       0x3e CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
  .rodata.__ieee754_pow.str1.4
-                0x700070c2       0x3e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
+                0x70007142       0x3e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
                                   0x1 (size before relaxing)
- *fill*         0x700070c2        0x6 
- .rodata.TWO52  0x700070c8       0x10 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
+ *fill*         0x70007142        0x6 
+ .rodata.TWO52  0x70007148       0x10 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
  .rodata._global_impure_ptr
-                0x700070d8        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-impure.o)
-                0x700070d8                _global_impure_ptr
+                0x70007158        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-impure.o)
+                0x70007158                _global_impure_ptr
  *(.glue_7)
- .glue_7        0x700070dc        0x0 linker stubs
+ .glue_7        0x7000715c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x700070dc        0x0 linker stubs
+ .glue_7t       0x7000715c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x700070dc        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x7000715c        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x700070dc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x700070dc                _init
- .init          0x700070e0        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x7000715c        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x7000715c                _init
+ .init          0x70007160        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x700070e8        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x700070e8                _fini
- .fini          0x700070ec        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x700070f4                . = ALIGN (0x4)
-                0x700070f4                _exit = .
-                0x700070f4                _etext = .
+ .fini          0x70007168        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x70007168                _fini
+ .fini          0x7000716c        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x70007174                . = ALIGN (0x4)
+                0x70007174                _exit = .
+                0x70007174                _etext = .
 
-.vfp11_veneer   0x700070f4        0x0
- .vfp11_veneer  0x700070f4        0x0 linker stubs
+.vfp11_veneer   0x70007174        0x0
+ .vfp11_veneer  0x70007174        0x0 linker stubs
 
-.v4_bx          0x700070f4        0x0
- .v4_bx         0x700070f4        0x0 linker stubs
+.v4_bx          0x70007174        0x0
+ .v4_bx         0x70007174        0x0 linker stubs
 
-.iplt           0x700070f4        0x0
- .iplt          0x700070f4        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x70007174        0x0
+ .iplt          0x70007174        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x700070f4        0x8
-                0x700070f4                __exidx_start = .
+.ARM            0x70007174        0x8
+                0x70007174                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x700070f4        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x70007174        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
                                  0x10 (size before relaxing)
- .ARM.exidx     0x700070fc        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x7000717c        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x700070fc                __exidx_end = .
+                0x7000717c                __exidx_end = .
 
-.rel.dyn        0x700070fc        0x0
- .rel.iplt      0x700070fc        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x7000717c        0x0
+ .rel.iplt      0x7000717c        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ctors          0x700070fc        0x0
-                0x700070fc                __CTOR_LIST__ = .
+.ctors          0x7000717c        0x0
+                0x7000717c                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x700070fc                __CTOR_END__ = .
+                0x7000717c                __CTOR_END__ = .
 
-.dtors          0x700070fc        0x0
-                0x700070fc                __DTOR_LIST__ = .
+.dtors          0x7000717c        0x0
+                0x7000717c                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x700070fc                __DTOR_END__ = .
+                0x7000717c                __DTOR_END__ = .
 
-.preinit_array  0x700070fc        0x0
-                0x700070fc                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x7000717c        0x0
+                0x7000717c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x700070fc                PROVIDE (__preinit_array_end = .)
+                0x7000717c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x700070fc        0x8
-                0x700070fc                PROVIDE (__init_array_start = .)
+.init_array     0x7000717c        0x8
+                0x7000717c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x700070fc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
+                0x7000717c        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x70007100        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x70007104                PROVIDE (__init_array_end = .)
+ .init_array    0x70007180        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x70007184                PROVIDE (__init_array_end = .)
 
-.fini_array     0x70007104        0x4
-                0x70007104                PROVIDE (__fini_array_start = .)
+.fini_array     0x70007184        0x4
+                0x70007184                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x70007104        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x70007108                PROVIDE (__fini_array_end = .)
-                0x70007108                __etext = .
-                0x70007108                __DATA_ROM = .
+ .fini_array    0x70007184        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x70007188                PROVIDE (__fini_array_end = .)
+                0x70007188                __etext = .
+                0x70007188                __DATA_ROM = .
 
 .interrupts_ram
                 0x20000000        0x0
@@ -9313,7 +9352,7 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
                 0x70002000                __VECTOR_RAM = DEFINED (__ram_vector_table__)?__VECTOR_RAM__:ORIGIN (m_interrupts)
                 0x00000000                __RAM_VECTOR_TABLE_SIZE_BYTES = DEFINED (__ram_vector_table__)?(__interrupts_ram_end__ - __interrupts_ram_start__):0x0
 
-.data           0x20000000      0x434 load address 0x70007108
+.data           0x20000000      0x434 load address 0x70007188
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __DATA_RAM = .
                 0x20000000                __data_start__ = .
@@ -9335,12 +9374,12 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
  *(.jcr*)
                 0x20000434                . = ALIGN (0x4)
                 0x20000434                __data_end__ = .
-                0x7000753c                __NDATA_ROM = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x700075bc                __NDATA_ROM = (__DATA_ROM + (__data_end__ - __data_start__))
 
-.igot.plt       0x20000434        0x0 load address 0x7000753c
+.igot.plt       0x20000434        0x0 load address 0x700075bc
  .igot.plt      0x20000434        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ncache.init    0x20000434        0x0 load address 0x7000753c
+.ncache.init    0x20000434        0x0 load address 0x700075bc
                 0x20000434                __noncachedata_start__ = .
  *(NonCacheable.init)
                 0x20000434                . = ALIGN (0x4)
@@ -9351,11 +9390,11 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
  *(NonCacheable)
                 0x20000434                . = ALIGN (0x4)
                 0x20000434                __noncachedata_end__ = .
-                0x7000753c                __DATA_END = (__NDATA_ROM + (__noncachedata_init_end__ - __noncachedata_start__))
+                0x700075bc                __DATA_END = (__NDATA_ROM + (__noncachedata_init_end__ - __noncachedata_start__))
                 0x70400000                text_end = (ORIGIN (m_text) + LENGTH (m_text))
                 0x00000001                ASSERT ((__DATA_END <= text_end), region m_text overflowed with text and data)
 
-.bss            0x20000434      0x220 load address 0x7000753c
+.bss            0x20000434      0x228 load address 0x700075bc
                 0x20000434                . = ALIGN (0x4)
                 0x20000434                __START_BSS = .
                 0x20000434                __bss_start__ = .
@@ -9363,110 +9402,113 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
  *(.bss)
  .bss           0x20000434       0x1c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
+ .bss.s_csiHandle
+                0x20000450        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .bss.s_csiIsr  0x20000454        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .bss.s_EDMAHandle
-                0x20000450       0x80 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x20000458       0x80 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
  .bss.s_ENETHandle
-                0x200004d0        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x200004d8        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
  .bss.s_enetErrIsr
-                0x200004d8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .bss.s_enetRxIsr
-                0x200004dc        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .bss.s_enetTxIsr
                 0x200004e0        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .bss.s_enetRxIsr
+                0x200004e4        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .bss.s_enetTxIsr
+                0x200004e8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
  .bss.s_flexcanHandle
-                0x200004e4       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x200004ec       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
  .bss.s_flexcanIsr
-                0x200004f4        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x200004fc        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
  .bss.s_flexioHandle
-                0x200004f8        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .bss.s_flexioIsr
                 0x20000500        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .bss.s_flexioType
+ .bss.s_flexioIsr
                 0x20000508        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .bss.s_flexioType
+                0x20000510        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
  .bss.s_lpi2cMasterHandle
-                0x20000510       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x20000518       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .bss.s_lpi2cMasterIsr
-                0x20000524        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x2000052c        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .bss.s_lpi2cSlaveHandle
-                0x20000528       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x20000530       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .bss.s_lpi2cSlaveIsr
-                0x2000053c        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x20000544        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .bss.s_lpspiHandle
-                0x20000540       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x20000548       0x14 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .bss.s_lpspiMasterIsr
-                0x20000554        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x2000055c        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .bss.s_lpspiSlaveIsr
-                0x20000558        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x20000560        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .bss.s_lpuartHandle
-                0x2000055c       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x20000564       0x24 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
  .bss.s_lpuartIsr
-                0x20000580        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x20000588        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
  .bss.s_saiHandle
-                0x20000584       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x2000058c       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
  .bss.s_saiRxIsr
-                0x200005a4        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x200005ac        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
  .bss.s_saiTxIsr
-                0x200005a8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x200005b0        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
  .bss.s_spdifHandle
-                0x200005ac        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
-                0x200005ac                s_spdifHandle
+                0x200005b4        0x8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+                0x200005b4                s_spdifHandle
  .bss.s_spdifRxIsr
-                0x200005b4        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+                0x200005bc        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
  .bss.s_spdifTxIsr
-                0x200005b8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+                0x200005c0        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
  .bss.s_usdhcHandle
-                0x200005bc        0xc CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+                0x200005c4        0xc CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
  .bss.s_usdhcIsr
-                0x200005c8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+                0x200005d0        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
  .bss.g_eventCardDetect
-                0x200005cc        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .bss.g_eventTimeMilliseconds
-                0x200005d0        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
-                0x200005d0                g_eventTimeMilliseconds
- .bss.g_eventTransferComplete
                 0x200005d4        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .bss.g_eventTimeMilliseconds
+                0x200005d8        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+                0x200005d8                g_eventTimeMilliseconds
+ .bss.g_eventTransferComplete
+                0x200005dc        0x4 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
  .bss.g_usdhcHandle
-                0x200005d8       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
-                0x200005d8                g_usdhcHandle
+                0x200005e0       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+                0x200005e0                g_usdhcHandle
  .bss.s_sdInsertedFlag
-                0x20000600        0x1 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- *fill*         0x20000601        0x3 
+                0x20000608        0x1 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ *fill*         0x20000609        0x3 
  .bss.s_debugConsoleState
-                0x20000604       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+                0x2000060c       0x1c CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
  .bss.s_cdcVcom
-                0x20000620       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
-                0x20000620                s_cdcVcom
+                0x20000628       0x10 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+                0x20000628                s_cdcVcom
  *(COMMON)
- COMMON         0x20000630       0x21 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x20000630                __lock___atexit_recursive_mutex
-                0x20000634                __lock___arc4random_mutex
-                0x20000638                __lock___env_recursive_mutex
-                0x2000063c                __lock___sinit_recursive_mutex
-                0x20000640                __lock___malloc_recursive_mutex
-                0x20000644                __lock___at_quick_exit_mutex
-                0x20000648                __lock___dd_hash_mutex
-                0x2000064c                __lock___tz_mutex
-                0x20000650                __lock___sfp_recursive_mutex
-                0x20000654                . = ALIGN (0x4)
- *fill*         0x20000651        0x3 
-                0x20000654                __bss_end__ = .
-                0x20000654                __END_BSS = .
+ COMMON         0x20000638       0x21 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x20000638                __lock___atexit_recursive_mutex
+                0x2000063c                __lock___arc4random_mutex
+                0x20000640                __lock___env_recursive_mutex
+                0x20000644                __lock___sinit_recursive_mutex
+                0x20000648                __lock___malloc_recursive_mutex
+                0x2000064c                __lock___at_quick_exit_mutex
+                0x20000650                __lock___dd_hash_mutex
+                0x20000654                __lock___tz_mutex
+                0x20000658                __lock___sfp_recursive_mutex
+                0x2000065c                . = ALIGN (0x4)
+ *fill*         0x20000659        0x3 
+                0x2000065c                __bss_end__ = .
+                0x2000065c                __END_BSS = .
 
-.heap           0x20000654     0x1004 load address 0x7000775c
-                0x20000658                . = ALIGN (0x8)
- *fill*         0x20000654        0x4 
-                0x20000658                __end__ = .
-                0x20000658                PROVIDE (end = .)
-                0x20000658                __HeapBase = .
-                0x20001658                . = (. + HEAP_SIZE)
- *fill*         0x20000658     0x1000 
-                0x20001658                __HeapLimit = .
-                0x20001658                __heap_limit = .
+.heap           0x2000065c     0x1004 load address 0x700077e4
+                0x20000660                . = ALIGN (0x8)
+ *fill*         0x2000065c        0x4 
+                0x20000660                __end__ = .
+                0x20000660                PROVIDE (end = .)
+                0x20000660                __HeapBase = .
+                0x20001660                . = (. + HEAP_SIZE)
+ *fill*         0x20000660     0x1000 
+                0x20001660                __HeapLimit = .
+                0x20001660                __heap_limit = .
 
-.stack          0x20001658     0x2000 load address 0x70008760
-                0x20001658                . = ALIGN (0x8)
-                0x20003658                . = (. + STACK_SIZE)
- *fill*         0x20001658     0x2000 
+.stack          0x20001660     0x2000 load address 0x700087e8
+                0x20001660                . = ALIGN (0x8)
+                0x20003660                . = (. + STACK_SIZE)
+ *fill*         0x20001660     0x2000 
                 0x20020000                __StackTop = (ORIGIN (m_data) + LENGTH (m_data))
                 0x2001e000                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20020000                PROVIDE (__stack = __StackTop)
@@ -9481,371 +9523,420 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard
  .ARM.attributes
                 0x00000052       0x1c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
-                0x0000006e       0x34 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+                0x0000006e       0x34 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
  .ARM.attributes
-                0x000000a2       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+                0x000000a2       0x34 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
  .ARM.attributes
-                0x000000d6       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+                0x000000d6       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
  .ARM.attributes
-                0x0000010a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+                0x0000010a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
  .ARM.attributes
-                0x0000013e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+                0x0000013e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
  .ARM.attributes
-                0x00000172       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+                0x00000172       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
  .ARM.attributes
-                0x000001a6       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+                0x000001a6       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .ARM.attributes
-                0x000001da       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+                0x000001da       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
  .ARM.attributes
-                0x0000020e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+                0x0000020e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
  .ARM.attributes
-                0x00000242       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+                0x00000242       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
  .ARM.attributes
-                0x00000276       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+                0x00000276       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
  .ARM.attributes
-                0x000002aa       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+                0x000002aa       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
  .ARM.attributes
-                0x000002de       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+                0x000002de       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
  .ARM.attributes
-                0x00000312       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+                0x00000312       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
  .ARM.attributes
-                0x00000346       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+                0x00000346       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
  .ARM.attributes
-                0x0000037a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+                0x0000037a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
  .ARM.attributes
-                0x000003ae       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+                0x000003ae       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
  .ARM.attributes
-                0x000003e2       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+                0x000003e2       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
  .ARM.attributes
-                0x00000416       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+                0x00000416       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
  .ARM.attributes
-                0x0000044a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+                0x0000044a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
  .ARM.attributes
-                0x0000047e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+                0x0000047e       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
  .ARM.attributes
-                0x000004b2       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+                0x000004b2       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
  .ARM.attributes
-                0x000004e6       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+                0x000004e6       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
  .ARM.attributes
-                0x0000051f       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+                0x0000051a       0x34 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
  .ARM.attributes
-                0x00000558       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+                0x0000054e       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
  .ARM.attributes
-                0x00000591       0x34 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+                0x00000587       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
  .ARM.attributes
-                0x000005c5       0x34 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+                0x000005c0       0x39 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
  .ARM.attributes
-                0x000005f9       0x1f CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+                0x000005f9       0x34 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
  .ARM.attributes
-                0x00000618       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
+                0x0000062d       0x34 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
  .ARM.attributes
-                0x0000064c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
+                0x00000661       0x1f CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
  .ARM.attributes
-                0x00000680       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
+                0x00000680       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
  .ARM.attributes
-                0x000006b4       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
+                0x000006b4       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
  .ARM.attributes
-                0x000006e8       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
+                0x000006e8       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
  .ARM.attributes
-                0x0000071c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
+                0x0000071c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
  .ARM.attributes
-                0x00000750       0x32 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_lib_ver.o)
+                0x00000750       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
  .ARM.attributes
-                0x00000782       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
+                0x00000784       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
  .ARM.attributes
-                0x000007b6       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
+                0x000007b8       0x32 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_lib_ver.o)
  .ARM.attributes
-                0x000007ea       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
+                0x000007ea       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
  .ARM.attributes
-                0x0000081e       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x0000081e       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
  .ARM.attributes
-                0x0000083c       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x00000852       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
  .ARM.attributes
-                0x0000085a       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                0x00000886       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000878       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+                0x000008a4       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x00000896       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+                0x000008c2       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x000008b4       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
+                0x000008e0       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x000008d2       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x000008fe       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x000008f0       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixdfdi.o)
+                0x0000091c       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
  .ARM.attributes
-                0x00000924       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                0x0000093a       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x00000958       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00000958       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixdfdi.o)
  .ARM.attributes
-                0x0000098c       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x0000098c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
  .ARM.attributes
-                0x000009aa       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x000009c0       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x000009c8       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
+                0x000009f4       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x000009fc       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
+                0x00000a12       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
  .ARM.attributes
-                0x00000a30       0x32 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-impure.o)
+                0x00000a30       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
  .ARM.attributes
-                0x00000a62       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
+                0x00000a64       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000a96       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
+                0x00000a98       0x32 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000aca       0x1c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-strlen.o)
+                0x00000aca       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
  .ARM.attributes
-                0x00000ae6       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
+                0x00000afe       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000b1a       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
+                0x00000b32       0x1c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-strlen.o)
  .ARM.attributes
-                0x00000b4e       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
+                0x00000b4e       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000b82       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x00000b82       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000bb6       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)
+                0x00000bb6       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
  .ARM.attributes
-                0x00000bea       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000bea       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+ .ARM.attributes
+                0x00000c1e       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000c52       0x1e d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
 OUTPUT(RT1064.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000    0x47014
- .debug_info    0x00000000       0x38 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_info    0x00000038     0x1727 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_info    0x0000175f     0x109e CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_info    0x000027fd     0x1bfd CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_info    0x000043fa      0xd98 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_info    0x00005192     0x4da1 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_info    0x00009f33     0x4a9f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_info    0x0000e9d2     0x645f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_info    0x00014e31     0x2750 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_info    0x00017581     0x5115 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_info    0x0001c696     0x554d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_info    0x00021be3     0x3d6b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_info    0x0002594e     0x472c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_info    0x0002a07a     0x3350 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_info    0x0002d3ca     0x5029 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_info    0x000323f3     0x1ed8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_info    0x000342cb     0x3523 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_info    0x000377ee     0x25c7 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_info    0x00039db5     0x2ecc CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_info    0x0003cc81     0x1d5a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_info    0x0003e9db      0xa35 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_info    0x0003f410     0x172a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_info    0x00040b3a     0x1659 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
- .debug_info    0x00042193       0xa9 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
- .debug_info    0x0004223c     0x1442 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
- .debug_info    0x0004367e      0xa06 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_info    0x00044084     0x2f6a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
- .debug_info    0x00046fee       0x26 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+.debug_info     0x00000000    0x4c27b
+ .debug_info    0x00000000     0x2931 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_info    0x00002931       0x38 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_info    0x00002969     0x1727 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_info    0x00004090     0x109e CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_info    0x0000512e     0x1bfd CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_info    0x00006d2b      0xd98 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_info    0x00007ac3     0x2936 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_info    0x0000a3f9     0x4da1 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_info    0x0000f19a     0x4a9f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_info    0x00013c39     0x645f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_info    0x0001a098     0x2750 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_info    0x0001c7e8     0x5115 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_info    0x000218fd     0x554d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_info    0x00026e4a     0x3d6b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_info    0x0002abb5     0x472c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_info    0x0002f2e1     0x3350 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_info    0x00032631     0x5029 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_info    0x0003765a     0x1ed8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_info    0x00039532     0x3523 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_info    0x0003ca55     0x25c7 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_info    0x0003f01c     0x2ecc CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_info    0x00041ee8     0x1d5a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_info    0x00043c42      0xa35 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_info    0x00044677     0x172a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_info    0x00045da1     0x1659 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+ .debug_info    0x000473fa       0xa9 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+ .debug_info    0x000474a3     0x1442 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+ .debug_info    0x000488e5      0xa06 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_info    0x000492eb     0x2f6a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_info    0x0004c255       0x26 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
 
-.debug_abbrev   0x00000000     0x6179
- .debug_abbrev  0x00000000       0x2c CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_abbrev  0x0000002c      0x292 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_abbrev  0x000002be      0x2bf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_abbrev  0x0000057d      0x31e CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_abbrev  0x0000089b      0x1cc CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_abbrev  0x00000a67      0x4f9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_abbrev  0x00000f60      0x46c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_abbrev  0x000013cc      0x541 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_abbrev  0x0000190d      0x45c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_abbrev  0x00001d69      0x532 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_abbrev  0x0000229b      0x531 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_abbrev  0x000027cc      0x4c1 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_abbrev  0x00002c8d      0x4ab CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_abbrev  0x00003138      0x50d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_abbrev  0x00003645      0x55b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_abbrev  0x00003ba0      0x3b6 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_abbrev  0x00003f56      0x565 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_abbrev  0x000044bb      0x3b6 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_abbrev  0x00004871      0x455 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_abbrev  0x00004cc6      0x398 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_abbrev  0x0000505e      0x219 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_abbrev  0x00005277      0x3d5 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_abbrev  0x0000564c      0x21c CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
- .debug_abbrev  0x00005868       0x61 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
- .debug_abbrev  0x000058c9      0x21d CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
- .debug_abbrev  0x00005ae6      0x205 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_abbrev  0x00005ceb      0x47a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
- .debug_abbrev  0x00006165       0x14 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+.debug_abbrev   0x00000000     0x6960
+ .debug_abbrev  0x00000000      0x2fe CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_abbrev  0x000002fe       0x2c CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_abbrev  0x0000032a      0x292 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_abbrev  0x000005bc      0x2bf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_abbrev  0x0000087b      0x31e CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_abbrev  0x00000b99      0x1cc CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_abbrev  0x00000d65      0x4e9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_abbrev  0x0000124e      0x4f9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_abbrev  0x00001747      0x46c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_abbrev  0x00001bb3      0x541 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_abbrev  0x000020f4      0x45c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_abbrev  0x00002550      0x532 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_abbrev  0x00002a82      0x531 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_abbrev  0x00002fb3      0x4c1 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_abbrev  0x00003474      0x4ab CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_abbrev  0x0000391f      0x50d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_abbrev  0x00003e2c      0x55b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_abbrev  0x00004387      0x3b6 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_abbrev  0x0000473d      0x565 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_abbrev  0x00004ca2      0x3b6 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_abbrev  0x00005058      0x455 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_abbrev  0x000054ad      0x398 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_abbrev  0x00005845      0x219 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_abbrev  0x00005a5e      0x3d5 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_abbrev  0x00005e33      0x21c CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+ .debug_abbrev  0x0000604f       0x61 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+ .debug_abbrev  0x000060b0      0x21d CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+ .debug_abbrev  0x000062cd      0x205 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_abbrev  0x000064d2      0x47a CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_abbrev  0x0000694c       0x14 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
 
-.debug_aranges  0x00000000     0x13c8
- .debug_aranges
-                0x00000000       0x20 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_aranges
-                0x00000020       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_aranges
-                0x000000a8       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_aranges
-                0x000000e0       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_aranges
-                0x00000120       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_aranges
-                0x00000150      0x320 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_aranges
-                0x00000470      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_aranges
-                0x000005a0      0x1a0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_aranges
-                0x00000740       0xa0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_aranges
-                0x000007e0      0x148 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_aranges
-                0x00000928      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_aranges
-                0x00000a58      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_aranges
-                0x00000b88      0x1a0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_aranges
-                0x00000d28       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_aranges
-                0x00000de0      0x150 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_aranges
-                0x00000f30       0x58 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_aranges
-                0x00000f88       0xb0 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_aranges
-                0x00001038       0xc8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_aranges
-                0x00001100       0xb0 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_aranges
-                0x000011b0       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_aranges
-                0x00001238       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_aranges
-                0x00001258       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_aranges
-                0x00001298       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
- .debug_aranges
-                0x000012b0       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
- .debug_aranges
-                0x000012c8       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
- .debug_aranges
-                0x000012e0       0x58 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_aranges
-                0x00001338       0x70 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
- .debug_aranges
-                0x000013a8       0x20 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+.debug_loc      0x00000000    0x21b26
+ .debug_loc     0x00000000      0x1c2 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_loc     0x000001c2      0xf4b CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_loc     0x0000110d      0x477 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_loc     0x00001584      0x541 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_loc     0x00001ac5      0x143 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_loc     0x00001c08      0xb71 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_loc     0x00002779     0x2086 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_loc     0x000047ff     0x2289 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_loc     0x00006a88     0x3f60 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_loc     0x0000a9e8      0xa08 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_loc     0x0000b3f0     0x30fa CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_loc     0x0000e4ea     0x367b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_loc     0x00011b65     0x2020 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_loc     0x00013b85     0x2425 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_loc     0x00015faa     0x17cf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_loc     0x00017779     0x3830 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_loc     0x0001afa9      0x2a5 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_loc     0x0001b24e      0xa33 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_loc     0x0001bc81     0x1798 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_loc     0x0001d419     0x1ad9 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_loc     0x0001eef2      0x706 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_loc     0x0001f5f8       0xb9 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_loc     0x0001f6b1     0x15ca CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_loc     0x00020c7b      0xeab CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
 
-.debug_ranges   0x00000000     0x17f0
- .debug_ranges  0x00000000       0x10 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_ranges  0x00000010       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_ranges  0x00000088       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_ranges  0x000000b0       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_ranges  0x000000e0       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_ranges  0x00000100      0x3b8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_ranges  0x000004b8      0x1c0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_ranges  0x00000678      0x228 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_ranges  0x000008a0       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_ranges  0x00000970      0x278 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_ranges  0x00000be8      0x198 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_ranges  0x00000d80      0x160 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_ranges  0x00000ee0      0x220 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_ranges  0x00001100      0x108 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_ranges  0x00001208      0x1b0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_ranges  0x000013b8       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_ranges  0x00001400       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_ranges  0x000014b8       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_ranges  0x00001588       0xd8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_ranges  0x00001660       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_ranges  0x000016d8       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_ranges  0x000016e8       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_ranges  0x00001718       0x48 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_ranges  0x00001760       0x90 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+.debug_aranges  0x00000000     0x14b8
+ .debug_aranges
+                0x00000000       0x28 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_aranges
+                0x00000028       0x20 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_aranges
+                0x00000048       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_aranges
+                0x000000d0       0x38 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_aranges
+                0x00000108       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_aranges
+                0x00000148       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_aranges
+                0x00000178       0xc8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_aranges
+                0x00000240      0x320 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_aranges
+                0x00000560      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_aranges
+                0x00000690      0x1a0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_aranges
+                0x00000830       0xa0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_aranges
+                0x000008d0      0x148 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_aranges
+                0x00000a18      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_aranges
+                0x00000b48      0x130 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_aranges
+                0x00000c78      0x1a0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_aranges
+                0x00000e18       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_aranges
+                0x00000ed0      0x150 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_aranges
+                0x00001020       0x58 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_aranges
+                0x00001078       0xb0 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_aranges
+                0x00001128       0xc8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_aranges
+                0x000011f0       0xb0 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_aranges
+                0x000012a0       0x88 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_aranges
+                0x00001328       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_aranges
+                0x00001348       0x40 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_aranges
+                0x00001388       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+ .debug_aranges
+                0x000013a0       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+ .debug_aranges
+                0x000013b8       0x18 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+ .debug_aranges
+                0x000013d0       0x58 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_aranges
+                0x00001428       0x70 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_aranges
+                0x00001498       0x20 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
 
-.debug_line     0x00000000    0x19647
- .debug_line    0x00000000       0x7a CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_line    0x0000007a      0x757 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_line    0x000007d1      0x4bf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_line    0x00000c90      0x512 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_line    0x000011a2      0x4dd CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_line    0x0000167f     0x2019 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_line    0x00003698     0x17db CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_line    0x00004e73     0x276f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_line    0x000075e2      0x829 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_line    0x00007e0b     0x1f52 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_line    0x00009d5d     0x2424 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_line    0x0000c181     0x17af CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_line    0x0000d930     0x1f88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_line    0x0000f8b8     0x1308 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_line    0x00010bc0     0x2029 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_line    0x00012be9      0x53c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_line    0x00013125      0xaf5 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_line    0x00013c1a      0xc8f CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_line    0x000148a9     0x1855 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_line    0x000160fe      0x7c5 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_line    0x000168c3      0x32a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_line    0x00016bed     0x1357 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_line    0x00017f44      0x2de CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
- .debug_line    0x00018222       0xfd CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
- .debug_line    0x0001831f      0x31b CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
- .debug_line    0x0001863a      0x273 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_line    0x000188ad      0xbe2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
- .debug_line    0x0001948f      0x1b8 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+.debug_ranges   0x00000000     0x1920
+ .debug_ranges  0x00000000       0x18 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_ranges  0x00000018       0x10 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_ranges  0x00000028       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_ranges  0x000000a0       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_ranges  0x000000c8       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_ranges  0x000000f8       0x20 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_ranges  0x00000118      0x118 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_ranges  0x00000230      0x3b8 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_ranges  0x000005e8      0x1c0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_ranges  0x000007a8      0x228 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_ranges  0x000009d0       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_ranges  0x00000aa0      0x278 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_ranges  0x00000d18      0x198 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_ranges  0x00000eb0      0x160 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_ranges  0x00001010      0x220 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_ranges  0x00001230      0x108 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_ranges  0x00001338      0x1b0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_ranges  0x000014e8       0x48 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_ranges  0x00001530       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_ranges  0x000015e8       0xd0 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_ranges  0x000016b8       0xd8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_ranges  0x00001790       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_ranges  0x00001808       0x10 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_ranges  0x00001818       0x30 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_ranges  0x00001848       0x48 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_ranges  0x00001890       0x90 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
 
-.debug_str      0x00000000    0x12d19
- .debug_str     0x00000000      0x150 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_str     0x00000150      0x9a3 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+.debug_line     0x00000000    0x1aa1b
+ .debug_line    0x00000000      0x754 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_line    0x00000754       0x7a CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_line    0x000007ce      0x757 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_line    0x00000f25      0x4bf CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_line    0x000013e4      0x512 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_line    0x000018f6      0x4dd CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_line    0x00001dd3      0xc80 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_line    0x00002a53     0x2019 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_line    0x00004a6c     0x17db CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_line    0x00006247     0x276f CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_line    0x000089b6      0x829 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_line    0x000091df     0x1f52 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_line    0x0000b131     0x2424 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_line    0x0000d555     0x17af CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_line    0x0000ed04     0x1f88 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_line    0x00010c8c     0x1308 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_line    0x00011f94     0x2029 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_line    0x00013fbd      0x53c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_line    0x000144f9      0xaf5 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_line    0x00014fee      0xc8f CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_line    0x00015c7d     0x1855 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_line    0x000174d2      0x7c5 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_line    0x00017c97      0x32a CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_line    0x00017fc1     0x1357 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_line    0x00019318      0x2de CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+ .debug_line    0x000195f6       0xfd CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+ .debug_line    0x000196f3      0x31b CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+ .debug_line    0x00019a0e      0x273 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_line    0x00019c81      0xbe2 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_line    0x0001a863      0x1b8 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+
+.debug_str      0x00000000    0x13e69
+ .debug_str     0x00000000     0x220f CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+                               0x2398 (size before relaxing)
+ .debug_str     0x0000220f       0x3b CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+                                0x150 (size before relaxing)
+ .debug_str     0x0000224a      0x54b CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
                                 0xb7d (size before relaxing)
- .debug_str     0x00000af3      0x488 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_str     0x00002795      0x488 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
                                 0xc31 (size before relaxing)
- .debug_str     0x00000f7b     0x10e6 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_str     0x00002c1d     0x1082 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
                                0x19b9 (size before relaxing)
- .debug_str     0x00002061      0x27d CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_str     0x00003c9f      0x26c CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
                                 0x81d (size before relaxing)
- .debug_str     0x000022de     0x23c7 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_str     0x00003f0b     0x115b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+                               0x2184 (size before relaxing)
+ .debug_str     0x00005066     0x12e5 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
                                0x2dbe (size before relaxing)
- .debug_str     0x000046a5     0x137a CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_str     0x0000634b     0x1320 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
                                0x3743 (size before relaxing)
- .debug_str     0x00005a1f     0x143c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_str     0x0000766b     0x142d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
                                0x3847 (size before relaxing)
- .debug_str     0x00006e5b     0x1301 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_str     0x00008a98     0x1215 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
                                0x2cb2 (size before relaxing)
- .debug_str     0x0000815c     0x1622 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_str     0x00009cad     0x1622 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
                                0x3a65 (size before relaxing)
- .debug_str     0x0000977e     0x111c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_str     0x0000b2cf     0x10fd CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
                                0x3536 (size before relaxing)
- .debug_str     0x0000a89a      0xb3b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_str     0x0000c3cc      0xb3b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
                                0x33b5 (size before relaxing)
- .debug_str     0x0000b3d5      0xcde CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_str     0x0000cf07      0xcde CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
                                0x30c3 (size before relaxing)
- .debug_str     0x0000c0b3      0xba9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_str     0x0000dbe5      0xba9 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
                                0x2547 (size before relaxing)
- .debug_str     0x0000cc5c     0x1cb6 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_str     0x0000e78e     0x176e CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
                                0x40c1 (size before relaxing)
- .debug_str     0x0000e912      0x3d6 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_str     0x0000fefc      0x3d6 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
                                0x202c (size before relaxing)
- .debug_str     0x0000ece8      0x91c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_str     0x000102d2      0x4ed CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
                                0x3626 (size before relaxing)
- .debug_str     0x0000f604     0x126d CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_str     0x000107bf     0x126d CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
                                0x2404 (size before relaxing)
- .debug_str     0x00010871      0x8bf CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_str     0x00011a2c      0x8bf CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
                                0x25b1 (size before relaxing)
- .debug_str     0x00011130      0x296 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_str     0x000122eb      0x296 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
                                0x1923 (size before relaxing)
- .debug_str     0x000113c6       0x5f CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_str     0x00012581       0x5f CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
                                 0x67b (size before relaxing)
- .debug_str     0x00011425      0x39b CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_str     0x000125e0      0x357 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
                                 0xa4e (size before relaxing)
- .debug_str     0x000117c0      0x59a CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
+ .debug_str     0x00012937      0x59a CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj
                                0x171a (size before relaxing)
- .debug_str     0x00011d5a       0x63 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
+ .debug_str     0x00012ed1       0x63 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj
                                 0x20e (size before relaxing)
- .debug_str     0x00011dbd       0xce CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
+ .debug_str     0x00012f34       0xce CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj
                                0x135b (size before relaxing)
- .debug_str     0x00011e8b       0xe6 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_str     0x00013002       0xcd CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
                                 0x6b7 (size before relaxing)
- .debug_str     0x00011f71      0xd5b CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_str     0x000130cf      0xd4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
                                0x359d (size before relaxing)
- .debug_str     0x00012ccc       0x4d CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
+ .debug_str     0x00013e1c       0x4d CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
                                  0x89 (size before relaxing)
 
 .comment        0x00000000       0x4c
- .comment       0x00000000       0x4c CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .comment       0x00000000       0x4c CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
                                  0x4d (size before relaxing)
+ .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/USER/main.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
@@ -9869,81 +9960,59 @@ LOAD linker stubs
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
 
-.debug_frame    0x00000000     0x424c
- .debug_frame   0x00000000       0x20 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
- .debug_frame   0x00000020      0x168 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_frame   0x00000188       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_frame   0x00000200       0x8c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_frame   0x0000028c       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_frame   0x000002e0      0x954 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_frame   0x00000c34      0x3ac CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_frame   0x00000fe0      0x58c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_frame   0x0000156c      0x1b0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_frame   0x0000171c      0x440 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_frame   0x00001b5c      0x3e0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_frame   0x00001f3c      0x384 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_frame   0x000022c0      0x4e0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_frame   0x000027a0      0x214 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_frame   0x000029b4      0x42c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_frame   0x00002de0       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_frame   0x00002e98      0x20c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_frame   0x000030a4      0x2a8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_frame   0x0000334c      0x29c CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_frame   0x000035e8      0x1c4 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_frame   0x000037ac       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_frame   0x000037d4       0xec CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_frame   0x000038c0       0x90 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
- .debug_frame   0x00003950      0x12c CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
- .debug_frame   0x00003a7c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
- .debug_frame   0x00003ab0       0x50 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
- .debug_frame   0x00003b00       0xc8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
- .debug_frame   0x00003bc8       0x30 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
- .debug_frame   0x00003bf8       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
- .debug_frame   0x00003c18       0x28 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
- .debug_frame   0x00003c40       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
- .debug_frame   0x00003c60       0x44 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
- .debug_frame   0x00003ca4       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
- .debug_frame   0x00003cd0       0xac d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00003d7c       0x50 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00003dcc       0xc4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00003e90       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00003eb0       0x24 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x00003ed4       0x44 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
- .debug_frame   0x00003f18       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00003f44       0x38 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixdfdi.o)
- .debug_frame   0x00003f7c       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
- .debug_frame   0x00003fa8       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00003fdc       0x24 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x00004000       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
- .debug_frame   0x00004020       0x28 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
- .debug_frame   0x00004048       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
- .debug_frame   0x00004074       0x38 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
- .debug_frame   0x000040ac       0x68 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00004114       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
- .debug_frame   0x00004134       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
- .debug_frame   0x00004168       0xb0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
- .debug_frame   0x00004218       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)
-
-.debug_loc      0x00000000    0x20df3
- .debug_loc     0x00000000      0xf4b CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
- .debug_loc     0x00000f4b      0x477 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
- .debug_loc     0x000013c2      0x541 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
- .debug_loc     0x00001903      0x143 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
- .debug_loc     0x00001a46     0x2086 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
- .debug_loc     0x00003acc     0x2289 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
- .debug_loc     0x00005d55     0x3f60 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
- .debug_loc     0x00009cb5      0xa08 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
- .debug_loc     0x0000a6bd     0x30fa CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
- .debug_loc     0x0000d7b7     0x367b CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
- .debug_loc     0x00010e32     0x2020 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
- .debug_loc     0x00012e52     0x2425 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
- .debug_loc     0x00015277     0x17cf CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
- .debug_loc     0x00016a46     0x3830 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
- .debug_loc     0x0001a276      0x2a5 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
- .debug_loc     0x0001a51b      0xa33 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
- .debug_loc     0x0001af4e     0x1798 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
- .debug_loc     0x0001c6e6     0x1ad9 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
- .debug_loc     0x0001e1bf      0x706 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
- .debug_loc     0x0001e8c5       0xb9 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
- .debug_loc     0x0001e97e     0x15ca CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
- .debug_loc     0x0001ff48      0xeab CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+.debug_frame    0x00000000     0x4494
+ .debug_frame   0x00000000       0x38 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ .debug_frame   0x00000038       0x20 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
+ .debug_frame   0x00000058      0x168 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
+ .debug_frame   0x000001c0       0x78 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj
+ .debug_frame   0x00000238       0x8c CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj
+ .debug_frame   0x000002c4       0x54 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj
+ .debug_frame   0x00000318      0x210 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj
+ .debug_frame   0x00000528      0x954 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj
+ .debug_frame   0x00000e7c      0x3ac CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj
+ .debug_frame   0x00001228      0x58c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj
+ .debug_frame   0x000017b4      0x1b0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj
+ .debug_frame   0x00001964      0x440 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj
+ .debug_frame   0x00001da4      0x3e0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj
+ .debug_frame   0x00002184      0x384 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj
+ .debug_frame   0x00002508      0x4e0 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj
+ .debug_frame   0x000029e8      0x214 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj
+ .debug_frame   0x00002bfc      0x42c CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj
+ .debug_frame   0x00003028       0xb8 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj
+ .debug_frame   0x000030e0      0x20c CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj
+ .debug_frame   0x000032ec      0x2a8 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj
+ .debug_frame   0x00003594      0x29c CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj
+ .debug_frame   0x00003830      0x1c4 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj
+ .debug_frame   0x000039f4       0x28 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj
+ .debug_frame   0x00003a1c       0xec CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj
+ .debug_frame   0x00003b08       0x90 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj
+ .debug_frame   0x00003b98      0x12c CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj
+ .debug_frame   0x00003cc4       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_modf.o)
+ .debug_frame   0x00003cf8       0x50 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-w_pow.o)
+ .debug_frame   0x00003d48       0xc8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_pow.o)
+ .debug_frame   0x00003e10       0x30 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00003e40       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x00003e60       0x28 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_finite.o)
+ .debug_frame   0x00003e88       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x00003ea8       0x44 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_rint.o)
+ .debug_frame   0x00003eec       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_scalbn.o)
+ .debug_frame   0x00003f18       0xac d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00003fc4       0x50 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00004014       0xc4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x000040d8       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x000040f8       0x24 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000411c       0x44 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00004160       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000418c       0x38 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixdfdi.o)
+ .debug_frame   0x000041c4       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_frame   0x000041f0       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00004224       0x24 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x00004248       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-errno.o)
+ .debug_frame   0x00004268       0x28 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-exit.o)
+ .debug_frame   0x00004290       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-init.o)
+ .debug_frame   0x000042bc       0x38 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-memset.o)
+ .debug_frame   0x000042f4       0x68 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000435c       0x20 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-atexit.o)
+ .debug_frame   0x0000437c       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-fini.o)
+ .debug_frame   0x000043b0       0xb0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+ .debug_frame   0x00004460       0x34 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-__atexit.o)

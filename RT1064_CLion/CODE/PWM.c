@@ -3,11 +3,12 @@
 //
 
 #include "PWM.h"
-#include "fsl_pwm.h"
 #include "port.h"
 #include "zf_iomuxc.h"
+#include "fsl_pwm.h"
 #define PWM_SRC_CLK_FREQ CLOCK_GetFreq(kCLOCK_IpgClk) //定义PWM输入时钟源频率
 #define PWM_PIN_CONF SPEED_100MHZ | KEEPER_EN | DSE_R0_6 //配置PWM引脚默认配置
+static PWM_Type *PWMPTR[] = PWM_BASE_PTRS;
 void User_PWMInit(PWMPin_enum PWMch, uint32 freq, uint32 duty) {
   uint8 pwm_num;
   uint8 pwm_module;

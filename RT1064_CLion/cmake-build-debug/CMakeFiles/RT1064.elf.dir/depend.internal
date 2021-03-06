@@ -19,12 +19,40 @@ CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
  ../nxp_libraries/drives/fsl_adc.h
  ../nxp_libraries/drives/fsl_clock.h
  ../nxp_libraries/drives/fsl_common.h
+ ../nxp_libraries/drives/fsl_iomuxc.h
  ../seekfree_libraries/common/common.h
  ../seekfree_libraries/zf_adc.h
  ../seekfree_libraries/zf_iomuxc.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.c
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
+CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+ ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+ ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+ ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+ ../nxp_libraries/CMSIS/Include/cmsis_version.h
+ ../nxp_libraries/CMSIS/Include/core_cm7.h
+ ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+ ../nxp_libraries/deceive/MIMXRT1064.h
+ ../nxp_libraries/deceive/MIMXRT1064_features.h
+ ../nxp_libraries/deceive/fsl_device_registers.h
+ ../nxp_libraries/deceive/system_MIMXRT1064.h
+ ../nxp_libraries/drives/fsl_adc.h
+ ../nxp_libraries/drives/fsl_clock.h
+ ../nxp_libraries/drives/fsl_common.h
+ ../nxp_libraries/drives/fsl_pwm.h
+ ../nxp_libraries/drives/fsl_qtmr.h
+ ../seekfree_libraries/common/common.h
+ ../seekfree_libraries/zf_adc.h
+ ../seekfree_libraries/zf_pwm.h
+ ../seekfree_libraries/zf_qtimer.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.c
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.c
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
@@ -46,7 +74,6 @@ CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
  ../nxp_libraries/drives/fsl_pwm.h
  ../seekfree_libraries/common/common.h
  ../seekfree_libraries/zf_iomuxc.h
- ../seekfree_libraries/zf_pwm.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.c
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
@@ -66,15 +93,123 @@ CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
  ../nxp_libraries/drives/fsl_adc.h
  ../nxp_libraries/drives/fsl_clock.h
  ../nxp_libraries/drives/fsl_common.h
- ../nxp_libraries/drives/fsl_pwm.h
  ../seekfree_libraries/common/common.h
  ../seekfree_libraries/zf_adc.h
- ../seekfree_libraries/zf_pwm.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PWM.h
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.c
  D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+ ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+ ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+ ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+ ../nxp_libraries/CMSIS/Include/cmsis_version.h
+ ../nxp_libraries/CMSIS/Include/core_cm7.h
+ ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+ ../nxp_libraries/deceive/MIMXRT1064.h
+ ../nxp_libraries/deceive/MIMXRT1064_features.h
+ ../nxp_libraries/deceive/fsl_device_registers.h
+ ../nxp_libraries/deceive/system_MIMXRT1064.h
+ ../nxp_libraries/drives/fsl_clock.h
+ ../nxp_libraries/drives/fsl_common.h
+ ../nxp_libraries/drives/fsl_lpuart.h
+ ../seekfree_libraries/common/common.h
+ ../seekfree_libraries/zf_uart.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.c
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h
+CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+ ../USER/RT106X_config.h
+ ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+ ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+ ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+ ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+ ../nxp_libraries/CMSIS/Include/cmsis_version.h
+ ../nxp_libraries/CMSIS/Include/core_cm7.h
+ ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+ ../nxp_libraries/components/serial_manager/serial_manager.h
+ ../nxp_libraries/components/serial_manager/serial_port_uart.h
+ ../nxp_libraries/components/serial_manager/serial_port_usb.h
+ ../nxp_libraries/deceive/MIMXRT1064.h
+ ../nxp_libraries/deceive/MIMXRT1064_features.h
+ ../nxp_libraries/deceive/fsl_device_registers.h
+ ../nxp_libraries/deceive/system_MIMXRT1064.h
+ ../nxp_libraries/drives/fsl_adc.h
+ ../nxp_libraries/drives/fsl_cache.h
+ ../nxp_libraries/drives/fsl_clock.h
+ ../nxp_libraries/drives/fsl_common.h
+ ../nxp_libraries/drives/fsl_csi.h
+ ../nxp_libraries/drives/fsl_dmamux.h
+ ../nxp_libraries/drives/fsl_edma.h
+ ../nxp_libraries/drives/fsl_flexio.h
+ ../nxp_libraries/drives/fsl_gpio.h
+ ../nxp_libraries/drives/fsl_iomuxc.h
+ ../nxp_libraries/drives/fsl_lpi2c.h
+ ../nxp_libraries/drives/fsl_lpspi.h
+ ../nxp_libraries/drives/fsl_lpuart.h
+ ../nxp_libraries/drives/fsl_pit.h
+ ../nxp_libraries/drives/fsl_pwm.h
+ ../nxp_libraries/drives/fsl_qtmr.h
+ ../nxp_libraries/drives/fsl_rtwdog.h
+ ../nxp_libraries/drives/fsl_usdhc.h
+ ../nxp_libraries/drives/fsl_wdog.h
+ ../nxp_libraries/middleware/fatfs/source/diskio.h
+ ../nxp_libraries/middleware/fatfs/source/ff.h
+ ../nxp_libraries/middleware/fatfs/source/ffconf.h
+ ../nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.h
+ ../nxp_libraries/middleware/fatfs/source/integer.h
+ ../nxp_libraries/middleware/sdmmc/inc/fsl_sd.h
+ ../nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_common.h
+ ../nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_host.h
+ ../nxp_libraries/middleware/sdmmc/inc/fsl_sdmmc_spec.h
+ ../nxp_libraries/utilities/debug_console/fsl_debug_console.h
+ ../nxp_libraries/xip/EVKMIMXRT1064_FLEXSPI_NOR_CONFIG.h
+ ../seekfree_libraries/board/board.h
+ ../seekfree_libraries/board/clock_config.h
+ ../seekfree_libraries/board/pin_mux.h
+ ../seekfree_libraries/common/SEEKFREE_PRINTF.h
+ ../seekfree_libraries/common/common.h
+ ../seekfree_libraries/zf_adc.h
+ ../seekfree_libraries/zf_camera.h
+ ../seekfree_libraries/zf_csi.h
+ ../seekfree_libraries/zf_flash.h
+ ../seekfree_libraries/zf_gpio.h
+ ../seekfree_libraries/zf_iic.h
+ ../seekfree_libraries/zf_iomuxc.h
+ ../seekfree_libraries/zf_pit.h
+ ../seekfree_libraries/zf_pwm.h
+ ../seekfree_libraries/zf_qtimer.h
+ ../seekfree_libraries/zf_rom_api.h
+ ../seekfree_libraries/zf_sdcard.h
+ ../seekfree_libraries/zf_spi.h
+ ../seekfree_libraries/zf_systick.h
+ ../seekfree_libraries/zf_uart.h
+ ../seekfree_libraries/zf_usb_cdc.h
+ ../seekfree_libraries/zf_vector.h
+ ../seekfree_peripheral/SEEKFREE_18TFT.h
+ ../seekfree_peripheral/SEEKFREE_FONT.h
+ ../seekfree_peripheral/SEEKFREE_FUN.h
+ ../seekfree_peripheral/SEEKFREE_ICM20602.h
+ ../seekfree_peripheral/SEEKFREE_IIC.h
+ ../seekfree_peripheral/SEEKFREE_IPS114_SPI.h
+ ../seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.h
+ ../seekfree_peripheral/SEEKFREE_L3G4200D.h
+ ../seekfree_peripheral/SEEKFREE_MMA8451.h
+ ../seekfree_peripheral/SEEKFREE_MPU6050.h
+ ../seekfree_peripheral/SEEKFREE_MT9V03X.h
+ ../seekfree_peripheral/SEEKFREE_MT9V03X_CSI.h
+ ../seekfree_peripheral/SEEKFREE_NRF24L01.h
+ ../seekfree_peripheral/SEEKFREE_OLED.h
+ ../seekfree_peripheral/SEEKFREE_SCC8660.h
+ ../seekfree_peripheral/SEEKFREE_SCC8660_CSI.h
+ ../seekfree_peripheral/SEEKFREE_VIRSCO.h
+ ../seekfree_peripheral/SEEKFREE_W25QXXJV.h
+ ../seekfree_peripheral/SEEKFREE_WIRELESS.h
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/isr.c
+ D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/isr.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj
  D:/Freescale_Vision_Group_16/RT1064_CLion/USER/main.c
  D:/Freescale_Vision_Group_16/RT1064_CLion/USER/main.h

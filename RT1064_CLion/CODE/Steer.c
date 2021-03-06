@@ -5,13 +5,13 @@
 #include "Steer.h"
 #include "ADC.h"
 #include "PWM.h"
-#include "zf_pwm.h"
 struct PID_Parameter Steer_PID_Parameter = {0};
 struct Filter_Parameter Steer_Filter_Parameter = {0};
+uint8 Trident_Flag = 0;
 uint16 SteerPWMDuty = MiddleSteer_PWM;
 void Steer_PIDStruct_Init(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
-  Steer_PID->ResultMax = SteerMAX;
-  Steer_PID->ResultMin = SteerMIN;
+  Steer_PID->ResultMax = (SteerMAX - MiddleSteer_PWM) * 50;
+  Steer_PID->ResultMin = (MiddleSteer_PWM - SteerMIN) * 50;
   Steer_PID->I_MAX = Steer_IMAX;
   Steer_PID->TargetValue = 0;
   // Steer_Filter->Coefficient=         RC低通滤波器滤波系数、待定

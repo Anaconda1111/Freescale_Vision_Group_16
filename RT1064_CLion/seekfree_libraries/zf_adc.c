@@ -135,10 +135,10 @@ void adc_iomuxc(ADCCH_enum ch) {
 //  Sample usage: adc_init(ADC_1,ADC1_CH0_B27,ADC_8BIT);//初始化B27为ADC功能
 //  分辨率为8位
 //-------------------------------------------------------------------------------------------------------------------
-void adc_init(ADCN_enum adcn, ADCRES_enum resolution) {
+void adc_init(ADCN_enum adcn, ADCCH_enum ch, ADCRES_enum resolution) {
   adc_config_t adcConfigStrcut;
 
-  // adc_iomuxc(ch);
+  adc_iomuxc(ch);
 
   /*
    *  config->enableAsynchronousClockOutput = true;

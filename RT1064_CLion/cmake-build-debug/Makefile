@@ -169,6 +169,33 @@ CODE/ADC.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ADC.c.s
 .PHONY : CODE/ADC.c.s
 
+CODE/Motor.obj: CODE/Motor.c.obj
+
+.PHONY : CODE/Motor.obj
+
+# target to build an object file
+CODE/Motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
+.PHONY : CODE/Motor.c.obj
+
+CODE/Motor.i: CODE/Motor.c.i
+
+.PHONY : CODE/Motor.i
+
+# target to preprocess a source file
+CODE/Motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Motor.c.i
+.PHONY : CODE/Motor.c.i
+
+CODE/Motor.s: CODE/Motor.c.s
+
+.PHONY : CODE/Motor.s
+
+# target to generate assembly for a file
+CODE/Motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Motor.c.s
+.PHONY : CODE/Motor.c.s
+
 CODE/PID.obj: CODE/PID.c.obj
 
 .PHONY : CODE/PID.obj
@@ -249,6 +276,60 @@ CODE/Steer.s: CODE/Steer.c.s
 CODE/Steer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Steer.c.s
 .PHONY : CODE/Steer.c.s
+
+CODE/Uart.obj: CODE/Uart.c.obj
+
+.PHONY : CODE/Uart.obj
+
+# target to build an object file
+CODE/Uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
+.PHONY : CODE/Uart.c.obj
+
+CODE/Uart.i: CODE/Uart.c.i
+
+.PHONY : CODE/Uart.i
+
+# target to preprocess a source file
+CODE/Uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.i
+.PHONY : CODE/Uart.c.i
+
+CODE/Uart.s: CODE/Uart.c.s
+
+.PHONY : CODE/Uart.s
+
+# target to generate assembly for a file
+CODE/Uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s
+.PHONY : CODE/Uart.c.s
+
+CODE/isr.obj: CODE/isr.c.obj
+
+.PHONY : CODE/isr.obj
+
+# target to build an object file
+CODE/isr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+.PHONY : CODE/isr.c.obj
+
+CODE/isr.i: CODE/isr.c.i
+
+.PHONY : CODE/isr.i
+
+# target to preprocess a source file
+CODE/isr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/isr.c.i
+.PHONY : CODE/isr.c.i
+
+CODE/isr.s: CODE/isr.c.s
+
+.PHONY : CODE/isr.s
+
+# target to generate assembly for a file
+CODE/isr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/isr.c.s
+.PHONY : CODE/isr.c.s
 
 USER/main.obj: USER/main.c.obj
 
@@ -4132,6 +4213,9 @@ help:
 	@echo ... CODE/ADC.obj
 	@echo ... CODE/ADC.i
 	@echo ... CODE/ADC.s
+	@echo ... CODE/Motor.obj
+	@echo ... CODE/Motor.i
+	@echo ... CODE/Motor.s
 	@echo ... CODE/PID.obj
 	@echo ... CODE/PID.i
 	@echo ... CODE/PID.s
@@ -4141,6 +4225,12 @@ help:
 	@echo ... CODE/Steer.obj
 	@echo ... CODE/Steer.i
 	@echo ... CODE/Steer.s
+	@echo ... CODE/Uart.obj
+	@echo ... CODE/Uart.i
+	@echo ... CODE/Uart.s
+	@echo ... CODE/isr.obj
+	@echo ... CODE/isr.i
+	@echo ... CODE/isr.s
 	@echo ... USER/main.obj
 	@echo ... USER/main.i
 	@echo ... USER/main.s

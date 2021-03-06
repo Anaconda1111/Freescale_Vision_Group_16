@@ -4,8 +4,8 @@
 
 #ifndef RT1064_CODE_PWM_H_
 #define RT1064_CODE_PWM_H_
-#include "zf_pwm.h"
-extern PWM_Type *PWMPTR[];
+#include "common.h"
+// extern PWM_Type *PWMPTR[];
 typedef enum {
   Motor_RT_R,
   Motor_RT_L,
