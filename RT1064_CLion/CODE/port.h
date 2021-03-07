@@ -5,45 +5,56 @@
 #ifndef RT1064_CODE_PORT_H_
 #define RT1064_CODE_PORT_H_
 
+#include "zf_adc.h"
 /***************************************ADC***************************************************************/
-#define Steer_ADCInput1 C28
-#define Steer_ADCInput2 C26
-#define Steer_ADCInput3 C24
-#define Steer_ADCInput4 C22
-#define Steer_ADCInput5 C20
-#define Steer_ADCInput6 B28
-#define Steer_ADCInput7 B11
-#define Steer_ADCInput8 B10
-#define Steer_ADCInput9 B9
-#define Steer_ADCInput10 C31
+#define Steer_ADCInput1_CH ADC1_CH3_B14
+#define Steer_ADCInput2_CH ADC1_CH4_B15
+#define Steer_ADCInput3_CH ADC1_CH5_B16
+#define Steer_ADCInput4_CH ADC1_CH6_B17
+#define Steer_ADCInput5_CH ADC1_CH9_B20
+#define Steer_ADCInput6_CH ADC1_CH10_B21
+#define Steer_ADCInput7_CH ADC1_CH11_B22
+#define Steer_ADCInput8_CH ADC1_CH12_B23
+#define Steer_ADCInput9_CH ADC1_CH13_B24
+#define Steer_ADCInput10_CH ADC1_CH14_B25
 /*********************************************************************************************************/
 
 /***************************************KYE***************************************************************/
-#define KEY1 B23
-#define KEY2 B22
-#define KEY3 B25
-#define KEY4 B24
+#define KEY1 C30
+#define KEY2 C29
+#define KEY3 C28
+#define KEY4 C27
 /*********************************************************************************************************/
 
 /****************************************OLED*************************************************************/
-#define OLEDCS B16
-#define OLEDDC B19
-#define OLEDRES B18
-#define OLEDD1 B21
-#define OLEDD0 B20
+#define OLEDCS C21
+#define OLEDDC C24
+#define OLEDRES C23
+#define OLEDSDA B26
+#define OLEDSCK B25
 /*********************************************************************************************************/
 
 /*****************************************PWM*************************************************************/
-#define MotorPWM_Return_R D2
-#define MotorPWM_Return_L D0
-#define MotorPWM_Go_R D1
-#define MotorPWM_Go_L D12
-#define SteerPWM_Pin D26
+#define MotorPWM_Return_R_CH PWM1_MODULE3_CHA_D0
+#define MotorPWM_Return_L_CH PWM2_MODULE3_CHA_D2
+#define MotorPWM_Go_R_CH PWM1_MODULE3_CHB_D1
+#define MotorPWM_Go_L_CH PWM2_MODULE3_CHB_D3
+#define SteerPWM_CH PWM4_MODULE3_CHA_C31
 /*********************************************************************************************************/
 
 /*****************************************UART************************************************************/
-#define UART_TXD B31
-#define UART_RXD B30
+#define UART_TXDCH UART6_TX_B2
+#define UART_RXDCH UART6_RX_B3
 /*********************************************************************************************************/
 
+/*****************************************QTIMER**********************************************************/
+#define Qtimer1_LSB QTIMER1_TIMER0_C0
+#define Qtimer1_DIR QTIMER1_TIMER1_C1
+#define Qtimer2_LSB QTIMER3_TIMER2_B18
+#define Qtimer2_DIR QTIMER3_TIMER3_B19
+/*********************************************************************************************************/
+
+/*****************************************BEEF************************************************************/
+#define BEEF B29
+/*********************************************************************************************************/
 #endif // RT1064_CODE_PORT_H_

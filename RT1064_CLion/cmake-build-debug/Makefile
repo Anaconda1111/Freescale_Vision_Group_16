@@ -223,33 +223,6 @@ CODE/PID.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PID.c.s
 .PHONY : CODE/PID.c.s
 
-CODE/PWM.obj: CODE/PWM.c.obj
-
-.PHONY : CODE/PWM.obj
-
-# target to build an object file
-CODE/PWM.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
-.PHONY : CODE/PWM.c.obj
-
-CODE/PWM.i: CODE/PWM.c.i
-
-.PHONY : CODE/PWM.i
-
-# target to preprocess a source file
-CODE/PWM.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.i
-.PHONY : CODE/PWM.c.i
-
-CODE/PWM.s: CODE/PWM.c.s
-
-.PHONY : CODE/PWM.s
-
-# target to generate assembly for a file
-CODE/PWM.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/PWM.c.s
-.PHONY : CODE/PWM.c.s
-
 CODE/Steer.obj: CODE/Steer.c.obj
 
 .PHONY : CODE/Steer.obj
@@ -330,6 +303,33 @@ CODE/isr.s: CODE/isr.c.s
 CODE/isr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/isr.c.s
 .PHONY : CODE/isr.c.s
+
+CODE/math.obj: CODE/math.c.obj
+
+.PHONY : CODE/math.obj
+
+# target to build an object file
+CODE/math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.obj
+.PHONY : CODE/math.c.obj
+
+CODE/math.i: CODE/math.c.i
+
+.PHONY : CODE/math.i
+
+# target to preprocess a source file
+CODE/math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.i
+.PHONY : CODE/math.c.i
+
+CODE/math.s: CODE/math.c.s
+
+.PHONY : CODE/math.s
+
+# target to generate assembly for a file
+CODE/math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.s
+.PHONY : CODE/math.c.s
 
 USER/main.obj: USER/main.c.obj
 
@@ -4219,9 +4219,6 @@ help:
 	@echo ... CODE/PID.obj
 	@echo ... CODE/PID.i
 	@echo ... CODE/PID.s
-	@echo ... CODE/PWM.obj
-	@echo ... CODE/PWM.i
-	@echo ... CODE/PWM.s
 	@echo ... CODE/Steer.obj
 	@echo ... CODE/Steer.i
 	@echo ... CODE/Steer.s
@@ -4231,6 +4228,9 @@ help:
 	@echo ... CODE/isr.obj
 	@echo ... CODE/isr.i
 	@echo ... CODE/isr.s
+	@echo ... CODE/math.obj
+	@echo ... CODE/math.i
+	@echo ... CODE/math.s
 	@echo ... USER/main.obj
 	@echo ... USER/main.i
 	@echo ... USER/main.s

@@ -3,9 +3,9 @@
 //
 
 #include "ADC.h"
-#include "zf_iomuxc.h"
+#include "math.h"
+#include "port.h"
 
-#define ADC_PIN_CONF SPEED_100MHZ | DSE_R0_6 //配置ADC引脚默认配置
 uint16 Inductance_ADCValue[InductanceNum][SamplingNum];
 float InductanceValue_Normal[InductanceNum] = {0};
 uint16 Inductance_MAXValue[InductanceNum] = {3600, 3600, 3600, 3600, 7200};
@@ -16,24 +16,14 @@ float Inductance_Weight[5] = {0};
 uint8 Camera = 0;
 int8 Island_Flag = -1;
 
-uint16 User_ADC_Convert(ADCN_enum ADCn, ADCPIN_enum ADCPIN) {
-    adc_channel_config_t adcChannelConfigStruct;
-
-    adcChannelConfigStruct.channelNumber = ADCPIN;
-    adcChannelConfigStruct.enableInterruptOnConversionCompleted = false;
-
-    ADC_SetChannelConfig(ADCN[ADCn], 0, &adcChannelConfigStruct);
-    while (0U == ADC_GetChannelStatusFlags(ADCN[ADCn], 0));
-    return ADC_GetChannelConversionValue(ADCN[ADCn], 0);
-}
 
 void Get_InductanceValue() {
     for (int i = 0; i < SamplingNum; ++i) {
-        Inductance_ADCValue[0][i] = User_ADC_Convert(ADC_2, ADCInput1);
-        Inductance_ADCValue[1][i] = User_ADC_Convert(ADC_2, ADCInput2);
-        Inductance_ADCValue[2][i] = User_ADC_Convert(ADC_2, ADCInput3);
-        Inductance_ADCValue[3][i] = User_ADC_Convert(ADC_2, ADCInput4);
-        Inductance_ADCValue[4][i] = User_ADC_Convert(ADC_2, ADCInput5);
+        Inductance_ADCValue[0][i] = adc_convert(ADC_1, Steer_ADCInput1_CH);
+        Inductance_ADCValue[1][i] = adc_convert(ADC_1, Steer_ADCInput2_CH);
+        Inductance_ADCValue[2][i] = adc_convert(ADC_1, Steer_ADCInput3_CH);
+        Inductance_ADCValue[3][i] = adc_convert(ADC_1, Steer_ADCInput4_CH);
+        Inductance_ADCValue[4][i] = adc_convert(ADC_1, Steer_ADCInput5_CH);
     }
 }
 
@@ -74,12 +64,11 @@ float InductanceValueHandler() {
 
     //电感值归一化：
     for (int i = 0; i < InductanceNum; ++i) {
-        InductanceValue_Normal[i] =
-                (float) InductanceValue_Average[i] / (float) Inductance_MAXValue[i];
+        InductanceValue_Normal[i] = (float) InductanceValue_Average[i] / (float) Inductance_MAXValue[i];
     }
     MiddleInductance = InductanceValue_Normal[4]; //中间电感值做检测环岛用
 
-
+    Setting_Weight();
     for (int i = 0; i < InductanceNum; ++i) { //给电感值加权重
         InductanceValue_Average[i] *= Inductance_Weight[i];
     }
@@ -91,14 +80,6 @@ float InductanceValueHandler() {
     return Current_Value;
 }
 
-float FastSqrt(float x) {
-    float a = x;
-    unsigned int i = *(unsigned int *) &x;
-    i = (i + 0x3f76cf62) >> 1UL;
-    x = *(float *) &i;
-    x = (x + a / x) * 0.5f;
-    return x;
-}
 
 void Setting_Weight() {
     if (Island_Flag > 0) {
@@ -136,3 +117,13 @@ void Setting_Weight() {
         Inductance_Weight[4] = (float) Straight_M / 100.0f;
     }
 }
+
+
+
+
+
+
+
+
+
+

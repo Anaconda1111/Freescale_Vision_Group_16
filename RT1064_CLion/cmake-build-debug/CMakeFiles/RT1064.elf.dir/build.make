@@ -115,22 +115,9 @@ CMakeFiles/RT1064.elf.dir/CODE/PID.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/PID.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\PID.c -o CMakeFiles\RT1064.elf.dir\CODE\PID.c.s
 
-CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
-CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj: ../CODE/PWM.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\PWM.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\PWM.c
-
-CMakeFiles/RT1064.elf.dir/CODE/PWM.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT1064.elf.dir/CODE/PWM.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\PWM.c > CMakeFiles\RT1064.elf.dir\CODE\PWM.c.i
-
-CMakeFiles/RT1064.elf.dir/CODE/PWM.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/PWM.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\PWM.c -o CMakeFiles\RT1064.elf.dir\CODE\PWM.c.s
-
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Steer.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Steer.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.i: cmake_force
@@ -143,7 +130,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Steer.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Uart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Uart.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.i: cmake_force
@@ -156,7 +143,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\isr.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\isr.c
 
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.i: cmake_force
@@ -166,6 +153,19 @@ CMakeFiles/RT1064.elf.dir/CODE/isr.c.i: cmake_force
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/isr.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\isr.c -o CMakeFiles\RT1064.elf.dir\CODE\isr.c.s
+
+CMakeFiles/RT1064.elf.dir/CODE/math.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
+CMakeFiles/RT1064.elf.dir/CODE/math.c.obj: ../CODE/math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RT1064.elf.dir/CODE/math.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\math.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\math.c
+
+CMakeFiles/RT1064.elf.dir/CODE/math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT1064.elf.dir/CODE/math.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\math.c > CMakeFiles\RT1064.elf.dir\CODE\math.c.i
+
+CMakeFiles/RT1064.elf.dir/CODE/math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/math.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\math.c -o CMakeFiles\RT1064.elf.dir\CODE\math.c.s
 
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../USER/main.c
@@ -2036,10 +2036,10 @@ RT1064_elf_OBJECTS = \
 "CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj" \
-"CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj" \
+"CMakeFiles/RT1064.elf.dir/CODE/math.c.obj" \
 "CMakeFiles/RT1064.elf.dir/USER/main.c.obj" \
 "CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj" \
 "CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj" \
@@ -2191,10 +2191,10 @@ RT1064_elf_EXTERNAL_OBJECTS =
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
-RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/PWM.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
+RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/math.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/USER/main.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj
