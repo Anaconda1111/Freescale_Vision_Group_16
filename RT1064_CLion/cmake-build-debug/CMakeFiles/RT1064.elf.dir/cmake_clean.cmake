@@ -1,11 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj"
+  "CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj"
+  "CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj"
   "CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj"
-  "CMakeFiles/RT1064.elf.dir/CODE/math.c.obj"
   "CMakeFiles/RT1064.elf.dir/USER/main.c.obj"
   "CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj"
   "CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj"

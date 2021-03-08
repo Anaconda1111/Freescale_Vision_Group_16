@@ -22,10 +22,31 @@ CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../seekfree_libraries/common/common.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../seekfree_libraries/zf_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/ADC.c
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/ADC.h
-CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/math.h
+CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/port.h
 
-CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/math.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_version.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/core_cm7.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/deceive/MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/deceive/MIMXRT1064_features.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/deceive/fsl_device_registers.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/drives/fsl_adc.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/drives/fsl_clock.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../nxp_libraries/drives/fsl_common.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../seekfree_libraries/common/common.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../seekfree_libraries/zf_adc.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../seekfree_libraries/zf_gpio.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.c
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/port.h
+
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -56,9 +77,8 @@ CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/port.h
 
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.c
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.h
-CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/math.h
+CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/fastmath.h
 
-CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/math.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -104,7 +124,8 @@ CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/zf_uart.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.c
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.h
 
-CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../USER/RT106X_config.h
+CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj: ../CODE/fastmath.c
+
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -194,9 +215,40 @@ CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../seekfree_peripheral/SEEKFREE_WIRELE
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.c
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.h
 
-CMakeFiles/RT1064.elf.dir/CODE/math.c.obj: ../CODE/math.c
-CMakeFiles/RT1064.elf.dir/CODE/math.c.obj: ../CODE/math.h
-
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/ADC.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Interactive.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Motor.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/PID.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Steer.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/port.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_version.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/core_cm7.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/MIMXRT1064_features.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/fsl_device_registers.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_adc.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_clock.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_common.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_gpio.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_lpuart.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_pwm.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/drives/fsl_qtmr.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/board/board.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/board/clock_config.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/common/common.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_adc.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_gpio.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_iomuxc.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_pwm.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_qtimer.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../seekfree_libraries/zf_uart.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../USER/main.c
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../USER/main.h
 
@@ -1368,7 +1420,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj: ../nxp_libraries
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj: ../nxp_libraries/drives/fsl_xbarb.c
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj: ../nxp_libraries/drives/fsl_xbarb.h
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1417,7 +1468,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj:
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj: ../nxp_libraries/middleware/fatfs/source/ffunicode.c
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj: ../nxp_libraries/middleware/fatfs/source/integer.h
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1476,7 +1526,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.h
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1538,7 +1587,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fs
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj: ../nxp_libraries/middleware/sdmmc/port/fsl_sdmmc_event.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj: ../nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1561,7 +1609,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fs
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../seekfree_libraries/board/clock_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1590,7 +1637,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../s
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../seekfree_libraries/board/clock_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_mmc.c
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1619,7 +1665,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../se
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../seekfree_libraries/board/clock_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_sd.c
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1648,7 +1693,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../seekfree_libraries/board/clock_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_sdio.c
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1899,7 +1943,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_consol
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj: ../nxp_libraries/utilities/debug_console/fsl_debug_console.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj: ../nxp_libraries/utilities/debug_console/fsl_debug_console_conf.h
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -1999,7 +2042,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.o
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj: ../nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj: ../nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.h
 
-CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -2020,7 +2062,6 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../seekf
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/xip/fsl_flexspi_nor_boot.c
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/xip/fsl_flexspi_nor_boot.h
 
-CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -2108,7 +2149,6 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.obj: ../se
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj: ../seekfree_libraries/common/common.c
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj: ../seekfree_libraries/common/common.h
 
-CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -2425,7 +2465,6 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj: ../nxp_libraries/
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj: ../seekfree_libraries/zf_rom_api.c
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj: ../seekfree_libraries/zf_rom_api.h
 
-CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -2500,7 +2539,6 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj: ../seekfree_libra
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj: ../seekfree_libraries/zf_systick.c
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj: ../seekfree_libraries/zf_systick.h
 
-CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h
@@ -2524,7 +2562,6 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../seekfree_librarie
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../seekfree_libraries/zf_uart.c
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../seekfree_libraries/zf_uart.h
 
-CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: ../USER/RT106X_config.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_compiler.h

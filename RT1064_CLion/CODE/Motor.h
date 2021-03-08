@@ -4,8 +4,11 @@
 
 #ifndef RT1064_CODE_MOTOR_H_
 #define RT1064_CODE_MOTOR_H_
+
 #include "ADC.h"
 #include "zf_pwm.h"
+#include "zf_qtimer.h"
+
 extern uint16 SteerPWMDuty;
 extern float InductanceValue_Normal[InductanceNum];
 
@@ -16,4 +19,5 @@ extern float InductanceValue_Normal[InductanceNum];
 #define Transform 0
 
 int16 GetDifferentSpeed(int16 Angle);
+
 #endif // RT1064_CODE_MOTOR_H_

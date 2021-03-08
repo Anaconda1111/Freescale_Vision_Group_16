@@ -8,7 +8,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
-#include "RT106X_config.h"
+//#include "RT106X_config.h"
 #include "clock_config.h"
 #include "fsl_common.h"
 #include "fsl_gpio.h"
@@ -65,7 +65,6 @@
 #define BOARD_UART_IRQ_HANDLER LPUART8_IRQHandler
 
 #endif
-
 
 
 #define BOARD_DEBUG_UART_CLK_FREQ BOARD_DebugConsoleSrcFreq()
@@ -256,6 +255,7 @@ uint32_t BOARD_DebugConsoleSrcFreq(void);
 void BOARD_InitDebugConsole(void);
 
 void BOARD_ConfigMPU(void);
+
 #if defined(SDK_I2C_BASED_COMPONENT_USED) && SDK_I2C_BASED_COMPONENT_USED
 void BOARD_LPI2C_Init(LPI2C_Type *base, uint32_t clkSrc_Hz);
 status_t BOARD_LPI2C_Send(LPI2C_Type *base,
@@ -306,6 +306,7 @@ status_t BOARD_Camera_I2C_ReceiveSCCB(
 void board_init(void);
 
 void BOARD_SD_Pin_Config(uint32_t speed, uint32_t strength);
+
 void BOARD_MMC_Pin_Config(uint32_t speed, uint32_t strength);
 
 #if defined(__cplusplus)

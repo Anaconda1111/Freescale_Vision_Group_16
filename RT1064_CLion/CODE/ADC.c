@@ -3,7 +3,7 @@
 //
 
 #include "ADC.h"
-#include "math.h"
+#include "fastmath.h"
 #include "port.h"
 
 uint16 Inductance_ADCValue[InductanceNum][SamplingNum];
@@ -89,13 +89,13 @@ void Setting_Weight() {
         Inductance_Weight[3] = (float) Island_R1 / 100.0f;
         Inductance_Weight[4] = (float) Island_M / 100.0f;
     } else if (Camera) {
-        if (Camera == Trident_Left) {
+        if (Camera == Trident_Right) {
             Inductance_Weight[0] = (float) Trident1 / 100.0f;
             Inductance_Weight[1] = (float) Trident2 / 100.0f;
             Inductance_Weight[2] = (float) Trident4 / 100.0f;
             Inductance_Weight[3] = (float) Trident3 / 100.0f;
             Inductance_Weight[4] = (float) TridentM / 100.0f;
-        } else if (Camera == Trident_Right) {
+        } else if (Camera == Trident_Left) {
             Inductance_Weight[0] = (float) Trident3 / 100.0f;
             Inductance_Weight[1] = (float) Trident4 / 100.0f;
             Inductance_Weight[2] = (float) Trident2 / 100.0f;

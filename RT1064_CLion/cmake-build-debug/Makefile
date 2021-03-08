@@ -169,6 +169,33 @@ CODE/ADC.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ADC.c.s
 .PHONY : CODE/ADC.c.s
 
+CODE/Interactive.obj: CODE/Interactive.c.obj
+
+.PHONY : CODE/Interactive.obj
+
+# target to build an object file
+CODE/Interactive.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj
+.PHONY : CODE/Interactive.c.obj
+
+CODE/Interactive.i: CODE/Interactive.c.i
+
+.PHONY : CODE/Interactive.i
+
+# target to preprocess a source file
+CODE/Interactive.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.i
+.PHONY : CODE/Interactive.c.i
+
+CODE/Interactive.s: CODE/Interactive.c.s
+
+.PHONY : CODE/Interactive.s
+
+# target to generate assembly for a file
+CODE/Interactive.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.s
+.PHONY : CODE/Interactive.c.s
+
 CODE/Motor.obj: CODE/Motor.c.obj
 
 .PHONY : CODE/Motor.obj
@@ -277,6 +304,33 @@ CODE/Uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s
 .PHONY : CODE/Uart.c.s
 
+CODE/fastmath.obj: CODE/fastmath.c.obj
+
+.PHONY : CODE/fastmath.obj
+
+# target to build an object file
+CODE/fastmath.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj
+.PHONY : CODE/fastmath.c.obj
+
+CODE/fastmath.i: CODE/fastmath.c.i
+
+.PHONY : CODE/fastmath.i
+
+# target to preprocess a source file
+CODE/fastmath.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.i
+.PHONY : CODE/fastmath.c.i
+
+CODE/fastmath.s: CODE/fastmath.c.s
+
+.PHONY : CODE/fastmath.s
+
+# target to generate assembly for a file
+CODE/fastmath.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.s
+.PHONY : CODE/fastmath.c.s
+
 CODE/isr.obj: CODE/isr.c.obj
 
 .PHONY : CODE/isr.obj
@@ -303,33 +357,6 @@ CODE/isr.s: CODE/isr.c.s
 CODE/isr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/isr.c.s
 .PHONY : CODE/isr.c.s
-
-CODE/math.obj: CODE/math.c.obj
-
-.PHONY : CODE/math.obj
-
-# target to build an object file
-CODE/math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.obj
-.PHONY : CODE/math.c.obj
-
-CODE/math.i: CODE/math.c.i
-
-.PHONY : CODE/math.i
-
-# target to preprocess a source file
-CODE/math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.i
-.PHONY : CODE/math.c.i
-
-CODE/math.s: CODE/math.c.s
-
-.PHONY : CODE/math.s
-
-# target to generate assembly for a file
-CODE/math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/math.c.s
-.PHONY : CODE/math.c.s
 
 USER/main.obj: USER/main.c.obj
 
@@ -4213,6 +4240,9 @@ help:
 	@echo ... CODE/ADC.obj
 	@echo ... CODE/ADC.i
 	@echo ... CODE/ADC.s
+	@echo ... CODE/Interactive.obj
+	@echo ... CODE/Interactive.i
+	@echo ... CODE/Interactive.s
 	@echo ... CODE/Motor.obj
 	@echo ... CODE/Motor.i
 	@echo ... CODE/Motor.s
@@ -4225,12 +4255,12 @@ help:
 	@echo ... CODE/Uart.obj
 	@echo ... CODE/Uart.i
 	@echo ... CODE/Uart.s
+	@echo ... CODE/fastmath.obj
+	@echo ... CODE/fastmath.i
+	@echo ... CODE/fastmath.s
 	@echo ... CODE/isr.obj
 	@echo ... CODE/isr.i
 	@echo ... CODE/isr.s
-	@echo ... CODE/math.obj
-	@echo ... CODE/math.i
-	@echo ... CODE/math.s
 	@echo ... USER/main.obj
 	@echo ... USER/main.i
 	@echo ... USER/main.s

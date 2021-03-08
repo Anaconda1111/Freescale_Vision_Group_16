@@ -3,7 +3,7 @@
 //
 
 #include "PID.h"
-#include "math.h"
+#include "fastmath.h"
 
 float PIDCalculate(PID_Struct PID, Filter_Struct Filter) {
     PID->CurrentError = PID->TargetValue - PID->CurrentValue; //¼ÆËãµ±Ç°Îó²î

@@ -8,7 +8,7 @@
 */
 
 #include "fsl_common.h"
-#include "RT106X_config.h"
+//#include "RT106X_config.h"
 #include "fsl_debug_console.h"
 
 #ifndef NDEBUG
@@ -24,15 +24,15 @@ void __aeabi_assert(const char *failedExpr, const char *file, int line)
     }
 }
 #elif(defined(__GNUC__))
-void __assert_func(const char *file, int line, const char *func, const char *failedExpr)
-{
+
+void __assert_func(const char *file, int line, const char *func, const char *failedExpr) {
 #if (1 == DEBUG_PRINTF)
     PRINTF("ASSERT ERROR \" %s \": file \"%s\" Line \"%d\" function name \"%s\" \n", failedExpr, file, line, func);
 #endif
-    for (;;)
-    {
+    for (;;) {
         __BKPT(0);
     }
 }
+
 #endif /* (defined(__CC_ARM) || (defined(__ICCARM__)) || (defined(__ARMCC_VERSION)) */
 #endif /* NDEBUG */
