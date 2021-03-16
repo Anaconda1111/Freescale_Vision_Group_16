@@ -10,12 +10,14 @@
 #include "pin_mux.h"
 #include "zf_uart.h"
 #include "board.h"
+
 #if defined(SDK_I2C_BASED_COMPONENT_USED) && SDK_I2C_BASED_COMPONENT_USED
 #include "fsl_lpi2c.h"
 #endif /* SDK_I2C_BASED_COMPONENT_USED */
 #if defined BOARD_USE_CODEC
 #include "fsl_wm8960.h"
 #endif
+
 #include "fsl_iomuxc.h"
 
 /*******************************************************************************
@@ -33,8 +35,7 @@ codec_config_t boardCodecConfig = {.I2C_SendFunc = BOARD_Codec_I2C_Send,
  ******************************************************************************/
 
 /* Get debug console frequency. */
-uint32_t BOARD_DebugConsoleSrcFreq(void)
-{
+uint32_t BOARD_DebugConsoleSrcFreq(void) {
     uint32_t freq;
 
     /* To make it simple, we assume default PLL and divider settings, and the only variable
@@ -42,9 +43,7 @@ uint32_t BOARD_DebugConsoleSrcFreq(void)
     if (CLOCK_GetMux(kCLOCK_UartMux) == 0) /* PLL3 div6 80M */
     {
         freq = (CLOCK_GetPllFreq(kCLOCK_PllUsb1) / 6U) / (CLOCK_GetDiv(kCLOCK_UartDiv) + 1U);
-    }
-    else
-    {
+    } else {
         freq = CLOCK_GetOscFreq() / (CLOCK_GetDiv(kCLOCK_UartDiv) + 1U);
     }
 
@@ -52,10 +51,9 @@ uint32_t BOARD_DebugConsoleSrcFreq(void)
 }
 
 /* Initialize debug console. */
-void BOARD_InitDebugConsole(void)
-{
+void BOARD_InitDebugConsole(void) {
     uint32_t uartClkSrcFreq = BOARD_DebugConsoleSrcFreq();
-#if (1==PRINTF_ENABLE)
+#if (1 == PRINTF_ENABLE)
     DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, BOARD_DEBUG_UART_BAUDRATE, BOARD_DEBUG_UART_TYPE, uartClkSrcFreq);
 #endif
 }
@@ -297,15 +295,12 @@ status_t BOARD_Camera_I2C_ReceiveSCCB(
 #endif /* SDK_I2C_BASED_COMPONENT_USED */
 
 /* MPU configuration. */
-void BOARD_ConfigMPU(void)
-{
+void BOARD_ConfigMPU(void) {
     /* Disable I cache and D cache */
-    if (SCB_CCR_IC_Msk == (SCB_CCR_IC_Msk & SCB->CCR))
-    {
+    if (SCB_CCR_IC_Msk == (SCB_CCR_IC_Msk & SCB->CCR)) {
         SCB_DisableICache();
     }
-    if (SCB_CCR_DC_Msk == (SCB_CCR_DC_Msk & SCB->CCR))
-    {
+    if (SCB_CCR_DC_Msk == (SCB_CCR_DC_Msk & SCB->CCR)) {
         SCB_DisableDCache();
     }
 
@@ -418,55 +413,50 @@ void BOARD_ConfigMPU(void)
 }
 
 
-void board_init(void)
-{
+void board_init(void) {
     BOARD_ConfigMPU();      //初始化内存保护单元
     BOARD_BootClockRUN();   //初始化开发板时钟
-    
+
     BOARD_InitBootPins();   //初始化开发板引脚
     BOARD_InitDebugConsole();
-/*    
-#if (1==PRINTF_ENABLE)      //初始化调试串口
+/*#if (1==PRINTF_ENABLE)      //初始化调试串口
     BOARD_InitDebugConsole();
     uart_init(DEBUG_UART, DEBUG_UART_BAUD, DEBUG_UART_TX_PIN, DEBUG_UART_RX_PIN);
-#endif
-*/  
-    NVIC_SetPriorityGrouping(((uint32_t)0x3));  //设置中断优先级分组
+#endif*/
+    NVIC_SetPriorityGrouping(((uint32_t) 0x3));  //设置中断优先级分组
 }
 
-void BOARD_SD_Pin_Config(uint32_t speed, uint32_t strength)
-{
+void BOARD_SD_Pin_Config(uint32_t speed, uint32_t strength) {
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_00_USDHC1_CMD,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_01_USDHC1_CLK,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(0) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(0) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_02_USDHC1_DATA0,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_03_USDHC1_DATA1,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_04_USDHC1_DATA2,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
     IOMUXC_SetPinConfig(IOMUXC_GPIO_SD_B0_05_USDHC1_DATA3,
                         IOMUXC_SW_PAD_CTL_PAD_SPEED(speed) | IOMUXC_SW_PAD_CTL_PAD_SRE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
-                            IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
-                            IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
+                        IOMUXC_SW_PAD_CTL_PAD_PKE_MASK | IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK | IOMUXC_SW_PAD_CTL_PAD_PUS(1) |
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(strength));
 }
 
-void BOARD_MMC_Pin_Config(uint32_t speed, uint32_t strength)
-{
+void BOARD_MMC_Pin_Config(uint32_t speed, uint32_t strength) {
 }

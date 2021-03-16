@@ -33,23 +33,23 @@ uint8 virtual_scope_data[10];
 //  @since      v1.0		
 //  Sample usage:			
 //-------------------------------------------------------------------------------------------------------------------
-uint16 CRC_CHECK(uint8 *Buf, uint8 CRC_CNT)
-{
-    uint16 CRC_Temp;
-    uint8 i,j;
-    CRC_Temp = 0xffff;
-
-    for (i=0;i<CRC_CNT; i++){      
-        CRC_Temp ^= Buf[i];
-        for (j=0;j<8;j++) {
-            if (CRC_Temp & 0x01)
-                CRC_Temp = (CRC_Temp >>1 ) ^ 0xa001;
-            else
-                CRC_Temp = CRC_Temp >> 1;
-        }
-    }
-    return(CRC_Temp);
-}
+// uint16 CRC_CHECK(uint8 *Buf, uint8 CRC_CNT)
+// {
+//     uint16 CRC_Temp;
+//     uint8 i,j;
+//     CRC_Temp = 0xffff;
+//
+//     for (i=0;i<CRC_CNT; i++){
+//         CRC_Temp ^= Buf[i];
+//         for (j=0;j<8;j++) {
+//             if (CRC_Temp & 0x01)
+//                 CRC_Temp = (CRC_Temp >>1 ) ^ 0xa001;
+//             else
+//                 CRC_Temp = CRC_Temp >> 1;
+//         }
+//     }
+//     return(CRC_Temp);
+// }
 
 //-------------------------------------------------------------------------------------------------------------------
 //  @brief      虚拟示波器数据转换函数
@@ -62,26 +62,25 @@ uint16 CRC_CHECK(uint8 *Buf, uint8 CRC_CNT)
 //  @since      v1.0		
 //  Sample usage:			
 //-------------------------------------------------------------------------------------------------------------------
-void data_conversion(int16 data1, int16 data2, int16 data3, int16 data4, uint8 *dat)
-{
+void data_conversion(int16 data1, int16 data2, int16 data3, int16 data4, uint8 *dat) {
     uint16 CRC16 = 0;
-    
-    dat[0] = (uint8)((uint16)data1&0xff);
-    dat[1] = (uint8)((uint16)data1>>8);
-    
-    dat[2] = (uint8)((uint16)data2&0xff);
-    dat[3] = (uint8)((uint16)data2>>8);
-    
-    dat[4] = (uint8)((uint16)data3&0xff);
-    dat[5] = (uint8)((uint16)data3>>8);
-    
-    dat[6] = (uint8)((uint16)data4&0xff);
-    dat[7] = (uint8)((uint16)data4>>8);
 
-    CRC16  = CRC_CHECK(dat,8);
-    dat[8] = (uint8)(CRC16&0xff);
-    dat[9] = (uint8)(CRC16>>8);
-    
+    dat[0] = (uint8) ((uint16) data1 & 0xff);
+    dat[1] = (uint8) ((uint16) data1 >> 8);
+
+    dat[2] = (uint8) ((uint16) data2 & 0xff);
+    dat[3] = (uint8) ((uint16) data2 >> 8);
+
+    dat[4] = (uint8) ((uint16) data3 & 0xff);
+    dat[5] = (uint8) ((uint16) data3 >> 8);
+
+    dat[6] = (uint8) ((uint16) data4 & 0xff);
+    dat[7] = (uint8) ((uint16) data4 >> 8);
+
+//    CRC16 = CRC_CHECK(dat, 8);
+    dat[8] = (uint8) (CRC16 & 0xff);
+    dat[9] = (uint8) (CRC16 >> 8);
+
     //uart_putbuff(USART_0,dat,10);  //数据转换完成后，使用串口发送将数组的内容发送出去
 }
 

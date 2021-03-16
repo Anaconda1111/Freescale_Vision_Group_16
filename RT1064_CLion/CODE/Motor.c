@@ -56,3 +56,13 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID, Filter_Struct
     pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
     pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
 }
+
+void GarageOut() {
+    while (InductanceValue_Normal[4] < 0.01) {
+        pwm_duty(SteerPWM_CH, MiddleSteer_PWM);
+        pwm_duty(MotorPWM_Go_L_CH, MotorOutGarage_PWM);
+        pwm_duty(MotorPWM_Go_R_CH, MotorOutGarage_PWM);
+        if (InductanceValue_Normal[1] > InductanceValue_Normal[0])
+            pwm_duty(SteerPWM_CH, SteerOutGarage_PWM);
+    }
+}

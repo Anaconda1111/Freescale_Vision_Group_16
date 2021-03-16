@@ -30,8 +30,8 @@
 #define OLEDCS C21
 #define OLEDDC C24
 #define OLEDRES C23
-#define OLEDSDA B26
-#define OLEDSCK B25
+#define OLEDSDA C26
+#define OLEDSCK C25
 /*********************************************************************************************************/
 
 /*****************************************PWM*************************************************************/
@@ -39,7 +39,7 @@
 #define MotorPWM_Return_L_CH PWM2_MODULE3_CHA_D2
 #define MotorPWM_Go_R_CH PWM1_MODULE3_CHB_D1
 #define MotorPWM_Go_L_CH PWM2_MODULE3_CHB_D3
-#define SteerPWM_CH PWM4_MODULE3_CHA_C31
+#define SteerPWM_CH PWM4_MODULE2_CHA_C30//PWM4_MODULE3_CHA_C31
 /*********************************************************************************************************/
 
 /*****************************************UART************************************************************/

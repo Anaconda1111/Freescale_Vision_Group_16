@@ -4,7 +4,7 @@
 
 #include "Interactive.h"
 #include "port.h"
-
+#include "SEEKFREE_OLED.h"
 
 uint8 key_scan() {
 
@@ -43,9 +43,12 @@ void Interactive() {
         case 0X00: {
             switch (key_scan()) {
                 case key1press: {
+                    oled_uint16(0, 0, 100);
                 }
                     break;
                 case key2press: {
+                    oled_fill(0);
+
                 }
                     break;
                 case key3press: {

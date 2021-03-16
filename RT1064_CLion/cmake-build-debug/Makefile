@@ -277,6 +277,33 @@ CODE/Steer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Steer.c.s
 .PHONY : CODE/Steer.c.s
 
+CODE/Text.obj: CODE/Text.c.obj
+
+.PHONY : CODE/Text.obj
+
+# target to build an object file
+CODE/Text.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj
+.PHONY : CODE/Text.c.obj
+
+CODE/Text.i: CODE/Text.c.i
+
+.PHONY : CODE/Text.i
+
+# target to preprocess a source file
+CODE/Text.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Text.c.i
+.PHONY : CODE/Text.c.i
+
+CODE/Text.s: CODE/Text.c.s
+
+.PHONY : CODE/Text.s
+
+# target to generate assembly for a file
+CODE/Text.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Text.c.s
+.PHONY : CODE/Text.c.s
+
 CODE/Uart.obj: CODE/Uart.c.obj
 
 .PHONY : CODE/Uart.obj
@@ -303,6 +330,33 @@ CODE/Uart.s: CODE/Uart.c.s
 CODE/Uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s
 .PHONY : CODE/Uart.c.s
+
+CODE/Visualscope.obj: CODE/Visualscope.c.obj
+
+.PHONY : CODE/Visualscope.obj
+
+# target to build an object file
+CODE/Visualscope.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj
+.PHONY : CODE/Visualscope.c.obj
+
+CODE/Visualscope.i: CODE/Visualscope.c.i
+
+.PHONY : CODE/Visualscope.i
+
+# target to preprocess a source file
+CODE/Visualscope.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.i
+.PHONY : CODE/Visualscope.c.i
+
+CODE/Visualscope.s: CODE/Visualscope.c.s
+
+.PHONY : CODE/Visualscope.s
+
+# target to generate assembly for a file
+CODE/Visualscope.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.s
+.PHONY : CODE/Visualscope.c.s
 
 CODE/fastmath.obj: CODE/fastmath.c.obj
 
@@ -4252,9 +4306,15 @@ help:
 	@echo ... CODE/Steer.obj
 	@echo ... CODE/Steer.i
 	@echo ... CODE/Steer.s
+	@echo ... CODE/Text.obj
+	@echo ... CODE/Text.i
+	@echo ... CODE/Text.s
 	@echo ... CODE/Uart.obj
 	@echo ... CODE/Uart.i
 	@echo ... CODE/Uart.s
+	@echo ... CODE/Visualscope.obj
+	@echo ... CODE/Visualscope.i
+	@echo ... CODE/Visualscope.s
 	@echo ... CODE/fastmath.obj
 	@echo ... CODE/fastmath.i
 	@echo ... CODE/fastmath.s

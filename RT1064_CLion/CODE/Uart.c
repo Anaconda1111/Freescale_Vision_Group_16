@@ -3,4 +3,9 @@
 //
 
 #include "Uart.h"
-#include "zf_uart.h"
+
+void SendDataPackage(uint8 CurrentValue, uint8 TargetValue) {
+    uart_putchar(USART_8, 1);
+    uart_putchar(USART_8, CurrentValue);
+    uart_putchar(USART_8, TargetValue);
+}

@@ -14,10 +14,13 @@ extern float InductanceValue_Normal[InductanceNum];
 
 #define MotorPWM_MAX 500
 #define MotorPWM_MIN 0
+#define MotorOutGarage_PWM 200
 #define MotorI_MAX 0
 #define MAXEncoder 0
 #define Transform 0
 
 int16 GetDifferentSpeed(int16 Angle);
+
+void GarageOut();
 
 #endif // RT1064_CODE_MOTOR_H_

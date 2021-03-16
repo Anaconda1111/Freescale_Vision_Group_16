@@ -188,10 +188,22 @@
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Text.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Text.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.c">
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Visualscope.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Visualscope.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.c">

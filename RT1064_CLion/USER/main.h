@@ -15,5 +15,6 @@
 #include "zf_iomuxc.h"
 #include "zf_uart.h"
 #include "SEEKFREE_OLED.h"
+#include "zf_pit.h"
 
 #endif // RT1064_USER_MAIN_H_
