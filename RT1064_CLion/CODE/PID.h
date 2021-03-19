@@ -15,8 +15,6 @@ struct PID_Parameter {
     float D_CurrentError;
     float D_LastError;
     float Result;
-    float ResultMax;
-    float ResultMin;
     float CurrentValue;
     float TargetValue;
     float I_MAX;

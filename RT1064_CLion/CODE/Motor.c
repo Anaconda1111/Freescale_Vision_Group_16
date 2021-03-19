@@ -3,25 +3,23 @@
 //
 
 #include "Motor.h"
-#include "PID.h"
 #include "Steer.h"
 #include "port.h"
+#include "zf_systick.h"
+#include "fastmath.h"
 
-struct PID_Parameter Motor_GOL_PID_Parameter = {0};
-struct PID_Parameter Motor_GOR_PID_Parameter = {0};
-struct Filter_Parameter Motor_GOL_Filter_Parameter = {0};
-struct Filter_Parameter Motor_GOR_Filter_Parameter = {0};
+extern uint8 Camera;
 
-uint16 Motor_GO_L_PWM;
-uint16 Motor_GO_R_PWM;
+uint16 Motor_GO_L_PWM = 0;
+uint16 Motor_GO_R_PWM = 0;
 
 void Motor_PIDStruct_Init(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
                           Filter_Struct Motor_GOR_Filter,
                           Filter_Struct Motor_GOL_Filter) {
     Motor_GOL_PID->I_MAX = MotorI_MAX;
     Motor_GOR_PID->I_MAX = MotorI_MAX;
-    // Motor_GOL_Filter->Coefficient=
-    // Motor_GOR_Filter->Coefficient=
+    Motor_GOL_Filter->Coefficient = 1.0f / 16.0f;
+    Motor_GOR_Filter->Coefficient = 1.0f / 16.0f;
 }
 
 int16 GetDifferentSpeed(int16 Angle) {
@@ -31,19 +29,31 @@ int16 GetDifferentSpeed(int16 Angle) {
         return Angle * Transform;
 }
 
-void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID, Filter_Struct Motor_GOL_Filter, Filter_Struct Motor_GOR_Filter) {
+void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
+               Filter_Struct Motor_GOL_Filter,
+               Filter_Struct Motor_GOR_Filter) {
     if (InductanceValue_Normal[0] < 0.01 && InductanceValue_Normal[1] < 0.01 &&
         InductanceValue_Normal[2] < 0.01 && InductanceValue_Normal[3] < 0.01) {
         pwm_duty(MotorPWM_Go_L_CH, 0);
         pwm_duty(MotorPWM_Go_R_CH, 0);
         return;
     }
+
+    if (Camera == IsAnimal) {   //停车
+        pwm_duty(MotorPWM_Go_L_CH, 0);
+        pwm_duty(MotorPWM_Go_R_CH, 0);
+        systick_delay_ms(3050);
+    }
+
     int16 base_speed, different_speed;
-    int16 Angle = MiddleSteer_PWM - SteerPWMDuty;
+
+    int16 Angle = FastABS(MiddleSteer_PWM - SteerPWMDuty);
     if (Angle <= 3)
         base_speed = MAXEncoder;
     else
         base_speed = MAXEncoder / 2;
+
+
     different_speed = GetDifferentSpeed(Angle);
     Motor_GOL_PID->TargetValue = (float) (base_speed - different_speed);
     Motor_GOR_PID->TargetValue = (float) (base_speed + different_speed);
@@ -53,6 +63,17 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID, Filter_Struct
     qtimer_quad_clear(QTIMER_3, Qtimer2_LSB);
     Motor_GO_L_PWM += (uint16) (PIDCalculate(Motor_GOL_PID, Motor_GOL_Filter)/*/*转换系数*/);
     Motor_GO_R_PWM += (uint16) (PIDCalculate(Motor_GOR_PID, Motor_GOR_Filter)/*/*转换系数*/);
+
+    if (Motor_GO_L_PWM > MotorPWM_MAX)
+        Motor_GO_L_PWM = MotorPWM_MAX;
+    else if (Motor_GO_R_PWM < MotorPWM_MIN)
+        Motor_GO_L_PWM = MotorPWM_MIN;
+
+    if (Motor_GO_R_PWM > MotorPWM_MAX)
+        Motor_GO_R_PWM = MotorPWM_MAX;
+    else if (Motor_GO_R_PWM < MotorPWM_MIN)
+        Motor_GO_R_PWM = MotorPWM_MIN;
+
     pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
     pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
 }

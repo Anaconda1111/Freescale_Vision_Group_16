@@ -41,6 +41,8 @@ typedef enum {
     Trident4 = 04
 } Weight_enum;
 
+void Get_InductanceValue();
+
 
 float InductanceValueHandler();
 

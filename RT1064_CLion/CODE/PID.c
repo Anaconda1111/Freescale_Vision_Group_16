@@ -27,10 +27,6 @@ float PIDCalculate(PID_Struct PID, Filter_Struct Filter) {
     PID->Result = PID->KP * PID->CurrentError + // PIDÎ»ÖÃÊ½
                   PID->KI * PID->Integral + PID->KD * PID->Differential;
 
-    if (PID->Result > PID->ResultMax)
-        PID->Result = PID->ResultMax;
-    else if (PID->Result < PID->ResultMin)
-        PID->Result = PID->ResultMin;
     return PID->Result;
 }
 

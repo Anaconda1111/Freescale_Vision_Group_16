@@ -17,4 +17,6 @@ void MatlabText();
 
 void DRAWCURVE(PID_Struct T_PID, Filter_Struct T_Filter);
 
+void Sendint16Data();
+
 #endif //RT1064_TEXT_H

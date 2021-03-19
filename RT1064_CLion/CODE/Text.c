@@ -45,14 +45,21 @@ void MatlabText() {
 void DRAWCURVE(PID_Struct T_PID, Filter_Struct T_Filter) {
     uint16 i = 10000;
     while (i > 0) {
-        if (i % 100 == 0) {
+        if (i % 2 == 0) {
             if (T_PID->TargetValue == 0)
                 T_PID->TargetValue = 100;
             else
                 T_PID->TargetValue = 0;
         }
-        T_PID->CurrentValue += PIDCalculate(T_PID, T_Filter);
-        SendDataPackage(T_PID->CurrentValue, T_PID->TargetValue);
+        int16 TargetValue = (int16) (T_PID->TargetValue);
+        int16 CurrentValue = (int16) (T_PID->CurrentValue);
+        int16 Data[4] = {CurrentValue, TargetValue, 0, 0};
+        SendDataPackage_int16(Data, 4);
         i--;
     }
+}
+
+void Sendint16Data() {
+    int16 Dtat[4] = {100, -100, 200, -200};
+    SendDataPackage_int16(Dtat, 4);
 }

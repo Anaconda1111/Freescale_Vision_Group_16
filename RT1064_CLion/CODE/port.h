@@ -39,7 +39,9 @@
 #define MotorPWM_Return_L_CH PWM2_MODULE3_CHA_D2
 #define MotorPWM_Go_R_CH PWM1_MODULE3_CHB_D1
 #define MotorPWM_Go_L_CH PWM2_MODULE3_CHB_D3
-#define SteerPWM_CH PWM4_MODULE2_CHA_C30//PWM4_MODULE3_CHA_C31
+#define SteerPWM_CH PWM4_MODULE3_CHA_C31
+#define Yuntai1PWM_CH PWM1_MODULE3_CHB_C17
+#define Yuntai2PWM_CH PWM1_MODULE3_CHB_C16
 /*********************************************************************************************************/
 
 /*****************************************UART************************************************************/

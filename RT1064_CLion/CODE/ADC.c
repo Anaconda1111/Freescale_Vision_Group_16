@@ -9,11 +9,9 @@
 uint16 Inductance_ADCValue[InductanceNum][SamplingNum];
 float InductanceValue_Normal[InductanceNum] = {0};
 uint16 Inductance_MAXValue[InductanceNum] = {3600, 3600, 3600, 3600, 7200};
-uint16 MiddleInductance = 0;
 
 float Inductance_Weight[5] = {0};
-
-uint8 Camera = 0;
+extern uint8 Camera;
 int8 Island_Flag = -1;
 
 
@@ -25,11 +23,6 @@ void Get_InductanceValue() {
         Inductance_ADCValue[3][i] = adc_convert(ADC_1, Steer_ADCInput4_CH);
         Inductance_ADCValue[4][i] = adc_convert(ADC_1, Steer_ADCInput5_CH);
     }
-}
-
-float InductanceValueHandler() {
-    Get_InductanceValue();
-
     //将电感值最大最小值去掉
     for (int i = 0; i < InductanceNum; ++i) {
         uint8 MAX_index = 0, MIN_index = 0;
@@ -66,11 +59,16 @@ float InductanceValueHandler() {
     for (int i = 0; i < InductanceNum; ++i) {
         InductanceValue_Normal[i] = (float) InductanceValue_Average[i] / (float) Inductance_MAXValue[i];
     }
-    MiddleInductance = InductanceValue_Normal[4]; //中间电感值做检测环岛用
 
+    float MidInductanceValue = InductanceValue_Normal[4];
+    if ((MidInductanceValue > Island_threshold) || InductanceValue_Normal[0] > InductanceValue_Normal[1])
+        Island_Flag *= -1;
+}
+
+float InductanceValueHandler() {
     Setting_Weight();
     for (int i = 0; i < InductanceNum; ++i) { //给电感值加权重
-        InductanceValue_Average[i] *= Inductance_Weight[i];
+        InductanceValue_Normal[i] *= Inductance_Weight[i];
     }
 
     float InductanceV1, InductanceV2;

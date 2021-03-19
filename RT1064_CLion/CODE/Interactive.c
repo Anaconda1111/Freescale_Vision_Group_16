@@ -5,6 +5,14 @@
 #include "Interactive.h"
 #include "port.h"
 #include "SEEKFREE_OLED.h"
+#include "PID.h"
+
+extern uint16 SteerPWMDuty;
+extern uint16 Motor_GO_L_PWM;
+extern uint16 Motor_GO_R_PWM;
+extern PID_Struct Steer_PID;
+extern PID_Struct Motor_GOL_PID;
+extern PID_Struct Motor_GOR_PID;
 
 uint8 key_scan() {
 
@@ -37,24 +45,33 @@ uint8 bm_scan(void) {
     return status;
 }
 
+
 void Interactive() {
     uint8 Status = bm_scan();
     switch (Status) {
         case 0X00: {
+            oled_fill(0X00);
+            oled_p6x8str(0, 0, "SteerKP:");
+            oled_printf_float(50, 0, Steer_PID->KP, 5, 2);
+            oled_p6x8str(0, 1, "SteerKI:");
+            oled_printf_float(50, 0, Steer_PID->KI, 5, 2);
+            oled_p6x8str(0, 1, "SteerKD:");
+            oled_printf_float(50, 0, Steer_PID->KD, 5, 2);
             switch (key_scan()) {
                 case key1press: {
-                    oled_uint16(0, 0, 100);
+                    Steer_PID->KP += 10;
                 }
                     break;
                 case key2press: {
-                    oled_fill(0);
-
+                    Steer_PID->KP -= 10;
                 }
                     break;
                 case key3press: {
+                    Steer_PID->KD += 100;
                 }
                     break;
                 case key4press: {
+                    Steer_PID->KD -= 100;
                 }
                     break;
             }

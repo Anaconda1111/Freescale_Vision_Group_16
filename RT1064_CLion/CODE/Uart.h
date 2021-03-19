@@ -9,4 +9,8 @@
 
 void SendDataPackage(uint8 CurrentValue, uint8 TargetValue);
 
+void SendDataPackage_int16(int16 *Data, uint8 len);
+
+void GetCameraMessage();
+
 #endif // RT1064_CODE_UART_H_

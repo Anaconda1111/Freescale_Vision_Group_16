@@ -46,6 +46,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../seekfree_libraries/zf_gpio.
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../seekfree_peripheral/SEEKFREE_OLED.h
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.c
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/port.h
 
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
@@ -63,17 +64,20 @@ CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/deceive/system_MIMX
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_clock.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_common.h
+CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_lpspi.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_pwm.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/drives/fsl_qtmr.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../seekfree_libraries/common/common.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../seekfree_libraries/zf_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../seekfree_libraries/zf_pwm.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../seekfree_libraries/zf_qtimer.h
+CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../seekfree_libraries/zf_systick.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/ADC.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/Motor.c
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/Motor.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/Steer.h
+CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/port.h
 
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.c
@@ -154,9 +158,19 @@ CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/deceive/fsl_device_r
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_clock.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_common.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_lpspi.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_lpuart.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_pwm.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../nxp_libraries/drives/fsl_qtmr.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/common/common.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/zf_pwm.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/zf_qtimer.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/zf_systick.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../seekfree_libraries/zf_uart.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/ADC.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Motor.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/PID.h
+CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Steer.h
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.c
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.h
 
@@ -269,6 +283,7 @@ CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../seekfree_peripheral/SEEKFREE_SCC866
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../seekfree_peripheral/SEEKFREE_VIRSCO.h
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../seekfree_peripheral/SEEKFREE_W25QXXJV.h
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../seekfree_peripheral/SEEKFREE_WIRELESS.h
+CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/ADC.h
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.c
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.h
 
@@ -278,7 +293,6 @@ CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Motor.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Steer.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Text.h
-CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Visualscope.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/port.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h
@@ -288,6 +302,7 @@ CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_version.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/core_cm7.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/mpu_armv7.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/components/uart/Uart.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/MIMXRT1064.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/MIMXRT1064_features.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/deceive/fsl_device_registers.h
