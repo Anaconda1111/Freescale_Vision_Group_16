@@ -6,6 +6,14 @@
 #define RT1064_TEXT_H
 
 #include "PID.h"
+#include "zf_gpio.h"
+#include "zf_systick.h"
+#include "Text.h"
+#include "Motor.h"
+#include "port.h"
+#include "Steer.h"
+#include "Uart.h"
+#include "SEEKFREE_OLED.h"
 
 void LED();
 
@@ -15,7 +23,7 @@ void SteerText();
 
 void MatlabText();
 
-void DRAWCURVE(PID_Struct T_PID, Filter_Struct T_Filter);
+void DRAWCURVE(struct PID_Parameter T_PID, struct Filter_Parameter T_Filter);
 
 void Sendint16Data();
 

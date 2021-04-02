@@ -7,11 +7,11 @@
 
 #include "PID.h"
 
-#define SteerMAX 3945
-#define SteerMIN 3195
-#define Steer_IMAX 0
-#define MiddleSteer_PWM 3570
-#define SteerOutGarage_PWM 3382
+#define SteerMAX 3800  //此时舵机打向最左边
+#define SteerMIN 3100  //此时舵机打向最右边
+#define Steer_IMAX 100
+#define MiddleSteer_PWM 3430
+#define SteerOutGarage_PWM 3810 //目测向左45度
 
 void Steer_PIDStruct_Init(PID_Struct Steer_PID, Filter_Struct Steer_Filter);
 

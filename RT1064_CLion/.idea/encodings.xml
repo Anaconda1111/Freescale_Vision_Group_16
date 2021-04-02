@@ -3,18 +3,22 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CODE/ADC.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/ADC.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CODE/Interactive.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/Motor.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/PID.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/Steer.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/port.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/USER/main.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/nxp_libraries/startup/IAR-ARM/startup_MIMXRT1064.s" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/common/common.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/headfile.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_adc.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_adc.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_gpio.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_pwm.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_pwm.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_uart.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/seekfree_peripheral/SEEKFREE_OLED.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_peripheral/SEEKFREE_SCC8660.c" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>

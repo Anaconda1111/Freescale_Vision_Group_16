@@ -12,8 +12,8 @@ uint8 Camera = 0;
 
 
 extern uint16 SteerPWMDuty; //舵机PWM占空比
-extern const uint16 Motor_GO_L_PWM;
-extern const uint16 Motor_GO_R_PWM;
+extern uint16 Motor_GO_L_PWMDuty;
+extern uint16 Motor_GO_R_PWMDuty;
 
 
 uint8 example_rx_buffer;
@@ -105,8 +105,8 @@ void send_motor_data(void) {
     uart_set_handle(USART_8, &example_g_lpuartHandle, example_uart_callback, NULL, 0, example_receivexfer.data, 1);
 
 
-    uint8 motordata_R = (uint8) (Motor_GO_R_PWM - MotorPWM_MIN) * 100 / (MotorPWM_MAX - MotorPWM_MIN);//0~100
-    uint8 motordata_L = (uint8) (Motor_GO_L_PWM - MotorPWM_MIN) * 100 / (MotorPWM_MAX - MotorPWM_MIN);//0~100
+    uint8 motordata_R = (uint8) (Motor_GO_R_PWMDuty - MotorPWM_MIN) * 100 / (MotorPWM_MAX - MotorPWM_MIN);//0~100
+    uint8 motordata_L = (uint8) (Motor_GO_L_PWMDuty - MotorPWM_MIN) * 100 / (MotorPWM_MAX - MotorPWM_MIN);//0~100
     //串口字节发送
     uart_putchar(USART_8, motordata_L);
     uart_putchar(USART_8, motordata_R);

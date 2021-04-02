@@ -3,6 +3,7 @@
 //
 
 #include "math.h"
+
 float FastSqrt(float x) {
     float a = x;
     unsigned int i = *(unsigned int *) &x;
@@ -10,4 +11,17 @@ float FastSqrt(float x) {
     x = *(float *) &i;
     x = (x + a / x) * 0.5f;
     return x;
+}
+
+double FastPow(double num, double n) {
+    double value = 1;
+    int i = 1;
+    if (n == 0) {
+        value = 1;
+    } else {
+        while (i++ <= n) {
+            value *= num;
+        }
+    }
+    return value;
 }

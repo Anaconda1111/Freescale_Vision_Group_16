@@ -8,6 +8,7 @@
 #include "port.h"
 #include "Steer.h"
 #include "Uart.h"
+#include "SEEKFREE_OLED.h"
 
 void LED() {
     gpio_set(B9, 1);
@@ -42,22 +43,29 @@ void MatlabText() {
 }
 
 
-void DRAWCURVE(PID_Struct T_PID, Filter_Struct T_Filter) {
-    uint16 i = 10000;
-    while (i > 0) {
-        if (i % 2 == 0) {
-            if (T_PID->TargetValue == 0)
-                T_PID->TargetValue = 100;
-            else
-                T_PID->TargetValue = 0;
-        }
-        int16 TargetValue = (int16) (T_PID->TargetValue);
-        int16 CurrentValue = (int16) (T_PID->CurrentValue);
-        int16 Data[4] = {CurrentValue, TargetValue, 0, 0};
-        SendDataPackage_int16(Data, 4);
-        i--;
-    }
-}
+// void DRAWCURVE(struct PID_Parameter T_PID, struct Filter_Parameter T_Filter) {
+//     int16 i = 50;
+//     while (1) {
+//         if (i == 50) {
+//             if (T_PID.TargetValue == 0)
+//                 T_PID.TargetValue = 100;
+//             else
+//                 T_PID.TargetValue = 0;
+//             i = 0;
+//         }
+//         T_PID.CurrentValue += PIDCalculate(T_PID, T_Filter);
+//         if (T_PID.CurrentValue > 120)
+//             T_PID.CurrentValue = 120;
+//         else if (T_PID.CurrentValue < -10)
+//             T_PID.CurrentValue = -10;
+//         int16 TargetValue = (int16) (T_PID.TargetValue);
+//         int16 CurrentValue = (int16) (T_PID.CurrentValue);
+//         int16 Data[4] = {CurrentValue, TargetValue, 0, 0};
+//         SendDataPackage_int16(Data, 4);
+//         i++;
+//         systick_delay_ms(20);
+//     }
+// }
 
 void Sendint16Data() {
     int16 Dtat[4] = {100, -100, 200, -200};

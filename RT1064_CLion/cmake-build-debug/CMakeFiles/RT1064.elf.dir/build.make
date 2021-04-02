@@ -89,9 +89,35 @@ CMakeFiles/RT1064.elf.dir/CODE/ADC.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/ADC.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ADC.c -o CMakeFiles\RT1064.elf.dir\CODE\ADC.c.s
 
+CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
+CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj: ../CODE/ANO_DT.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\ANO_DT.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ANO_DT.c
+
+CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ANO_DT.c > CMakeFiles\RT1064.elf.dir\CODE\ANO_DT.c.i
+
+CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ANO_DT.c -o CMakeFiles\RT1064.elf.dir\CODE\ANO_DT.c.s
+
+CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
+CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj: ../CODE/ART.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\ART.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ART.c
+
+CMakeFiles/RT1064.elf.dir/CODE/ART.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT1064.elf.dir/CODE/ART.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ART.c > CMakeFiles\RT1064.elf.dir\CODE\ART.c.i
+
+CMakeFiles/RT1064.elf.dir/CODE/ART.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/ART.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\ART.c -o CMakeFiles\RT1064.elf.dir\CODE\ART.c.s
+
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Interactive.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Interactive.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.i: cmake_force
@@ -104,7 +130,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../CODE/Motor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Motor.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Motor.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.i: cmake_force
@@ -117,7 +143,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Motor.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj: ../CODE/PID.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\PID.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\PID.c
 
 CMakeFiles/RT1064.elf.dir/CODE/PID.c.i: cmake_force
@@ -130,7 +156,7 @@ CMakeFiles/RT1064.elf.dir/CODE/PID.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Steer.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Steer.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.i: cmake_force
@@ -143,7 +169,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Steer.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj: ../CODE/Text.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Text.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Text.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Text.c.i: cmake_force
@@ -156,7 +182,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Text.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj: ../CODE/Uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Uart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Uart.c
 
 CMakeFiles/RT1064.elf.dir/CODE/Uart.c.i: cmake_force
@@ -167,22 +193,9 @@ CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Uart.c -o CMakeFiles\RT1064.elf.dir\CODE\Uart.c.s
 
-CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
-CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj: ../CODE/Visualscope.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\Visualscope.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Visualscope.c
-
-CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Visualscope.c > CMakeFiles\RT1064.elf.dir\CODE\Visualscope.c.i
-
-CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\Visualscope.c -o CMakeFiles\RT1064.elf.dir\CODE\Visualscope.c.s
-
 CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj: ../CODE/fastmath.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\fastmath.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\fastmath.c
 
 CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.i: cmake_force
@@ -195,7 +208,7 @@ CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj: ../CODE/isr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\CODE\isr.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\CODE\isr.c
 
 CMakeFiles/RT1064.elf.dir/CODE/isr.c.i: cmake_force
@@ -208,7 +221,7 @@ CMakeFiles/RT1064.elf.dir/CODE/isr.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../USER/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RT1064.elf.dir/USER/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RT1064.elf.dir/USER/main.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\USER\main.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\USER\main.c
 
 CMakeFiles/RT1064.elf.dir/USER/main.c.i: cmake_force
@@ -221,7 +234,7 @@ CMakeFiles/RT1064.elf.dir/USER/main.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj: ../nxp_libraries/components/lists/generic_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\components\lists\generic_list.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\components\lists\generic_list.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.i: cmake_force
@@ -234,7 +247,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/components/lists/generic_list.c.s: cmake
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj: ../nxp_libraries/components/serial_manager/serial_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\components\serial_manager\serial_manager.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\components\serial_manager\serial_manager.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager.c.i: cmake_force
@@ -247,7 +260,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_manager
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj: ../nxp_libraries/components/serial_manager/serial_port_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\components\serial_manager\serial_port_uart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\components\serial_manager\serial_port_uart.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_uart.c.i: cmake_force
@@ -260,7 +273,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/components/serial_manager/serial_port_ua
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj: ../nxp_libraries/components/uart/lpuart_adapter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\components\uart\lpuart_adapter.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\components\uart\lpuart_adapter.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.i: cmake_force
@@ -273,7 +286,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/components/uart/lpuart_adapter.c.s: cmak
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj: ../nxp_libraries/deceive/system_MIMXRT1064.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\deceive\system_MIMXRT1064.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\deceive\system_MIMXRT1064.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.i: cmake_force
@@ -286,7 +299,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/deceive/system_MIMXRT1064.c.s: cmake_for
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.obj: ../nxp_libraries/drives/fsl_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_adc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_adc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.i: cmake_force
@@ -299,7 +312,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.obj: ../nxp_libraries/drives/fsl_adc_etc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_adc_etc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_adc_etc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.i: cmake_force
@@ -312,7 +325,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_adc_etc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.obj: ../nxp_libraries/drives/fsl_aipstz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_aipstz.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_aipstz.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.i: cmake_force
@@ -325,7 +338,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aipstz.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.obj: ../nxp_libraries/drives/fsl_aoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_aoi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_aoi.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.i: cmake_force
@@ -338,7 +351,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_aoi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.obj: ../nxp_libraries/drives/fsl_bee.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_bee.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_bee.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.i: cmake_force
@@ -351,7 +364,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_bee.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.obj: ../nxp_libraries/drives/fsl_cache.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_cache.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_cache.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.i: cmake_force
@@ -364,7 +377,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cache.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.obj: ../nxp_libraries/drives/fsl_clock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_clock.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_clock.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.i: cmake_force
@@ -377,7 +390,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_clock.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.obj: ../nxp_libraries/drives/fsl_cmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_cmp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_cmp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.i: cmake_force
@@ -390,7 +403,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_cmp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.obj: ../nxp_libraries/drives/fsl_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_common.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_common.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.i: cmake_force
@@ -403,7 +416,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_common.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj: ../nxp_libraries/drives/fsl_csi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_csi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_csi.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.i: cmake_force
@@ -416,7 +429,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_csi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj: ../nxp_libraries/drives/fsl_dcdc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_dcdc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_dcdc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.i: cmake_force
@@ -429,7 +442,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcdc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.obj: ../nxp_libraries/drives/fsl_dcp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_dcp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_dcp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.i: cmake_force
@@ -442,7 +455,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dcp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.obj: ../nxp_libraries/drives/fsl_dmamux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_dmamux.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_dmamux.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.i: cmake_force
@@ -455,7 +468,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_dmamux.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj: ../nxp_libraries/drives/fsl_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.i: cmake_force
@@ -468,7 +481,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.obj: ../nxp_libraries/drives/fsl_elcdif.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_elcdif.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_elcdif.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.i: cmake_force
@@ -481,7 +494,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_elcdif.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.obj: ../nxp_libraries/drives/fsl_enc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_enc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_enc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.i: cmake_force
@@ -494,7 +507,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj: ../nxp_libraries/drives/fsl_enet.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_enet.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_enet.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.i: cmake_force
@@ -507,7 +520,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_enet.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.obj: ../nxp_libraries/drives/fsl_ewm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_ewm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_ewm.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.i: cmake_force
@@ -520,7 +533,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ewm.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj: ../nxp_libraries/drives/fsl_flexcan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexcan.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexcan.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.i: cmake_force
@@ -533,7 +546,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexcan.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj: ../nxp_libraries/drives/fsl_flexio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.i: cmake_force
@@ -546,7 +559,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.obj: ../nxp_libraries/drives/fsl_flexio_camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_camera.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_camera.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.i: cmake_force
@@ -559,7 +572,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_camera.c.s: cmake_forc
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.obj: ../nxp_libraries/drives/fsl_flexio_i2c_master.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_i2c_master.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_i2c_master.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.i: cmake_force
@@ -572,7 +585,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2c_master.c.s: cmake_
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.obj: ../nxp_libraries/drives/fsl_flexio_i2s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_i2s.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_i2s.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.i: cmake_force
@@ -585,7 +598,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.obj: ../nxp_libraries/drives/fsl_flexio_i2s_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_i2s_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_i2s_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.i: cmake_force
@@ -598,7 +611,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_i2s_edma.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.obj: ../nxp_libraries/drives/fsl_flexio_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_spi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_spi.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.i: cmake_force
@@ -611,7 +624,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.obj: ../nxp_libraries/drives/fsl_flexio_spi_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_spi_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_spi_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.i: cmake_force
@@ -624,7 +637,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_spi_edma.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.obj: ../nxp_libraries/drives/fsl_flexio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_uart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_uart.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.i: cmake_force
@@ -637,7 +650,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.obj: ../nxp_libraries/drives/fsl_flexio_uart_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexio_uart_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexio_uart_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.i: cmake_force
@@ -650,7 +663,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexio_uart_edma.c.s: cmake_f
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.obj: ../nxp_libraries/drives/fsl_flexram.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexram.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexram.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.i: cmake_force
@@ -663,7 +676,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexram.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.obj: ../nxp_libraries/drives/fsl_flexspi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_flexspi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_flexspi.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.i: cmake_force
@@ -676,7 +689,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_flexspi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.obj: ../nxp_libraries/drives/fsl_gpc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_gpc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_gpc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.i: cmake_force
@@ -689,7 +702,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.obj: ../nxp_libraries/drives/fsl_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_gpio.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_gpio.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.i: cmake_force
@@ -702,7 +715,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpio.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.obj: ../nxp_libraries/drives/fsl_gpt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_gpt.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_gpt.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.i: cmake_force
@@ -715,7 +728,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_gpt.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.obj: ../nxp_libraries/drives/fsl_kpp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_kpp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_kpp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.i: cmake_force
@@ -728,7 +741,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_kpp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj: ../nxp_libraries/drives/fsl_lpi2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpi2c.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpi2c.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.i: cmake_force
@@ -741,7 +754,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.obj: ../nxp_libraries/drives/fsl_lpi2c_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpi2c_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpi2c_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.i: cmake_force
@@ -754,7 +767,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpi2c_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj: ../nxp_libraries/drives/fsl_lpspi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpspi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpspi.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.i: cmake_force
@@ -767,7 +780,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.obj: ../nxp_libraries/drives/fsl_lpspi_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpspi_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpspi_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.i: cmake_force
@@ -780,7 +793,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpspi_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj: ../nxp_libraries/drives/fsl_lpuart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpuart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpuart.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.i: cmake_force
@@ -793,7 +806,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.obj: ../nxp_libraries/drives/fsl_lpuart_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_lpuart_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_lpuart_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.i: cmake_force
@@ -806,7 +819,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_lpuart_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.obj: ../nxp_libraries/drives/fsl_ocotp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_ocotp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_ocotp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.i: cmake_force
@@ -819,7 +832,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_ocotp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.obj: ../nxp_libraries/drives/fsl_pit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_pit.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_pit.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.i: cmake_force
@@ -832,7 +845,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pit.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.obj: ../nxp_libraries/drives/fsl_pmu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_pmu.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_pmu.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.i: cmake_force
@@ -845,7 +858,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pmu.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.obj: ../nxp_libraries/drives/fsl_pwm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_pwm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_pwm.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.i: cmake_force
@@ -858,7 +871,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pwm.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.obj: ../nxp_libraries/drives/fsl_pxp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_pxp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_pxp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.i: cmake_force
@@ -871,7 +884,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_pxp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.obj: ../nxp_libraries/drives/fsl_qtmr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_qtmr.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_qtmr.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.i: cmake_force
@@ -884,7 +897,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_qtmr.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.obj: ../nxp_libraries/drives/fsl_rtwdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_rtwdog.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_rtwdog.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.i: cmake_force
@@ -897,7 +910,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_rtwdog.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj: ../nxp_libraries/drives/fsl_sai.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_sai.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_sai.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.i: cmake_force
@@ -910,7 +923,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.obj: ../nxp_libraries/drives/fsl_sai_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_sai_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_sai_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.i: cmake_force
@@ -923,7 +936,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_sai_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.obj: ../nxp_libraries/drives/fsl_semc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_semc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_semc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.i: cmake_force
@@ -936,7 +949,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_semc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.obj: ../nxp_libraries/drives/fsl_snvs_hp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_snvs_hp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_snvs_hp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.i: cmake_force
@@ -949,7 +962,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_hp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.obj: ../nxp_libraries/drives/fsl_snvs_lp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_snvs_lp.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_snvs_lp.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.i: cmake_force
@@ -962,7 +975,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_snvs_lp.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj: ../nxp_libraries/drives/fsl_spdif.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_spdif.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_spdif.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.i: cmake_force
@@ -975,7 +988,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.obj: ../nxp_libraries/drives/fsl_spdif_edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_spdif_edma.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_spdif_edma.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.i: cmake_force
@@ -988,7 +1001,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_spdif_edma.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.obj: ../nxp_libraries/drives/fsl_src.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_src.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_src.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.i: cmake_force
@@ -1001,7 +1014,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_src.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.obj: ../nxp_libraries/drives/fsl_tempmon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_tempmon.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_tempmon.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.i: cmake_force
@@ -1014,7 +1027,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tempmon.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.obj: ../nxp_libraries/drives/fsl_trng.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_trng.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_trng.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.i: cmake_force
@@ -1027,7 +1040,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_trng.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.obj: ../nxp_libraries/drives/fsl_tsc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_tsc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_tsc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.i: cmake_force
@@ -1040,7 +1053,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_tsc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj: ../nxp_libraries/drives/fsl_usdhc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_usdhc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_usdhc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.i: cmake_force
@@ -1053,7 +1066,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_usdhc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.obj: ../nxp_libraries/drives/fsl_wdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_wdog.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_wdog.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.i: cmake_force
@@ -1066,7 +1079,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_wdog.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.obj: ../nxp_libraries/drives/fsl_xbara.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_xbara.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_xbara.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.i: cmake_force
@@ -1079,7 +1092,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbara.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj: ../nxp_libraries/drives/fsl_xbarb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\drives\fsl_xbarb.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\drives\fsl_xbarb.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.i: cmake_force
@@ -1092,7 +1105,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/drives/fsl_xbarb.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj: ../nxp_libraries/middleware/fatfs/source/diskio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\diskio.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\diskio.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.i: cmake_force
@@ -1105,7 +1118,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/diskio.c.s: cmak
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.obj: ../nxp_libraries/middleware/fatfs/source/ff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\ff.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\ff.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.i: cmake_force
@@ -1118,7 +1131,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ff.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.obj: ../nxp_libraries/middleware/fatfs/source/ffsystem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\ffsystem.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\ffsystem.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.i: cmake_force
@@ -1131,7 +1144,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffsystem.c.s: cm
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj: ../nxp_libraries/middleware/fatfs/source/ffunicode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\ffunicode.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\ffunicode.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.i: cmake_force
@@ -1144,7 +1157,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/ffunicode.c.s: c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_mmc_disk\fsl_mmc_disk.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_mmc_disk\fsl_mmc_disk.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c.i: cmake_force
@@ -1157,7 +1170,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_nand_disk\fsl_nand_disk.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_nand_disk\fsl_nand_disk.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c.i: cmake_force
@@ -1170,7 +1183,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fs
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_ram_disk\fsl_ram_disk.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_ram_disk\fsl_ram_disk.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c.i: cmake_force
@@ -1183,7 +1196,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_sd_disk\fsl_sd_disk.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_sd_disk\fsl_sd_disk.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c.i: cmake_force
@@ -1196,7 +1209,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_usb_disk\fsl_usb_disk_bm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_usb_disk\fsl_usb_disk_bm.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c.i: cmake_force
@@ -1209,7 +1222,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c.obj: ../nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\fatfs\source\fsl_usb_disk\fsl_usb_disk_freertos.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\fatfs\source\fsl_usb_disk\fsl_usb_disk_freertos.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_freertos.c.i: cmake_force
@@ -1222,7 +1235,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj: ../nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\port\usdhc\interrupt\fsl_sdmmc_event.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\port\usdhc\interrupt\fsl_sdmmc_event.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c.i: cmake_force
@@ -1235,7 +1248,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fs
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj: ../nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\port\usdhc\interrupt\fsl_sdmmc_host.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\port\usdhc\interrupt\fsl_sdmmc_host.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c.i: cmake_force
@@ -1248,7 +1261,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fs
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_mmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\src\fsl_mmc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\src\fsl_mmc.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.i: cmake_force
@@ -1261,7 +1274,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c.s: cmake_
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_sd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\src\fsl_sd.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\src\fsl_sd.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.i: cmake_force
@@ -1274,7 +1287,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sd.c.s: cmake_f
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_sdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\src\fsl_sdio.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\src\fsl_sdio.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.i: cmake_force
@@ -1287,7 +1300,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c.s: cmake
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj: ../nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\middleware\sdmmc\src\fsl_sdmmc_common.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\middleware\sdmmc\src\fsl_sdmmc_common.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.i: cmake_force
@@ -1300,7 +1313,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c.
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.obj: ../nxp_libraries/usb/device/usb_device_cdc_acm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_cdc_acm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_cdc_acm.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.i: cmake_force
@@ -1313,7 +1326,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_cdc_acm.c.s: cmake
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.obj: ../nxp_libraries/usb/device/usb_device_ch9.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_ch9.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_ch9.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.i: cmake_force
@@ -1326,7 +1339,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ch9.c.s: cmake_for
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.obj: ../nxp_libraries/usb/device/usb_device_class.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_class.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_class.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.i: cmake_force
@@ -1339,7 +1352,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_class.c.s: cmake_f
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj: ../nxp_libraries/usb/device/usb_device_dci.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_dci.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_dci.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.i: cmake_force
@@ -1352,7 +1365,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_dci.c.s: cmake_for
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.obj: ../nxp_libraries/usb/device/usb_device_descriptor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_descriptor.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_descriptor.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.i: cmake_force
@@ -1365,7 +1378,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_descriptor.c.s: cm
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj: ../nxp_libraries/usb/device/usb_device_ehci.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\device\usb_device_ehci.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\device\usb_device_ehci.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.i: cmake_force
@@ -1378,7 +1391,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/device/usb_device_ehci.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.obj: ../nxp_libraries/usb/osa/usb_osa_bm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\osa\usb_osa_bm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\osa\usb_osa_bm.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.i: cmake_force
@@ -1391,7 +1404,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/osa/usb_osa_bm.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.obj: ../nxp_libraries/usb/phy/usb_phy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\usb\phy\usb_phy.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\usb\phy\usb_phy.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.i: cmake_force
@@ -1404,7 +1417,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/usb/phy/usb_phy.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj: ../nxp_libraries/utilities/debug_console/fsl_debug_console.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\debug_console\fsl_debug_console.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\debug_console\fsl_debug_console.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_console.c.i: cmake_force
@@ -1417,7 +1430,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/debug_console/fsl_debug_consol
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj: ../nxp_libraries/utilities/fsl_assert.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\fsl_assert.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\fsl_assert.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.i: cmake_force
@@ -1430,7 +1443,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_assert.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.obj: ../nxp_libraries/utilities/fsl_notifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\fsl_notifier.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\fsl_notifier.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.i: cmake_force
@@ -1443,7 +1456,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_notifier.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.obj: ../nxp_libraries/utilities/fsl_sbrk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\fsl_sbrk.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\fsl_sbrk.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.i: cmake_force
@@ -1456,7 +1469,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_sbrk.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.obj: ../nxp_libraries/utilities/fsl_shell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\fsl_shell.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\fsl_shell.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.i: cmake_force
@@ -1469,7 +1482,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/fsl_shell.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj: ../nxp_libraries/utilities/str/fsl_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\utilities\str\fsl_str.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\utilities\str\fsl_str.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.i: cmake_force
@@ -1482,7 +1495,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/utilities/str/fsl_str.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj: ../nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\xip\evkmimxrt1064_flexspi_nor_config.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\xip\evkmimxrt1064_flexspi_nor_config.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.i: cmake_force
@@ -1495,7 +1508,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_flexspi_nor_config.c.s
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj: ../nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\xip\evkmimxrt1064_sdram_ini_dcd.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\xip\evkmimxrt1064_sdram_ini_dcd.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.i: cmake_force
@@ -1508,7 +1521,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/evkmimxrt1064_sdram_ini_dcd.c.s: cma
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj: ../nxp_libraries/xip/fsl_flexspi_nor_boot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\nxp_libraries\xip\fsl_flexspi_nor_boot.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\nxp_libraries\xip\fsl_flexspi_nor_boot.c
 
 CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.i: cmake_force
@@ -1521,7 +1534,7 @@ CMakeFiles/RT1064.elf.dir/nxp_libraries/xip/fsl_flexspi_nor_boot.c.s: cmake_forc
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj: ../seekfree_libraries/board/board.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\board\board.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\board\board.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.i: cmake_force
@@ -1534,7 +1547,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/board.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.obj: ../seekfree_libraries/board/clock_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\board\clock_config.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\board\clock_config.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.i: cmake_force
@@ -1547,7 +1560,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/clock_config.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.obj: ../seekfree_libraries/board/pin_mux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\board\pin_mux.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\board\pin_mux.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.i: cmake_force
@@ -1560,7 +1573,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/board/pin_mux.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.obj: ../seekfree_libraries/common/SEEKFREE_PRINTF.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\common\SEEKFREE_PRINTF.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\common\SEEKFREE_PRINTF.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.i: cmake_force
@@ -1573,7 +1586,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/SEEKFREE_PRINTF.c.s: cmake_f
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj: ../seekfree_libraries/common/common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\common\common.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\common\common.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.i: cmake_force
@@ -1586,7 +1599,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/common/common.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj: ../seekfree_libraries/oled.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\oled.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\oled.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.i: cmake_force
@@ -1599,7 +1612,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/oled.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj: ../seekfree_libraries/zf_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_adc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_adc.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.i: cmake_force
@@ -1612,7 +1625,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_adc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.obj: ../seekfree_libraries/zf_camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_camera.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_camera.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.i: cmake_force
@@ -1625,7 +1638,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_camera.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.obj: ../seekfree_libraries/zf_csi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_csi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_csi.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.i: cmake_force
@@ -1638,7 +1651,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_csi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.obj: ../seekfree_libraries/zf_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_flash.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_flash.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.i: cmake_force
@@ -1651,7 +1664,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_flash.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.obj: ../seekfree_libraries/zf_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_gpio.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_gpio.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.i: cmake_force
@@ -1664,7 +1677,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_gpio.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.obj: ../seekfree_libraries/zf_iic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_iic.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_iic.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.i: cmake_force
@@ -1677,7 +1690,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iic.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj: ../seekfree_libraries/zf_iomuxc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_iomuxc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_iomuxc.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.i: cmake_force
@@ -1690,7 +1703,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_iomuxc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.obj: ../seekfree_libraries/zf_pit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_pit.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_pit.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.i: cmake_force
@@ -1703,7 +1716,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pit.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.obj: ../seekfree_libraries/zf_pwm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_pwm.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_pwm.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.i: cmake_force
@@ -1716,7 +1729,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_pwm.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.obj: ../seekfree_libraries/zf_qtimer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_qtimer.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_qtimer.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.i: cmake_force
@@ -1729,7 +1742,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_qtimer.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj: ../seekfree_libraries/zf_rom_api.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_rom_api.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_rom_api.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.i: cmake_force
@@ -1742,7 +1755,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_rom_api.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj: ../seekfree_libraries/zf_sdcard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_sdcard.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_sdcard.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.i: cmake_force
@@ -1755,7 +1768,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_sdcard.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.obj: ../seekfree_libraries/zf_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_spi.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_spi.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.i: cmake_force
@@ -1768,7 +1781,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_spi.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj: ../seekfree_libraries/zf_systick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_systick.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_systick.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.i: cmake_force
@@ -1781,7 +1794,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_systick.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj: ../seekfree_libraries/zf_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_uart.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_uart.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.i: cmake_force
@@ -1794,7 +1807,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_uart.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj: ../seekfree_libraries/zf_usb_cdc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_usb_cdc.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_usb_cdc.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.i: cmake_force
@@ -1807,7 +1820,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_usb_cdc.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.obj: ../seekfree_libraries/zf_vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_libraries\zf_vector.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_libraries\zf_vector.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.i: cmake_force
@@ -1820,7 +1833,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_libraries/zf_vector.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.obj: ../seekfree_peripheral/SEEKFREE_18TFT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_18TFT.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_18TFT.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.i: cmake_force
@@ -1833,7 +1846,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_18TFT.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.obj: ../seekfree_peripheral/SEEKFREE_FONT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_FONT.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_FONT.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.i: cmake_force
@@ -1846,7 +1859,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FONT.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.obj: ../seekfree_peripheral/SEEKFREE_FUN.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_FUN.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_FUN.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.i: cmake_force
@@ -1859,7 +1872,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_FUN.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.obj: ../seekfree_peripheral/SEEKFREE_ICM20602.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_ICM20602.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_ICM20602.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.i: cmake_force
@@ -1872,7 +1885,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_ICM20602.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.obj: ../seekfree_peripheral/SEEKFREE_IIC.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_IIC.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_IIC.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.i: cmake_force
@@ -1885,7 +1898,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IIC.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.obj: ../seekfree_peripheral/SEEKFREE_IPS114_SPI.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_IPS114_SPI.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_IPS114_SPI.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.i: cmake_force
@@ -1898,7 +1911,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS114_SPI.c.s: cmake_for
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.obj: ../seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_IPS200_PARALLEL8.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_IPS200_PARALLEL8.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.i: cmake_force
@@ -1911,7 +1924,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_IPS200_PARALLEL8.c.s: cma
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.obj: ../seekfree_peripheral/SEEKFREE_L3G4200D.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_L3G4200D.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_L3G4200D.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.i: cmake_force
@@ -1924,7 +1937,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_L3G4200D.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.obj: ../seekfree_peripheral/SEEKFREE_MMA8451.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_MMA8451.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_MMA8451.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.i: cmake_force
@@ -1937,7 +1950,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MMA8451.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.obj: ../seekfree_peripheral/SEEKFREE_MPU6050.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_MPU6050.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_MPU6050.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.i: cmake_force
@@ -1950,7 +1963,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MPU6050.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.obj: ../seekfree_peripheral/SEEKFREE_MT9V03X.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_MT9V03X.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_MT9V03X.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.i: cmake_force
@@ -1963,7 +1976,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.obj: ../seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_MT9V03X_CSI.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_MT9V03X_CSI.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.i: cmake_force
@@ -1976,7 +1989,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_MT9V03X_CSI.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.obj: ../seekfree_peripheral/SEEKFREE_NRF24L01.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_NRF24L01.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_NRF24L01.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.i: cmake_force
@@ -1989,7 +2002,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_NRF24L01.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.obj: ../seekfree_peripheral/SEEKFREE_OLED.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_OLED.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_OLED.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.i: cmake_force
@@ -2002,7 +2015,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_OLED.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.obj: ../seekfree_peripheral/SEEKFREE_SCC8660.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_SCC8660.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_SCC8660.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.i: cmake_force
@@ -2015,7 +2028,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.obj: ../seekfree_peripheral/SEEKFREE_SCC8660_CSI.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_SCC8660_CSI.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_SCC8660_CSI.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.i: cmake_force
@@ -2028,7 +2041,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_SCC8660_CSI.c.s: cmake_fo
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.obj: ../seekfree_peripheral/SEEKFREE_VIRSCO.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_VIRSCO.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_VIRSCO.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.i: cmake_force
@@ -2041,7 +2054,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_VIRSCO.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.obj: ../seekfree_peripheral/SEEKFREE_W25QXXJV.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_W25QXXJV.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_W25QXXJV.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.i: cmake_force
@@ -2054,7 +2067,7 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_W25QXXJV.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.obj: ../seekfree_peripheral/SEEKFREE_WIRELESS.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RT1064.elf.dir\seekfree_peripheral\SEEKFREE_WIRELESS.c.obj   -c D:\Freescale_Vision_Group_16\RT1064_CLion\seekfree_peripheral\SEEKFREE_WIRELESS.c
 
 CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.i: cmake_force
@@ -2067,19 +2080,20 @@ CMakeFiles/RT1064.elf.dir/seekfree_peripheral/SEEKFREE_WIRELESS.c.s: cmake_force
 
 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj: CMakeFiles/RT1064.elf.dir/flags.make
 CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj: ../startup_MIMXRT1064.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building ASM object CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building ASM object CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\RT1064.elf.dir\startup_MIMXRT1064.S.obj -c D:\Freescale_Vision_Group_16\RT1064_CLion\startup_MIMXRT1064.S
 
 # Object files for target RT1064.elf
 RT1064_elf_OBJECTS = \
 "CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj" \
+"CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj" \
+"CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj" \
-"CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj" \
 "CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj" \
 "CMakeFiles/RT1064.elf.dir/USER/main.c.obj" \
@@ -2231,13 +2245,14 @@ RT1064_elf_OBJECTS = \
 RT1064_elf_EXTERNAL_OBJECTS =
 
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj
+RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj
+RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/PID.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Uart.c.obj
-RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/fastmath.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/CODE/isr.c.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/USER/main.c.obj
@@ -2387,7 +2402,7 @@ RT1064.elf: CMakeFiles/RT1064.elf.dir/startup_MIMXRT1064.S.obj
 RT1064.elf: CMakeFiles/RT1064.elf.dir/build.make
 RT1064.elf: CMakeFiles/RT1064.elf.dir/objects1.rsp
 RT1064.elf: CMakeFiles/RT1064.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Linking C executable RT1064.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Freescale_Vision_Group_16\RT1064_CLion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Linking C executable RT1064.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RT1064.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold " Building D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/RT1064.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "        Building D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/RT1064.bin "

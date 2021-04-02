@@ -164,6 +164,18 @@
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ANO_DT.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ANO_DT.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ART.c">
+			<Option target="RT1064.elf"/>
+		</Unit>
+		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ART.h">
+			<Option target="RT1064.elf"/>
+		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Interactive.c">
 			<Option target="RT1064.elf"/>
 		</Unit>
@@ -198,12 +210,6 @@
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h">
-			<Option target="RT1064.elf"/>
-		</Unit>
-		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Visualscope.c">
-			<Option target="RT1064.elf"/>
-		</Unit>
-		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Visualscope.h">
 			<Option target="RT1064.elf"/>
 		</Unit>
 		<Unit filename="D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.c">

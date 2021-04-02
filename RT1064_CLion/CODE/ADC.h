@@ -6,13 +6,13 @@
 #define RT1064_CODE_ADC_H_
 
 
-#define InductanceNum 5 //电感个数
-#define SamplingNum 5   //采集多少组数据
+#define InductanceNum 6 //电感个数
+#define SamplingNum 7   //采集多少组数据
 #define Trident_Left 2
 #define Trident_Right 1
 
-#define Curve_threshold 0
-#define Island_threshold 0
+#define Curve_threshold 10000
+#define Island_threshold 10000
 
 
 typedef enum {

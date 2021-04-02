@@ -8,4 +8,6 @@
 
 float FastSqrt(float x);
 
+double FastPow(double num, double n);
+
 #endif //RT1064_MATH_H

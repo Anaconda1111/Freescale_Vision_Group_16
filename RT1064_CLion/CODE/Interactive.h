@@ -18,4 +18,10 @@ uint8 bm_scan(void);
 
 void Interactive();
 
+void ShowInductanceValue_Normal();
+
+void ShowInductanceValue_Average();
+
+void ShowADCConvert();
+
 #endif //RT1064_INTERACTIVE_H

@@ -10,12 +10,14 @@
 
 extern uint8 Camera;
 
-uint16 Motor_GO_L_PWM = 0;
-uint16 Motor_GO_R_PWM = 0;
+uint16 Motor_GO_L_PWMDuty = 0;
+uint16 Motor_GO_R_PWMDuty = 0;
 
 void Motor_PIDStruct_Init(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
                           Filter_Struct Motor_GOR_Filter,
                           Filter_Struct Motor_GOL_Filter) {
+    Motor_GO_L_PWMDuty = 7500;
+    Motor_GO_R_PWMDuty = 7500;
     Motor_GOL_PID->I_MAX = MotorI_MAX;
     Motor_GOR_PID->I_MAX = MotorI_MAX;
     Motor_GOL_Filter->Coefficient = 1.0f / 16.0f;
@@ -23,7 +25,7 @@ void Motor_PIDStruct_Init(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 }
 
 int16 GetDifferentSpeed(int16 Angle) {
-    if (Angle <= 3)
+    if (Angle <= 100)
         return 0;
     else
         return Angle * Transform;
@@ -47,8 +49,8 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
     int16 base_speed, different_speed;
 
-    int16 Angle = FastABS(MiddleSteer_PWM - SteerPWMDuty);
-    if (Angle <= 3)
+    int16 Angle = MiddleSteer_PWM - SteerPWMDuty;
+    if (FastABS(Angle) <= 100 || Camera == 0)
         base_speed = MAXEncoder;
     else
         base_speed = MAXEncoder / 2;
@@ -61,21 +63,21 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
     qtimer_quad_clear(QTIMER_1, Qtimer1_LSB);
     Motor_GOR_PID->CurrentValue = qtimer_quad_get(QTIMER_3, Qtimer2_LSB);
     qtimer_quad_clear(QTIMER_3, Qtimer2_LSB);
-    Motor_GO_L_PWM += (uint16) (PIDCalculate(Motor_GOL_PID, Motor_GOL_Filter)/*/*转换系数*/);
-    Motor_GO_R_PWM += (uint16) (PIDCalculate(Motor_GOR_PID, Motor_GOR_Filter)/*/*转换系数*/);
+    Motor_GO_L_PWMDuty += (uint16) (PIDCalculate(Motor_GOL_PID, Motor_GOL_Filter)/*/*转换系数*/);
+    Motor_GO_R_PWMDuty += (uint16) (PIDCalculate(Motor_GOR_PID, Motor_GOR_Filter)/*/*转换系数*/);
 
-    if (Motor_GO_L_PWM > MotorPWM_MAX)
-        Motor_GO_L_PWM = MotorPWM_MAX;
-    else if (Motor_GO_R_PWM < MotorPWM_MIN)
-        Motor_GO_L_PWM = MotorPWM_MIN;
+    if (Motor_GO_L_PWMDuty > MotorPWM_MAX)
+        Motor_GO_L_PWMDuty = MotorPWM_MAX;
+    else if (Motor_GO_L_PWMDuty < MotorPWM_MIN)
+        Motor_GO_L_PWMDuty = MotorPWM_MIN;
 
-    if (Motor_GO_R_PWM > MotorPWM_MAX)
-        Motor_GO_R_PWM = MotorPWM_MAX;
-    else if (Motor_GO_R_PWM < MotorPWM_MIN)
-        Motor_GO_R_PWM = MotorPWM_MIN;
+    if (Motor_GO_R_PWMDuty > MotorPWM_MAX)
+        Motor_GO_R_PWMDuty = MotorPWM_MAX;
+    else if (Motor_GO_R_PWMDuty < MotorPWM_MIN)
+        Motor_GO_R_PWMDuty = MotorPWM_MIN;
 
-    pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
-    pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
+    pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWMDuty);
+    pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWMDuty);
 }
 
 void GarageOut() {

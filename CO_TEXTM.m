@@ -47,7 +47,7 @@ for j=1:2
 end
 
 
-for i=1:1000
+for i=1:10000
     a=fread(S,[1,9],'uint8');
     Data=zeros(1,5);
     Data(1,1)=a(1,1);
@@ -62,10 +62,11 @@ for i=1:1000
     Data2(1,1)=Data2(1,2);
     Data1(1,2)=Data(1,2);
      Data2(1,2)=Data(1,3);
-    plot(X,Data1,'-r',X,Data2,'-b');%红线当前值 蓝线期望值
-    axis([0 i+1 0 120]);
+    plot(X,Data1,'-r');%红线当前值 蓝线期望值
+    axis([i-20 i+20 -200 200]);
     hold on;
     X=X+1;
     t=t+1;
-    pause(0.01)
+    pause(0.05)
 end
+

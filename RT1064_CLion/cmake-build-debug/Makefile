@@ -169,6 +169,60 @@ CODE/ADC.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ADC.c.s
 .PHONY : CODE/ADC.c.s
 
+CODE/ANO_DT.obj: CODE/ANO_DT.c.obj
+
+.PHONY : CODE/ANO_DT.obj
+
+# target to build an object file
+CODE/ANO_DT.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.obj
+.PHONY : CODE/ANO_DT.c.obj
+
+CODE/ANO_DT.i: CODE/ANO_DT.c.i
+
+.PHONY : CODE/ANO_DT.i
+
+# target to preprocess a source file
+CODE/ANO_DT.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.i
+.PHONY : CODE/ANO_DT.c.i
+
+CODE/ANO_DT.s: CODE/ANO_DT.c.s
+
+.PHONY : CODE/ANO_DT.s
+
+# target to generate assembly for a file
+CODE/ANO_DT.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ANO_DT.c.s
+.PHONY : CODE/ANO_DT.c.s
+
+CODE/ART.obj: CODE/ART.c.obj
+
+.PHONY : CODE/ART.obj
+
+# target to build an object file
+CODE/ART.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ART.c.obj
+.PHONY : CODE/ART.c.obj
+
+CODE/ART.i: CODE/ART.c.i
+
+.PHONY : CODE/ART.i
+
+# target to preprocess a source file
+CODE/ART.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ART.c.i
+.PHONY : CODE/ART.c.i
+
+CODE/ART.s: CODE/ART.c.s
+
+.PHONY : CODE/ART.s
+
+# target to generate assembly for a file
+CODE/ART.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/ART.c.s
+.PHONY : CODE/ART.c.s
+
 CODE/Interactive.obj: CODE/Interactive.c.obj
 
 .PHONY : CODE/Interactive.obj
@@ -330,33 +384,6 @@ CODE/Uart.s: CODE/Uart.c.s
 CODE/Uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Uart.c.s
 .PHONY : CODE/Uart.c.s
-
-CODE/Visualscope.obj: CODE/Visualscope.c.obj
-
-.PHONY : CODE/Visualscope.obj
-
-# target to build an object file
-CODE/Visualscope.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.obj
-.PHONY : CODE/Visualscope.c.obj
-
-CODE/Visualscope.i: CODE/Visualscope.c.i
-
-.PHONY : CODE/Visualscope.i
-
-# target to preprocess a source file
-CODE/Visualscope.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.i
-.PHONY : CODE/Visualscope.c.i
-
-CODE/Visualscope.s: CODE/Visualscope.c.s
-
-.PHONY : CODE/Visualscope.s
-
-# target to generate assembly for a file
-CODE/Visualscope.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RT1064.elf.dir\build.make CMakeFiles/RT1064.elf.dir/CODE/Visualscope.c.s
-.PHONY : CODE/Visualscope.c.s
 
 CODE/fastmath.obj: CODE/fastmath.c.obj
 
@@ -4294,6 +4321,12 @@ help:
 	@echo ... CODE/ADC.obj
 	@echo ... CODE/ADC.i
 	@echo ... CODE/ADC.s
+	@echo ... CODE/ANO_DT.obj
+	@echo ... CODE/ANO_DT.i
+	@echo ... CODE/ANO_DT.s
+	@echo ... CODE/ART.obj
+	@echo ... CODE/ART.i
+	@echo ... CODE/ART.s
 	@echo ... CODE/Interactive.obj
 	@echo ... CODE/Interactive.i
 	@echo ... CODE/Interactive.s
@@ -4312,9 +4345,6 @@ help:
 	@echo ... CODE/Uart.obj
 	@echo ... CODE/Uart.i
 	@echo ... CODE/Uart.s
-	@echo ... CODE/Visualscope.obj
-	@echo ... CODE/Visualscope.i
-	@echo ... CODE/Visualscope.s
 	@echo ... CODE/fastmath.obj
 	@echo ... CODE/fastmath.i
 	@echo ... CODE/fastmath.s
