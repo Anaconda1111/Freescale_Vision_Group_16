@@ -22,6 +22,7 @@ CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../seekfree_libraries/common/common.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../seekfree_libraries/zf_adc.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/ADC.c
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/ADC.h
+CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/CODE/ADC.c.obj: ../CODE/port.h
 
@@ -99,6 +100,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.c
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Interactive.h
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/Steer.h
+CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/CODE/Interactive.c.obj: ../CODE/port.h
 
 CMakeFiles/RT1064.elf.dir/CODE/Motor.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
@@ -159,6 +161,7 @@ CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/ADC.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.c
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/Steer.h
+CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/CODE/Steer.c.obj: ../CODE/port.h
 
 CMakeFiles/RT1064.elf.dir/CODE/Text.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
@@ -333,6 +336,7 @@ CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/PID.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Steer.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Text.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/Uart.h
+CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/fastmath.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../CODE/port.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armcc.h
 CMakeFiles/RT1064.elf.dir/USER/main.c.obj: ../nxp_libraries/CMSIS/Include/cmsis_armclang.h

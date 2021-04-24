@@ -4,8 +4,8 @@
 
 #ifndef RT1064_CODE_PID_H_
 #define RT1064_CODE_PID_H_
-typedef struct PID_Parameter *PID_Struct;
-typedef struct Filter_Parameter *Filter_Struct;
+typedef struct PID_Parameter * PID_Struct;
+typedef struct Filter_Parameter * Filter_Struct;
 struct PID_Parameter {
     float KP;
     float KI;

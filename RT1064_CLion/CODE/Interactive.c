@@ -10,15 +10,20 @@
 #include "zf_systick.h"
 #include "ADC.h"
 #include "Steer.h"
+#include "fastmath.h"
 
 extern uint16 SteerPWMDuty;
-extern uint16 Motor_GO_L_PWMDuty;
-extern uint16 Motor_GO_R_PWMDuty;
+extern uint16 Motor_GO_L_PWM;
+extern uint16 Motor_GO_R_PWM;
 extern PID_Struct Steer_PID;
 extern PID_Struct Motor_GOL_PID;
 extern PID_Struct Motor_GOR_PID;
 extern float InductanceValue_Normal[InductanceNum];
 extern uint16 InductanceValue_Average[InductanceNum];
+extern int16 encoder_value_L;
+extern int16 encoder_value_R;
+extern int16 garageout_flag;
+extern int16 Island_Flag;
 
 uint8 key_scan() {
 
@@ -53,124 +58,193 @@ uint8 bm_scan(void) {
 
 
 void Interactive() {
-    uint8 Status = bm_scan();
+    uint8 Status;
+    Status = bm_scan();
     uint8 Key_State = key_scan();
     switch (Status) {
         case 0X00: {
-            pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWMDuty);
-            pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWMDuty);
-            //oled_int16(0, 0, SteerPWMDuty);
             oled_fill(0X00);
-            oled_p6x8str(0, 0, "Motor L PWM:");
-            oled_p6x8str(0, 1, "Motor R PWM:");
-            oled_int16(50, 0, Motor_GO_L_PWMDuty);
-            oled_int16(50, 1, Motor_GO_R_PWMDuty);
-            // oled_p6x8str(0, 0, "SteerKP:");
-            // oled_printf_float(50, 0, Steer_PID->KP, 5, 2);
-            // oled_p6x8str(0, 1, "SteerKI:");
-            // oled_printf_float(50, 0, Steer_PID->KI, 5, 2);
-            // oled_p6x8str(0, 1, "SteerKD:");
-            // oled_printf_float(50, 0, Steer_PID->KD, 5, 2);
+            oled_p6x8str(0, 0, "adc1:");
+            oled_printf_float(50, 0, InductanceValue_Normal[0], 5, 2);
+            oled_p6x8str(0, 1, "adc2:");
+            oled_printf_float(50, 1, InductanceValue_Normal[1], 5, 2);
+            oled_p6x8str(0, 2, "adc3:");
+            oled_printf_float(50, 2, InductanceValue_Normal[2], 5, 2);
+            oled_p6x8str(0, 3, "adc4:");
+            oled_printf_float(50, 3, InductanceValue_Normal[3], 5, 2);
+            oled_p6x8str(0, 4, "adc5:");
+            oled_printf_float(50, 4, InductanceValue_Normal[4], 5, 2);
+            oled_p6x8str(0, 5, "adc6:");
+            oled_printf_float(50, 5, InductanceValue_Normal[5], 5, 2);
+            oled_p6x8str(0, 6, "CurrentValue:");
+            oled_printf_float(50, 6, Steer_PID->CurrentValue, 5, 2);
+            oled_p6x8str(0, 7, "SteerPWMDuty:");
+            oled_printf_float(50, 7, SteerPWMDuty, 5, 2);
+
             switch (Key_State) {
                 case key1press: {
-                    // Steer_PID->KP += 10;
-                    Motor_GO_L_PWMDuty += 20;
-                }
-                    break;
+
+                }break;
                 case key2press: {
-                    Motor_GO_L_PWMDuty -= 20;
-                }
-                    break;
+
+                }break;
                 case key3press: {
-                    //Steer_PID->KD += 100;
-                    Motor_GO_R_PWMDuty += 20;
-                }
-                    break;
+
+                }break;
                 case key4press: {
-                    //Steer_PID->KD -= 100;
-                    Motor_GO_R_PWMDuty -= 20;
-                }
-                    break;
+
+                }break;
+
             }
         }
             break;
+
         case 0x01: {
-            oled_fill(0x00);
+
+            oled_fill(0X00);
             oled_p6x8str(0, 0, "SteerKP:");
-            oled_int16(50, 0, (int16) Steer_PID->KP);
+            oled_printf_float(50, 0, Steer_PID->KP, 5, 2);
             oled_p6x8str(0, 1, "SteerKI:");
-            oled_int16(50, 1, (int16) Steer_PID->KI);
+            oled_printf_float(50, 1, Steer_PID->KI, 5, 2);
             oled_p6x8str(0, 2, "SteerKD:");
-            oled_int16(50, 2, (int16) Steer_PID->KD);
-            oled_p6x8str(0, 3, "SteerPWM:");
-            oled_int16(50, 3, SteerPWMDuty);
-            //ShowInductanceValue_Normal();
-            switch (key_scan()) {
+            oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
+            oled_p6x8str(0, 3, "CurrentValue:");
+            oled_printf_float(50, 3, Steer_PID->CurrentValue, 5, 2);
+            oled_p6x8str(0, 4, "Steerpwn:");
+            oled_printf_float(50, 4, SteerPWMDuty, 5, 2);
+            oled_p6x8str(0, 5, "Island:");
+            oled_printf_float(50, 5, Island_Flag, 5, 2);
+            oled_p6x8str(0, 6, "D_diffe:");
+            oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
+
+            /*           oled_fill(0X00);
+                       oled_p6x8str(0, 0, "GOR_KP:");
+                       oled_printf_float(50, 0, Motor_GOR_PID->KP, 5, 2);
+                       oled_p6x8str(0, 1, "GOR_KI:");
+                       oled_printf_float(50, 1, Motor_GOR_PID->KI, 5, 2);
+                       oled_p6x8str(0, 2, "GOR_KD:");
+                       oled_printf_float(50, 2, Motor_GOR_PID->KD, 5, 2);
+           */
+            /*           oled_fill(0X00);
+                       oled_p6x8str(0, 0, "Rate:");
+                       oled_printf_float(50, 0, Rate, 5, 2);
+              */
+            switch (Key_State) {
                 case key1press: {
-                    Steer_PID->KP += 1;
+                    Steer_PID->KP +=0.01;
+                    //Motor_GOR_PID->KP +=0.01;
+
+
                 }
                     break;
                 case key2press: {
-                    Steer_PID->KP -= 1;
+                    Steer_PID->KP -=0.01;
+                    // Motor_GOR_PID->KP -=0.01;
+
                 }
                     break;
                 case key3press: {
-                    Steer_PID->KI += 5;
+                    Steer_PID->KI += 0.01;
+                    // Motor_GOR_PID->KI +=0.01;
                 }
                     break;
                 case key4press: {
-                    Steer_PID->KI -= 5;
+                    Steer_PID->KI -= 0.01;
+                    //Motor_GOR_PID->KI -=0.01;
                 }
                     break;
             }
         }
             break;
         case 0x10: {
-            //ShowInductanceValue_Average();
-            ShowADCConvert();
-            switch (key_scan()) {
-                case key1press: {
-                }
-                    break;
-                case key2press: {
-                }
-                    break;
-                case key3press: {
-                }
-                    break;
-                case key4press: {
-                }
-                    break;
-            }
-        }
-            break;
-        case 0x11: {
-            oled_fill(0x00);
-            oled_p6x8str(0, 0, "CurrentValue:");
-            oled_int16(50, 0, (int16) Steer_PID->CurrentValue);
-            oled_p6x8str(0, 1, "TargetValue:");
-            oled_int16(50, 1, (int16) Steer_PID->TargetValue);
-            oled_p6x8str(0, 2, "CurrentError:");
-            oled_int16(50, 2, (int16) Steer_PID->CurrentError);
-            oled_p6x8str(0, 3, "PIDResult:");
-            oled_int16(50, 3, (int16) Steer_PID->Result);
-            switch (key_scan()) {
-                case key1press: {
-                }
-                    break;
-                case key2press: {
-                }
-                    break;
-                case key3press: {
-                }
-                    break;
-                case key4press: {
-                }
-                    break;
-            }
-        }
-            break;
+            /*
+               oled_fill(0X00);
+               oled_p6x8str(0, 0, "GOL_KP:");
+               oled_printf_float(50, 0, Motor_GOL_PID->KP, 5, 2);
+               oled_p6x8str(0, 1, "GOL_KI:");
+               oled_printf_float(50, 1, Motor_GOL_PID->KI, 5, 2);
+               oled_p6x8str(0, 2, "GOL_KD:");
+               oled_printf_float(50, 2, Motor_GOL_PID->KD, 5, 2);
+           */
 
+            oled_fill(0X00);
+            oled_p6x8str(0, 2, "SteerKD:");
+            oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
+
+
+
+            switch (Key_State) {
+                case key1press: {
+                    // Motor_GOL_PID->KP +=0.01;
+
+                    // Steer_PID->KD +=0.01;
+
+                }
+                    break;
+                case key2press: {
+                    // Motor_GOL_PID->KP -=0.01;
+
+                    Steer_PID->KD -=0.01;
+
+                }
+                    break;
+                case key3press: {
+                    //  Motor_GOL_PID->KI +=0.01;
+                }
+                    break;
+                case key4press: {
+                    //  Motor_GOL_PID->KI -=0.01;
+                }
+                    break;
+            }
+        }
+        break;
+        case 0x11: {
+
+            //  pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
+            //  pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
+            //oled_int16(0, 0, SteerPWMDuty);
+
+            oled_fill(0X00);
+            oled_p6x8str(0, 0, "MotorL:");
+            oled_p6x8str(0, 1, "MotorR:");
+            oled_int16(50, 0, Motor_GO_L_PWM);
+            oled_int16(50, 1, Motor_GO_R_PWM);
+            oled_p6x8str(0, 2, "EncoderL:");
+            oled_p6x8str(0, 3, "EncoderR:");
+            oled_int16(50, 2, encoder_value_L);//L
+            oled_int16(50, 3, encoder_value_R);//R
+            oled_p6x8str(0, 4, "Angle:");
+            oled_printf_float(50, 4, Steer_PID->CurrentValue, 5, 2);
+            oled_p6x8str(0, 5, "garage:");
+            oled_printf_float(50, 5, garageout_flag, 5, 2);
+            oled_p6x8str(0, 6, "D_diffe:");
+            oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
+
+            switch (Key_State) {
+                case key1press: {
+                    //Motor_GO_L_PWM +=20;
+                    garageout_flag =1;
+
+                }
+                    break;
+                case key2press: {
+                    // Motor_GO_L_PWM -=20;
+                    garageout_flag = 0;
+
+                }
+                    break;
+                case key3press: {
+                    // Motor_GO_R_PWM +=20;
+                }
+                    break;
+                case key4press: {
+                    //Motor_GO_R_PWM -=20;
+                }
+                    break;
+            }
+        }
+        break;
     }
 }
 

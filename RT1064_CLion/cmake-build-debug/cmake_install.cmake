@@ -1,4 +1,4 @@
-# Install script for directory: D:/Freescale_Vision_Group_16/RT1064_CLion
+# Install script for directory: C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

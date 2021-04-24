@@ -16,5 +16,6 @@
 #include "SEEKFREE_OLED.h"
 #include "zf_pit.h"
 #include "ANO_DT.h"
+#include "fastmath.h"
 
 #endif // RT1064_USER_MAIN_H_

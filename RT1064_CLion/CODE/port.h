@@ -7,12 +7,13 @@
 
 #include "zf_adc.h"
 /***************************************ADC***************************************************************/
-#define Steer_ADCInput1_CH ADC1_CH2_B13
-#define Steer_ADCInput2_CH ADC1_CH1_B12
-#define Steer_ADCInput3_CH ADC1_CH5_B16
-#define Steer_ADCInput4_CH ADC1_CH6_B17
-#define Steer_ADCInput5_CH ADC1_CH9_B20
-#define Steer_ADCInput6_CH ADC1_CH10_B21
+#define Steer_ADCInput1_CH ADC1_CH4_B15
+#define Steer_ADCInput2_CH ADC1_CH2_B13
+#define Steer_ADCInput3_CH ADC1_CH3_B14
+#define Steer_ADCInput4_CH ADC1_CH1_B12
+#define Steer_ADCInput5_CH ADC1_CH5_B16
+#define Steer_ADCInput6_CH ADC1_CH6_B17
+
 #define Steer_ADCInput7_CH ADC1_CH11_B22
 #define Steer_ADCInput8_CH ADC1_CH12_B23
 #define Steer_ADCInput9_CH ADC1_CH13_B24
@@ -20,10 +21,11 @@
 /*********************************************************************************************************/
 
 /***************************************KYE***************************************************************/
-#define KEY1 C29
-#define KEY2 C30
-#define KEY3 C27
-#define KEY4 C28
+#define KEY1 C30
+#define KEY2 C29
+#define KEY3 C28
+#define KEY4 C27
+
 /*********************************************************************************************************/
 
 /****************************************OLED*************************************************************/
@@ -40,8 +42,9 @@
 #define MotorPWM_Go_R_CH PWM1_MODULE3_CHB_D1
 #define MotorPWM_Go_L_CH PWM2_MODULE3_CHB_D3
 #define SteerPWM_CH PWM4_MODULE3_CHA_C31
-#define Yuntai1PWM_CH PWM2_MODULE3_CHA_C18
-#define Yuntai2PWM_CH PWM2_MODULE3_CHB_C19
+#define Yuntai1PWM_CH PWM2_MODULE1_CHB_C9
+#define Yuntai2PWM_CH PWM2_MODULE0_CHB_C7
+#define JiguangPWM_CH PWM1_MODULE0_CHB_D13
 /*********************************************************************************************************/
 
 /*****************************************UART************************************************************/
