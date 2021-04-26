@@ -29,14 +29,14 @@ void Motor_PIDStruct_Init(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
     Motor_GOL_Filter->Coefficient = 1.0f / 16.0f;
     Motor_GOR_Filter->Coefficient = 1.0f / 16.0f;
 
-    Motor_GOL_PID->KP = 1.30;
-    Motor_GOL_PID->KI = 0.10;
-    Motor_GOL_PID->KD = 0.50;
+    Motor_GOL_PID->KP = 1.30f;
+    Motor_GOL_PID->KI = 0.10f;
+    Motor_GOL_PID->KD = 0.50f;
     Motor_GOL_Filter->Coefficient =  1.0f / 4.0f;
 
-    Motor_GOR_PID->KP = 1.15;
-    Motor_GOR_PID->KI = 0.10;
-    Motor_GOR_PID->KD = 0.50;
+    Motor_GOR_PID->KP = 1.15f;
+    Motor_GOR_PID->KI = 0.10f;
+    Motor_GOR_PID->KD = 0.50f;
     Motor_GOR_Filter->Coefficient =  1.0f / 4.0f;
 
 
@@ -236,7 +236,7 @@ void Motor_value_get()
 
 }
 
-
+/*
 void motorctrl()
 {
     int16 Angle = (int16)FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
@@ -380,294 +380,226 @@ void motorctrl()
     }
 }
 
+*/
 
+void motorctrl_Faster() {
+    int16 Angle = (int16) FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
 
-void motorctrl_Faster()
-{
-    int16 Angle = (int16)FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
-
-    if(Angle <= 3.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
+    if (Angle <= 3.5) {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(15000-Angle*114.3);
-            Motor_GO_R_PWM =(uint16)(15000-Angle*400.0);
+            Motor_GO_L_PWM = (uint16) (16000 - Angle * 114.3);
+            Motor_GO_R_PWM = (uint16) (16000 - Angle * 400.0);
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
+        {
+            Motor_GO_L_PWM = (uint16) (16000 - Angle * 400.0);
+            Motor_GO_R_PWM = (uint16) (16000 - Angle * 114.3);
         }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
+    } else if (Angle > 3.5 && Angle <= 6.5) {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(15000 - Angle*400.0);
-            Motor_GO_R_PWM =(uint16)(15000 - Angle*114.3);
+            Motor_GO_L_PWM = (uint16) (15600 - (Angle - 3.5) * 133.3);
+            Motor_GO_R_PWM = (uint16) (14600 - (Angle - 3.5) * 466.6);
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
+        {
+            Motor_GO_L_PWM = (uint16) (14600 - (Angle - 3.5) * 466.6);
+            Motor_GO_R_PWM = (uint16) (15600 - (Angle - 3.5) * 133.3);
         }
-    }
-    else if(Angle > 3.5 && Angle <= 6.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
+    } else if (Angle > 6.5 && Angle <= 9.5) {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(14600 - (Angle-3.5) * 133.3);
-            Motor_GO_R_PWM =(uint16)(13600 - (Angle-3.5) * 466.6);
+            Motor_GO_L_PWM = (uint16) (15200 - (Angle - 6.5) * 133.3);
+            Motor_GO_R_PWM = (uint16) (13200 - (Angle - 6.5) * 466.6);
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
+        {
+            Motor_GO_L_PWM = (uint16) (13200 - (Angle - 6.5) * 466.6);
+            Motor_GO_R_PWM = (uint16) (15200 - (Angle - 6.5) * 133.3);
         }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
+    } else if (Angle > 9.5 && Angle <= 13.0) {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(13600 - (Angle-3.5) * 466.6);
-            Motor_GO_R_PWM =(uint16)(14600 - (Angle-3.5) * 133.3);
+            Motor_GO_L_PWM = (uint16) (14800 - (Angle - 9.5) * 114.3);
+            Motor_GO_R_PWM = (uint16) (11800 - (Angle - 9.5) * 400.0);
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
+        {
+            Motor_GO_L_PWM = (uint16) (11800 - (Angle - 9.5) * 400.0);
+            Motor_GO_R_PWM = (uint16) (14800 - (Angle - 9.5) * 114.3);
         }
-    }
-    else if(Angle > 6.5 && Angle <= 9.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
+    } else if (Angle > 13.0 && Angle <= 16.0) {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(14200 - (Angle-6.5) * 133.3);
-            Motor_GO_R_PWM =(uint16)(12200 - (Angle-6.5) * 466.6);
+            Motor_GO_L_PWM = (uint16) (14400 - (Angle - 13.0) * 133.3);
+            Motor_GO_R_PWM = (uint16) (10400 - (Angle - 13.0) * 466.7);
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
+        {
+            Motor_GO_L_PWM = (uint16) (10400 - (Angle - 13.0) * 466.7);
+            Motor_GO_R_PWM = (uint16) (14400 - (Angle - 13.0) * 133.3);
         }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
+    } else {
+        if (Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GO_L_PWM =(uint16)(12200 - (Angle-6.5) * 466.6);
-            Motor_GO_R_PWM =(uint16)(14200 - (Angle-6.5) * 133.3);
-        }
-    }
-    else if(Angle > 9.5 && Angle <= 13.0)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
+            Motor_GO_L_PWM = (uint16) 14000;
+            Motor_GO_R_PWM = (uint16) 9000;
+        } else if (Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GO_L_PWM =(uint16)(13800 - (Angle-9.5) * 114.3);
-            Motor_GO_R_PWM =(uint16)(10800 - (Angle-9.5) * 400.0);
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)(10800 - (Angle-9.5) * 400.0);
-            Motor_GO_R_PWM =(uint16)(13800 - (Angle-9.5) * 114.3);
-        }
-    }
-    else
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)13400;
-            Motor_GO_R_PWM =(uint16)9400;
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)9400;
-            Motor_GO_R_PWM =(uint16)13400;
+            Motor_GO_L_PWM = (uint16) 9000;
+            Motor_GO_R_PWM = (uint16) 14000;
         }
     }
 
     //速度预测,弯道降速，急弯减速
-    if(FastABS(Steer_PID->Differential) >= 0.0 && FastABS(Steer_PID->Differential) < 0.5)
-    {
-        Motor_GO_L_PWM -=0;
-        Motor_GO_R_PWM -=0;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 0.5 && FastABS(Steer_PID->Differential) < 1.0)
-    {
-        Motor_GO_L_PWM -=1000;
-        Motor_GO_R_PWM -=1000;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 1.0 && FastABS(Steer_PID->Differential) < 2.0)
-    {
-        Motor_GO_L_PWM -=2000;
-        Motor_GO_R_PWM -=2000;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 2.0 && FastABS(Steer_PID->Differential) < 3.0)
-    {
-        Motor_GO_L_PWM -=3000;
-        Motor_GO_R_PWM -=3000;
-    }
-    else
-    {
-        Motor_GO_L_PWM -=4000;
-        Motor_GO_R_PWM -=4000;
-    }
-
-    //环岛减速
-    if(Island_Flag)
-    {
-        Motor_GO_L_PWM -=2000;
-        Motor_GO_R_PWM -=2000;
-    }
-
-
-    //电机保护
-    if (Motor_GO_L_PWM > MotorPWM_MAX)
-    {
-        Motor_GO_L_PWM = MotorPWM_MAX;
-    }
-    if (Motor_GO_R_PWM < MotorPWM_MIN)
-    {
-        Motor_GO_L_PWM = MotorPWM_MIN;
-    }
-
-    if (Motor_GO_R_PWM > MotorPWM_MAX)
-    {
-        Motor_GO_R_PWM = MotorPWM_MAX;
-    }
-    if (Motor_GO_R_PWM < MotorPWM_MIN)
-    {
-        Motor_GO_R_PWM = MotorPWM_MIN;
-    }
-
-    //出轨保护
-    if(InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] <1.0 && InductanceValue_Normal[3] <1.0  && InductanceValue_Normal[4] <3.0
-       && InductanceValue_Normal[0] <0.5 && InductanceValue_Normal[5] <0.5)
-    {
-        pwm_duty(MotorPWM_Go_L_CH, 0);
-        pwm_duty(MotorPWM_Go_R_CH, 0);
-
-    }
-    else
-    {
-
-        pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
-        pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
-        garageout_flag = 0;
-
-    }
-}
-
-
-
-void motorctrl_test()
-{
-    int16 Angle = (int16)FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
-
-    //主要输出电机差速
-    if(Angle <= 3.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)(13000-Angle*57.1);
-            Motor_GO_R_PWM =(uint16)(13000-Angle*342.9);
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)(13000 - Angle*342.9);
-            Motor_GO_R_PWM =(uint16)(13000 - Angle*57.1);
-        }
-    }
-    else if(Angle > 3.5 && Angle <= 6.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)(12800 - (Angle-3.5) * 66.6);
-            Motor_GO_R_PWM =(uint16)(11800 - (Angle-3.5) * 400.0);
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)(11800 - (Angle-3.5) * 400.0);
-            Motor_GO_R_PWM =(uint16)(12800 - (Angle-3.5) * 66.6);
-        }
-    }
-    else if(Angle > 6.5 && Angle <= 9.5)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)(12600 - (Angle-6.5) * 66.6);
-            Motor_GO_R_PWM =(uint16)(10600 - (Angle-6.5) * 400.0);
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)(10600 - (Angle-6.5) * 400.0);
-            Motor_GO_R_PWM =(uint16)(12600 - (Angle-6.5) * 66.6);
-        }
-    }
-    else if(Angle > 9.5 && Angle <= 13.0)
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)(12400 - (Angle-9.5) * 57.1);
-            Motor_GO_R_PWM =(uint16)(9400 - (Angle-9.5) * 342.9);
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)(9400 - (Angle-9.5) * 342.9);
-            Motor_GO_R_PWM =(uint16)(12400 - (Angle-9.5) * 57.1);
-        }
-    }
-    else
-    {
-        if(Steer_PID->CurrentValue > 0.0) //往右转
-        {
-            Motor_GO_L_PWM =(uint16)12200;
-            Motor_GO_R_PWM =(uint16)82000;
-        }
-        else if(Steer_PID->CurrentValue < 0.0) //往左转
-        {
-            Motor_GO_L_PWM =(uint16)8200;
-            Motor_GO_R_PWM =(uint16)12200;
-        }
-    }
-
-
-    //速度预测,弯道降速，急弯减速
-    if(FastABS(Steer_PID->Differential) >= 0.0 && FastABS(Steer_PID->Differential) < 0.5)
-    {
-        Motor_GO_L_PWM -=0;
-        Motor_GO_R_PWM -=0;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 0.5 && FastABS(Steer_PID->Differential) < 1.0)
-    {
-        Motor_GO_L_PWM -=1000;
-        Motor_GO_R_PWM -=1000;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 1.0 && FastABS(Steer_PID->Differential) < 2.0)
-    {
-        Motor_GO_L_PWM -=2000;
-        Motor_GO_R_PWM -=2000;
-    }
-    else if(FastABS(Steer_PID->Differential) >= 2.0 && FastABS(Steer_PID->Differential) < 3.0)
-    {
-        Motor_GO_L_PWM -=3000;
-        Motor_GO_R_PWM -=3000;
-    }
-    else
-    {
-        Motor_GO_L_PWM -=4000;
-        Motor_GO_R_PWM -=4000;
+    if (FastABS(Steer_PID->Differential) >= 0.0 && FastABS(Steer_PID->Differential) < 0.5) {
+        Motor_GO_L_PWM -= 0;
+        Motor_GO_R_PWM -= 0;
+    } else if (FastABS(Steer_PID->Differential) >= 0.5 && FastABS(Steer_PID->Differential) < 1.0) {
+        Motor_GO_L_PWM -= 2000;
+        Motor_GO_R_PWM -= 2000;
+    } else if (FastABS(Steer_PID->Differential) >= 1.0 && FastABS(Steer_PID->Differential) < 2.0) {
+        Motor_GO_L_PWM -= 3000;
+        Motor_GO_R_PWM -= 3000;
+    } else if (FastABS(Steer_PID->Differential) >= 2.0 && FastABS(Steer_PID->Differential) < 3.0) {
+        Motor_GO_L_PWM -= 4000;
+        Motor_GO_R_PWM -= 4000;
+    } else {
+        Motor_GO_L_PWM -= 5000;
+        Motor_GO_R_PWM -= 5000;
     }
 
 
     //环岛减速
-    if(Island_Flag)
-    {
-        Motor_GO_L_PWM -=2000;
-        Motor_GO_R_PWM -=2000;
+    if (Island_Flag) {
+        Motor_GO_L_PWM -= 3000;
+        Motor_GO_R_PWM -= 3000;
     }
 
-
-    //电机保护
-    if (Motor_GO_L_PWM > MotorPWM_MAX)
-    {
-        Motor_GO_L_PWM = MotorPWM_MAX;
-    }
-    if (Motor_GO_R_PWM < MotorPWM_MIN)
-    {
-        Motor_GO_L_PWM = MotorPWM_MIN;
+    //动物停止30秒
+    if (Camera == IsAnimal) {   //停车
+        pwm_duty(MotorPWM_Go_L_CH, 0);
+        pwm_duty(MotorPWM_Go_R_CH, 0);
+        systick_delay_ms(3050);
     }
 
-    if (Motor_GO_R_PWM > MotorPWM_MAX)
-    {
-        Motor_GO_R_PWM = MotorPWM_MAX;
-    }
-    if (Motor_GO_R_PWM < MotorPWM_MIN)
-    {
-        Motor_GO_R_PWM = MotorPWM_MIN;
-    }
-
-    //出轨保护
-    if(InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] <1.0 && InductanceValue_Normal[3] <1.0  && InductanceValue_Normal[4] <3.0
-       && InductanceValue_Normal[0] <0.5 && InductanceValue_Normal[5] <0.5)
-    {
+    //摄像头识别到二维码，先停车
+    if (Camera) {
         pwm_duty(MotorPWM_Go_L_CH, 0);
         pwm_duty(MotorPWM_Go_R_CH, 0);
 
     }
-    else
-    {
-
-        pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
-        pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
-        garageout_flag = 0;
-
-    }
 }
 
+/*
+
+void motorctrl_test() {
+        int16 Angle = (int16) FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
+
+        //主要输出电机差速
+        if (Angle <= 3.5) {
+            if (Steer_PID->CurrentValue > 0.0) //往右转
+            {
+                Motor_GO_L_PWM = (uint16) (13000 - Angle * 57.1);
+                Motor_GO_R_PWM = (uint16) (13000 - Angle * 342.9);
+            } else if (Steer_PID->CurrentValue < 0.0) //往左转
+            {
+                Motor_GO_L_PWM = (uint16) (13000 - Angle * 342.9);
+                Motor_GO_R_PWM = (uint16) (13000 - Angle * 57.1);
+            }
+        } else if (Angle > 3.5 && Angle <= 6.5) {
+            if (Steer_PID->CurrentValue > 0.0) //往右转
+            {
+                Motor_GO_L_PWM = (uint16) (12800 - (Angle - 3.5) * 66.6);
+                Motor_GO_R_PWM = (uint16) (11800 - (Angle - 3.5) * 400.0);
+            } else if (Steer_PID->CurrentValue < 0.0) //往左转
+            {
+                Motor_GO_L_PWM = (uint16) (11800 - (Angle - 3.5) * 400.0);
+                Motor_GO_R_PWM = (uint16) (12800 - (Angle - 3.5) * 66.6);
+            }
+        } else if (Angle > 6.5 && Angle <= 9.5) {
+            if (Steer_PID->CurrentValue > 0.0) //往右转
+            {
+                Motor_GO_L_PWM = (uint16) (12600 - (Angle - 6.5) * 66.6);
+                Motor_GO_R_PWM = (uint16) (10600 - (Angle - 6.5) * 400.0);
+            } else if (Steer_PID->CurrentValue < 0.0) //往左转
+            {
+                Motor_GO_L_PWM = (uint16) (10600 - (Angle - 6.5) * 400.0);
+                Motor_GO_R_PWM = (uint16) (12600 - (Angle - 6.5) * 66.6);
+            }
+        } else if (Angle > 9.5 && Angle <= 13.0) {
+            if (Steer_PID->CurrentValue > 0.0) //往右转
+            {
+                Motor_GO_L_PWM = (uint16) (12400 - (Angle - 9.5) * 57.1);
+                Motor_GO_R_PWM = (uint16) (9400 - (Angle - 9.5) * 342.9);
+            } else if (Steer_PID->CurrentValue < 0.0) //往左转
+            {
+                Motor_GO_L_PWM = (uint16) (9400 - (Angle - 9.5) * 342.9);
+                Motor_GO_R_PWM = (uint16) (12400 - (Angle - 9.5) * 57.1);
+            }
+        } else {
+            if (Steer_PID->CurrentValue > 0.0) //往右转
+            {
+                Motor_GO_L_PWM = (uint16) 12200;
+                Motor_GO_R_PWM = (uint16) 82000;
+            } else if (Steer_PID->CurrentValue < 0.0) //往左转
+            {
+                Motor_GO_L_PWM = (uint16) 8200;
+                Motor_GO_R_PWM = (uint16) 12200;
+            }
+        }
+
+
+        //速度预测,弯道降速，急弯减速
+        if (FastABS(Steer_PID->Differential) >= 0.0 && FastABS(Steer_PID->Differential) < 0.5) {
+            Motor_GO_L_PWM -= 0;
+            Motor_GO_R_PWM -= 0;
+        } else if (FastABS(Steer_PID->Differential) >= 0.5 && FastABS(Steer_PID->Differential) < 1.0) {
+            Motor_GO_L_PWM -= 1000;
+            Motor_GO_R_PWM -= 1000;
+        } else if (FastABS(Steer_PID->Differential) >= 1.0 && FastABS(Steer_PID->Differential) < 2.0) {
+            Motor_GO_L_PWM -= 2000;
+            Motor_GO_R_PWM -= 2000;
+        } else if (FastABS(Steer_PID->Differential) >= 2.0 && FastABS(Steer_PID->Differential) < 3.0) {
+            Motor_GO_L_PWM -= 3000;
+            Motor_GO_R_PWM -= 3000;
+        } else {
+            Motor_GO_L_PWM -= 4000;
+            Motor_GO_R_PWM -= 4000;
+        }
+
+
+        //环岛减速
+        if (Island_Flag) {
+            Motor_GO_L_PWM -= 2000;
+            Motor_GO_R_PWM -= 2000;
+        }
+
+
+        //电机保护
+        if (Motor_GO_L_PWM > MotorPWM_MAX) {
+            Motor_GO_L_PWM = MotorPWM_MAX;
+        }
+        if (Motor_GO_R_PWM < MotorPWM_MIN) {
+            Motor_GO_L_PWM = MotorPWM_MIN;
+        }
+
+        if (Motor_GO_R_PWM > MotorPWM_MAX) {
+            Motor_GO_R_PWM = MotorPWM_MAX;
+        }
+        if (Motor_GO_R_PWM < MotorPWM_MIN) {
+            Motor_GO_R_PWM = MotorPWM_MIN;
+        }
+
+        //出轨保护
+        if (InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] < 1.0 && InductanceValue_Normal[3] < 1.0 && InductanceValue_Normal[4] < 3.0
+            && InductanceValue_Normal[0] < 0.5 && InductanceValue_Normal[5] < 0.5) {
+            pwm_duty(MotorPWM_Go_L_CH, 0);
+            pwm_duty(MotorPWM_Go_R_CH, 0);
+
+        } else {
+
+            pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
+            pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
+            garageout_flag = 0;
+
+        }
+    }
+
+*/

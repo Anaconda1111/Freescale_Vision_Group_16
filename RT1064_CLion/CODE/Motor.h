@@ -15,7 +15,7 @@ extern float InductanceValue_Normal[InductanceNum];
 
 #define MotorPWM_MAX 18000 //25000
 #define MotorPWM_MIN 3000
-#define MotorOutGarage_PWM 10000
+#define MotorOutGarage_PWM 15000
 #define MotorI_MAX 0
 #define MAXEncoder_L 1000
 #define MAXEncoder_R 1000

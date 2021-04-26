@@ -17,7 +17,10 @@ float Inductance_Weight[6] = {0};
 
 extern PID_Struct Steer_PID;
 extern uint8 Camera;
+
 int16 Island_Flag =0;
+int16 Trident_Flag =0;
+
 
 
 float Current_Value;
@@ -114,6 +117,7 @@ float InductanceValueHandler() {
     }
 
 
+
     if(Island_Flag)
     {
         if(InductanceValue_Normal[0] > InductanceValue_Normal[5])//往右转,右环岛
@@ -121,34 +125,38 @@ float InductanceValueHandler() {
             if(InductanceValue_Normal[2] > InductanceValue_Normal[3])
             {
                 float InductanceV1, InductanceV2;
-                InductanceV1 = (InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = (InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = (InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
+                InductanceV1 = FastSqrt(InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
             }
-            else
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-            }
+            /*
+                       else
+                       {
+                         float InductanceV1, InductanceV2;
+                         InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                         InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                         Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
+                       }
+         */
         }
         else if(InductanceValue_Normal[0] < InductanceValue_Normal[5])//往左转，左环岛
         {
             if(InductanceValue_Normal[2] < InductanceValue_Normal[3])
             {
                 float InductanceV1, InductanceV2;
-                InductanceV1 = (InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = (InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = (InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
+                InductanceV1 = FastSqrt(InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
             }
-            else
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-            }
+            /*
+                         else
+                         {
+                           float InductanceV1, InductanceV2;
+                           InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                           InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                           Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
+                         }
+           */
         }
         else
         {
@@ -165,7 +173,6 @@ float InductanceValueHandler() {
         InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
         Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
     }
-
     //出轨时角度维持输出
     if(InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] <1.0 && InductanceValue_Normal[3] <1.0  && InductanceValue_Normal[4] <3.0
        && InductanceValue_Normal[0] <0.5 && InductanceValue_Normal[5] <0.5)
@@ -174,11 +181,11 @@ float InductanceValueHandler() {
 
         if(Current_Value > 0.0)
         {
-            Current_Value = 13.0;
+            Current_Value = 13.0f;
         }
         else
         {
-            Current_Value = -13.0;
+            Current_Value = -13.0f;
         }
     }
 
@@ -221,6 +228,8 @@ void Setting_Weight() {
         Inductance_Weight[4] = (float) Base_L2 / 100.0f;
         Inductance_Weight[5] = (float) Base_L1 / 100.0f;
         Island_Flag=0;
+        Camera = 0;
+        Trident_Flag =0;
     }
 
 }
