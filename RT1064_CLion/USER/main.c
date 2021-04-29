@@ -121,9 +121,9 @@ int main(void)
         SteerCtrl(Steer_PID, Steer_Filter);
         // motorctrl();
 
-        motorctrl_Faster();
+       // motorctrl_Faster();
 
-        // motorctrl_test();
+         motorctrl_test();
 
         //MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
         /*

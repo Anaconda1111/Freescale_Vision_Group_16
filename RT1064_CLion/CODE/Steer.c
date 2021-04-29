@@ -19,6 +19,10 @@ uint16 SteerPWMDuty = MiddleSteer_PWM;
 
 float Rate=3.5f;
 
+float Island_weight_L=0.50f;
+float Island_weight_R=0.38f;
+
+
 void Steer_PIDStruct_Init(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
     SteerPWMDuty = MiddleSteer_PWM;
     Steer_PID->KP = 8.95f;
@@ -37,15 +41,16 @@ void SteerCtrl(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
 
     int16 Angle = (int16)FastABS(Steer_PID->CurrentValue); // -13.0 <= angle <= 13
 
+
     if(Island_Flag)
     {
         if(InductanceValue_Normal[0] > InductanceValue_Normal[5] && InductanceValue_Normal[2] > InductanceValue_Normal[3])//ÍùÓÒ×ª,ÓÒ»·µº
         {
-            Steer_PID->CurrentValue = Steer_PID->CurrentValue * 0.283f;
+            Steer_PID->CurrentValue *= Island_weight_R;//Island_weight;
         }
         else if(InductanceValue_Normal[0] < InductanceValue_Normal[5] && InductanceValue_Normal[2] < InductanceValue_Normal[3])//Íù×ó×ª£¬×ó»·µº
         {
-            Steer_PID->CurrentValue = Steer_PID->CurrentValue * 0.283f;
+            Steer_PID->CurrentValue *= Island_weight_L;//Island_weight;
         }
     }
 

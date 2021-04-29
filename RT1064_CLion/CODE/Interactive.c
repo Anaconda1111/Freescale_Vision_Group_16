@@ -24,6 +24,9 @@ extern int16 encoder_value_L;
 extern int16 encoder_value_R;
 extern int16 garageout_flag;
 extern int16 Island_Flag;
+extern float Island_weight_L;
+extern float Island_weight_R;
+
 
 uint8 key_scan() {
 
@@ -131,25 +134,25 @@ void Interactive() {
               */
             switch (Key_State) {
                 case key1press: {
-                    Steer_PID->KP +=0.01;
+                    Steer_PID->KP +=0.01f;
                     //Motor_GOR_PID->KP +=0.01;
 
 
                 }
                     break;
                 case key2press: {
-                    Steer_PID->KP -=0.01;
+                    Steer_PID->KP -=0.01f;
                     // Motor_GOR_PID->KP -=0.01;
 
                 }
                     break;
                 case key3press: {
-                    Steer_PID->KI += 0.01;
+                    Steer_PID->KI += 0.01f;
                     // Motor_GOR_PID->KI +=0.01;
                 }
                     break;
                 case key4press: {
-                    Steer_PID->KI -= 0.01;
+                    Steer_PID->KI -= 0.01f;
                     //Motor_GOR_PID->KI -=0.01;
                 }
                     break;
@@ -168,8 +171,11 @@ void Interactive() {
            */
 
             oled_fill(0X00);
-            oled_p6x8str(0, 2, "SteerKD:");
-            oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
+            oled_p6x8str(0, 2, "Island_wight_L:");
+            oled_printf_float(50, 3, Island_weight_L, 5, 2);
+            oled_p6x8str(0, 4, "Island_wight_R:");
+            oled_printf_float(50, 5, Island_weight_R, 5, 2);
+
 
 
 
@@ -178,22 +184,27 @@ void Interactive() {
                     // Motor_GOL_PID->KP +=0.01;
 
                     // Steer_PID->KD +=0.01;
+                    Island_weight_L +=0.01f;
+
 
                 }
                     break;
                 case key2press: {
                     // Motor_GOL_PID->KP -=0.01;
 
-                    Steer_PID->KD -=0.01;
+                    //Steer_PID->KD -=0.01f;
+                    Island_weight_L -=0.01f;
 
                 }
                     break;
                 case key3press: {
                     //  Motor_GOL_PID->KI +=0.01;
+                    Island_weight_R +=0.01f;
                 }
                     break;
                 case key4press: {
                     //  Motor_GOL_PID->KI -=0.01;
+                    Island_weight_R -=0.01f;
                 }
                     break;
             }

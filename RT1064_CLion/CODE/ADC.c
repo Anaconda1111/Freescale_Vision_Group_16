@@ -129,15 +129,15 @@ float InductanceValueHandler() {
                 InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
                 Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
             }
-            /*
-                       else
-                       {
-                         float InductanceV1, InductanceV2;
-                         InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                         InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                         Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-                       }
-         */
+
+            else
+            {
+                float InductanceV1, InductanceV2;
+                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
+            }
+
         }
         else if(InductanceValue_Normal[0] < InductanceValue_Normal[5])//往左转，左环岛
         {
@@ -148,15 +148,15 @@ float InductanceValueHandler() {
                 InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
                 Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
             }
-            /*
-                         else
-                         {
-                           float InductanceV1, InductanceV2;
-                           InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                           InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                           Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-                         }
-           */
+
+            else
+            {
+                float InductanceV1, InductanceV2;
+                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
+                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
+                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
+            }
+
         }
         else
         {
@@ -202,6 +202,29 @@ void Setting_Weight() {
         Inductance_Weight[4] = (float) Island_L2 / 100.0f;
         Inductance_Weight[5] = (float) Island_L1 / 100.0f;
         Island_Flag = 1;
+
+
+
+    }else if(InductanceValue_Normal[1] >= 15 &&  InductanceValue_Normal[4] >= 20 &&  InductanceValue_Normal[5] <= 1.5 &&  InductanceValue_Normal[0] >=1.5) {  //入环岛,右环岛
+
+        Inductance_Weight[0] = (float) Island_R1 / 100.0f;
+        Inductance_Weight[1] = (float) Island_R2 / 100.0f;
+        Inductance_Weight[2] = (float) Island_M1 / 100.0f;
+        Inductance_Weight[3] = (float) Island_M2 / 100.0f;
+        Inductance_Weight[4] = (float) Island_L2 / 100.0f;
+        Inductance_Weight[5] = (float) Island_L1 / 100.0f;
+        Island_Flag = 1;
+
+    }else if(InductanceValue_Normal[1] >= 20 &&  InductanceValue_Normal[4] >= 20 &&  InductanceValue_Normal[5] >= 1.30 &&  InductanceValue_Normal[0] <=1.0){ //入环岛，左环岛
+
+        Inductance_Weight[0] = (float) Island_R1 / 100.0f;
+        Inductance_Weight[1] = (float) Island_R2 / 100.0f;
+        Inductance_Weight[2] = (float) Island_M1 / 100.0f;
+        Inductance_Weight[3] = (float) Island_M2 / 100.0f;
+        Inductance_Weight[4] = (float) Island_L2 / 100.0f;
+        Inductance_Weight[5] = (float) Island_L1 / 100.0f;
+        Island_Flag = 1;
+
 
     } else if (Camera) {
         if (Camera == Trident_Left) {
