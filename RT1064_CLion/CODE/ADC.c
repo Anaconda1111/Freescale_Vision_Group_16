@@ -10,9 +10,8 @@
 uint16 Inductance_ADCValue[InductanceNum][SamplingNum] = {0};
 float InductanceValue_Normal[InductanceNum] = {0};
 
-float Inductance_MAXValue[InductanceNum] ={2730,3285,3720,3450,2870,2850};
-float Inductance_InitialValue[InductanceNum] ={0,125,77,136,48,43};
-
+float Inductance_MAXValue[InductanceNum] ={2250,4025,3877,3738,4003,3598};
+float Inductance_InitialValue[InductanceNum] ={0,175,77,148,113,43};
 float Inductance_Weight[6] = {0};
 
 extern PID_Struct Steer_PID;
@@ -204,7 +203,7 @@ void Setting_Weight() {
         Island_Flag = 1;
 
 
-
+/*
     }else if(InductanceValue_Normal[1] >= 15 &&  InductanceValue_Normal[4] >= 20 &&  InductanceValue_Normal[5] <= 1.5 &&  InductanceValue_Normal[0] >=1.5) {  //»Îª∑µ∫,”“ª∑µ∫
 
         Inductance_Weight[0] = (float) Island_R1 / 100.0f;
@@ -224,7 +223,7 @@ void Setting_Weight() {
         Inductance_Weight[4] = (float) Island_L2 / 100.0f;
         Inductance_Weight[5] = (float) Island_L1 / 100.0f;
         Island_Flag = 1;
-
+*/
 
     } else if (Camera) {
         if (Camera == Trident_Left) {
