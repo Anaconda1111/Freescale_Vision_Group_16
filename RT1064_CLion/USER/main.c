@@ -16,12 +16,20 @@ struct PID_Parameter Motor_GOR_PID_Parameter = {0};
 struct Filter_Parameter Motor_GOL_Filter_Parameter = {0};
 struct Filter_Parameter Motor_GOR_Filter_Parameter = {0};
 
+struct Filter_Parameter Encoder_Filter_Parameter_L = {0};
+struct Filter_Parameter Encoder_Filter_Parameter_R = {0};
+
+
 PID_Struct Motor_GOL_PID = &Motor_GOL_PID_Parameter;
 PID_Struct Motor_GOR_PID = &Motor_GOR_PID_Parameter;
 PID_Struct Steer_PID = &Steer_PID_Parameter;
 Filter_Struct Motor_GOL_Filter = &Motor_GOL_Filter_Parameter;
 Filter_Struct Motor_GOR_Filter = &Motor_GOR_Filter_Parameter;
 Filter_Struct Steer_Filter = &Steer_Filter_Parameter;
+
+
+Filter_Struct Encoder_L_Filter = &Encoder_Filter_Parameter_L;
+Filter_Struct Encoder_R_Filter = &Encoder_Filter_Parameter_R;
 
 
 
@@ -119,13 +127,8 @@ int main(void)
         systick_delay_ms(50);
 
         SteerCtrl(Steer_PID, Steer_Filter);
-        // motorctrl();
 
-       // motorctrl_Faster();
-
-         motorctrl_test();
-
-        //MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
+        MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
         /*
              if(garageout_flag)
              {

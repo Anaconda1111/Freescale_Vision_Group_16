@@ -37,7 +37,6 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
 void Motor_value_get();
 
-void motorctrl();
 void motorctrl_Faster();
 void motorctrl_test();
 
