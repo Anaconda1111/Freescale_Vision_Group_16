@@ -38,7 +38,6 @@ int main(void)
 {
     DisableGlobalIRQ();
     board_init();
-    systick_delay_ms(100);
 
 
 
@@ -99,7 +98,7 @@ int main(void)
 
     //PIT:
     pit_init();
-    pit_interrupt_ms(PIT_CH0, 15);
+    pit_interrupt_ms(PIT_CH0, 5);
     NVIC_SetPriority(PIT_IRQn, 1);
 
 
@@ -111,11 +110,12 @@ int main(void)
 
 
 
+
    // int16 data1=0,data2=0,data3=0,data4=0,data5=0,data6=0,data7=0,data8=0;
 
 
 
-
+    systick_delay_ms(300);
     EnableGlobalIRQ(0);
     while (1)
     {
@@ -126,9 +126,9 @@ int main(void)
         Interactive();
         systick_delay_ms(50);
 
-        SteerCtrl(Steer_PID, Steer_Filter);
+       // SteerCtrl(Steer_PID, Steer_Filter);
 
-        MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
+       // MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
         /*
              if(garageout_flag)
              {

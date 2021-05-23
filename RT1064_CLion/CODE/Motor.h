@@ -13,13 +13,10 @@
 extern uint16 SteerPWMDuty;
 extern float InductanceValue_Normal[InductanceNum];
 
-#define MotorPWM_MAX 18000 //25000
+#define MotorPWM_MAX 20000 //25000
 #define MotorPWM_MIN 3000
 #define MotorOutGarage_PWM 15000
-#define MotorI_MAX 0
-#define MAXEncoder_L 1000
-#define MAXEncoder_R 1000
-#define Transform 0
+#define MotorI_MAX 10000
 #define IsFruit  3
 #define IsAnimal 4
 
@@ -36,8 +33,5 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
                Filter_Struct Motor_GOR_Filter);
 
 void Motor_value_get();
-
-void motorctrl_Faster();
-void motorctrl_test();
 
 #endif // RT1064_CODE_MOTOR_H_

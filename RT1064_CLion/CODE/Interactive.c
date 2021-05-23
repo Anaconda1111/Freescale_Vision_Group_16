@@ -24,8 +24,6 @@ extern int16 encoder_value_L;
 extern int16 encoder_value_R;
 extern int16 garageout_flag;
 extern int16 Island_Flag;
-extern float Island_weight_L;
-extern float Island_weight_R;
 
 
 uint8 key_scan() {
@@ -170,13 +168,7 @@ void Interactive() {
                oled_printf_float(50, 2, Motor_GOL_PID->KD, 5, 2);
            */
 
-            oled_fill(0X00);
-            oled_p6x8str(0, 2, "Island_wight_L:");
-            oled_printf_float(50, 3, Island_weight_L, 5, 2);
-            oled_p6x8str(0, 4, "Island_wight_R:");
-            oled_printf_float(50, 5, Island_weight_R, 5, 2);
-
-
+        
 
 
             switch (Key_State) {
@@ -184,7 +176,6 @@ void Interactive() {
                     // Motor_GOL_PID->KP +=0.01;
 
                     // Steer_PID->KD +=0.01;
-                    Island_weight_L +=0.01f;
 
 
                 }
@@ -193,18 +184,18 @@ void Interactive() {
                     // Motor_GOL_PID->KP -=0.01;
 
                     //Steer_PID->KD -=0.01f;
-                    Island_weight_L -=0.01f;
+
 
                 }
                     break;
                 case key3press: {
                     //  Motor_GOL_PID->KI +=0.01;
-                    Island_weight_R +=0.01f;
+
                 }
                     break;
                 case key4press: {
                     //  Motor_GOL_PID->KI -=0.01;
-                    Island_weight_R -=0.01f;
+
                 }
                     break;
             }

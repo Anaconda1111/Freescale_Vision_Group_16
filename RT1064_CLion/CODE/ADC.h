@@ -10,8 +10,8 @@
 #define Trident_Left 2
 #define Trident_Right 1
 
-#define Curve_threshold 10
-#define Island_threshold 200 //Î´Öª´ý¶¨
+
+#define Island_threshold 100
 
 
 

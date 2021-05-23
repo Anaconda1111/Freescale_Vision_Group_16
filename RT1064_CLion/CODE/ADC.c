@@ -117,75 +117,38 @@ float InductanceValueHandler() {
 
 
 
-    if(Island_Flag)
-    {
-        if(InductanceValue_Normal[0] > InductanceValue_Normal[5])//往右转,右环岛
-        {
-            if(InductanceValue_Normal[2] > InductanceValue_Normal[3])
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
-            }
 
-            else
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-            }
-
-        }
-        else if(InductanceValue_Normal[0] < InductanceValue_Normal[5])//往左转，左环岛
-        {
-            if(InductanceValue_Normal[2] < InductanceValue_Normal[3])
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[2] * InductanceValue_Normal[2]+ InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3]+ InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value =(InductanceV1 - InductanceV2) / (InductanceV1 + InductanceV2) * 100;
-            }
-
-            else
-            {
-                float InductanceV1, InductanceV2;
-                InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-                InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-                Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-            }
-
-        }
-        else
-        {
-            float InductanceV1, InductanceV2;
-            InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
-            InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
-            Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-        }
-    }
-    else  //一般情况
-    {
         float InductanceV1, InductanceV2;
         InductanceV1 = FastSqrt(InductanceValue_Normal[1] * InductanceValue_Normal[1] + InductanceValue_Normal[2] * InductanceValue_Normal[2] + InductanceValue_Normal[0] * InductanceValue_Normal[0]);
         InductanceV2 = FastSqrt(InductanceValue_Normal[3] * InductanceValue_Normal[3] + InductanceValue_Normal[4] * InductanceValue_Normal[4] + InductanceValue_Normal[5] * InductanceValue_Normal[5]);
         Current_Value = ((FastSqrt(InductanceV1) - FastSqrt(InductanceV2)) / (InductanceV1 + InductanceV2) * 100);
-    }
+
     //出轨时角度维持输出
-    if(InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] <1.0 && InductanceValue_Normal[3] <1.0  && InductanceValue_Normal[4] <3.0
-       && InductanceValue_Normal[0] <0.5 && InductanceValue_Normal[5] <0.5)
+    if(InductanceValue_Normal[1] < 3.0 && InductanceValue_Normal[2] < 3.0 && InductanceValue_Normal[3] < 3.0  && InductanceValue_Normal[4] < 3.0
+       && InductanceValue_Normal[0] < 3.0 && InductanceValue_Normal[5] < 3.0)
     {
         Current_Value = -(Steer_PID->D_LastError);//D_LastError = 0 - Current_Value;
 
         if(Current_Value > 0.0)
         {
-            Current_Value = 13.0f;
+            Current_Value = 16.0;
         }
         else
         {
-            Current_Value = -13.0f;
+            Current_Value = -16.0;
         }
+    }
+
+    if(Island_Flag)
+    {
+
+
+        Current_Value *= 60.0f;
+
+    }
+    else
+    {
+        Current_Value *= 1.5f;
     }
 
     return Current_Value;
