@@ -11,7 +11,7 @@
 #define Trident_Right 1
 
 
-#define Island_threshold 100
+#define Island_threshold 98
 
 
 

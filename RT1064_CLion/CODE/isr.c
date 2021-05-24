@@ -20,7 +20,7 @@ extern Filter_Struct Steer_Filter;
 
 extern Filter_Struct Motor_GOL_Filter;
 extern Filter_Struct Motor_GOR_Filter;
-
+extern int16 garageout_flag;
 
 void CSI_IRQHandler(void) {
     CSI_DriverIRQHandler();
@@ -29,12 +29,25 @@ void CSI_IRQHandler(void) {
 
 void PIT_IRQHandler(void) {
     if (PIT_FLAG_GET(PIT_CH0)) {
+        if(garageout_flag)
+        {
+            Get_InductanceValue();
 
-        Get_InductanceValue();
-        SteerCtrl(Steer_PID, Steer_Filter);
-        Motor_value_get();
-        MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
+            if((InductanceValue_Normal[1] + InductanceValue_Normal[4]) >= 30)
+            {
+                garageout_flag=0;
+            }
+            GarageOut();
+        }
+        else
+        {
 
+
+            Get_InductanceValue();
+            SteerCtrl(Steer_PID, Steer_Filter);
+            Motor_value_get();
+            MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);
+        }
         //GetCameraMessage();
         PIT_FLAG_CLEAR(PIT_CH0);
     }

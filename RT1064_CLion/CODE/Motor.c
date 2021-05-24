@@ -22,8 +22,8 @@ uint16 Motor_GO_R_PWM=9000;
 
 int16 encoder_value_L =0;
 int16 encoder_value_R =0;
-uint16 speed_R = 60;  //70还可以跑，但是要擦轮胎
-uint16 speed_L = 60;
+uint16 speed_R = 65;  //70还可以跑，但是要擦轮胎
+uint16 speed_L = 65;
 int16 garageout_flag = 1;
 
 
@@ -123,13 +123,13 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 10;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 20;
+            Motor_GOL_PID->TargetValue =(uint16)speed_L;
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 10);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 20;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 10;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 10);
+            Motor_GOR_PID->TargetValue =(uint16)speed_R;
         }
     }
     else if(Angle > 6.5 && Angle <= 9.5)
@@ -138,13 +138,13 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 10;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 30;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 10);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 10);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 30;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 10;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 10);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 10);
         }
     }
     else if(Angle > 9.5 && Angle <= 12.5)
@@ -152,13 +152,13 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 10;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 20;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 10);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 20);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 20;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 10;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 20);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 10);
         }
     }
     else if(Angle > 12.5 && Angle <= 15.5)
@@ -166,13 +166,13 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 20;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 20;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 20);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 20);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 20;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 20;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 20);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 20);
         }
     }
     else if(Angle > 15.5 && Angle <= 18.5)
@@ -180,61 +180,62 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 30;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 20;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 30);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 20);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 20;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 30;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 20);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 30);
         }
     }
     else if(Angle > 18.5 && Angle <= 21.5)
     {
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 30;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 30;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 30);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 30);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 30;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 30;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 30);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 30);
         }
     }
     else if(Angle < 21.5 && Angle <= 24.5)
     {
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 40;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 30;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 40);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 30);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 30;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 40;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 30);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 40);
         }
     }
     else
     {
         if(Steer_PID->CurrentValue > 0.0) //往右转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L + 40;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R - 40;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L + 40);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R - 40);
         }
         else if(Steer_PID->CurrentValue < 0.0) //往左转
         {
-            Motor_GOL_PID->TargetValue =(uint16)speed_L - 40;
-            Motor_GOR_PID->TargetValue =(uint16)speed_R + 40;
+            Motor_GOL_PID->TargetValue =(uint16)(speed_L - 40);
+            Motor_GOR_PID->TargetValue =(uint16)(speed_R + 40);
         }
     }
+
 
     if(Island_Flag)
     {
 
 
-        Motor_GOL_PID->TargetValue =(uint16)speed_L - 30;
-        Motor_GOR_PID->TargetValue =(uint16)speed_R + 30;
+        Motor_GOL_PID->TargetValue =(uint16)(speed_L - 30);
+        Motor_GOR_PID->TargetValue =(uint16)(speed_R + 30);
 
     }
 
@@ -289,18 +290,10 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
 
 void GarageOut() {
 
-    pwm_duty(MotorPWM_Go_L_CH, MotorOutGarage_PWM);
-    pwm_duty(MotorPWM_Go_R_CH, MotorOutGarage_PWM);
+    pwm_duty(SteerPWM_CH, SteerOutGarage_PWM);//
+    pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
+    pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
 
-    pwm_duty(SteerPWM_CH, SteerOutGarage_PWM);
-/*
-        float garageout_weight[6]={100,100,100,30,30,30};
-
-        for(int i=0;i<6;i++)
-        {
-          InductanceValue_Normal[i] *  garageout_weight[i] /100.0f;
-        }
-*/
 
 }
 
