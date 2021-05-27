@@ -11,17 +11,17 @@
 #define Trident_Right 1
 
 
-#define Island_threshold 98
+#define Island_threshold 99
 
 
 
 typedef enum {
-    Island_R1 = 100,
-    Island_R2 = 100,
+    Island_R1 = 30,
+    Island_R2 = 30,
     Island_M1 = 100,
     Island_M2 = 100,
-    Island_L2 = 100,
-    Island_L1 = 100,
+    Island_L2 = 300,
+    Island_L1 = 300,
 
 
     Straight_L1 = 100,

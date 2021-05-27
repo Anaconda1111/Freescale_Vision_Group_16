@@ -138,7 +138,7 @@ float InductanceValueHandler() {
             Current_Value = -16.0;
         }
     }
-
+/*
     if(Island_Flag)
     {
 
@@ -150,6 +150,16 @@ float InductanceValueHandler() {
     {
         Current_Value *= 1.5f;
     }
+*/
+    if(Island_Flag)
+    {
+        Current_Value *= 2.5f;
+    }
+    else
+    {
+        Current_Value *= 1.5f;
+    }
+
 
     return Current_Value;
 }

@@ -101,8 +101,8 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
         Motor_GOR_PID->KD = 0.0f;
     }
 
-    speed_R = 65;  //在这里更改直道最大速度
-    speed_L = 65;
+    speed_R = 60;  //在这里更改直道最大速度
+    speed_L = 60;
 
     if(Angle <= 2.5)
     {
@@ -290,8 +290,8 @@ void MotorCtrl(PID_Struct Motor_GOL_PID, PID_Struct Motor_GOR_PID,
     {
 
 
-        Motor_GOL_PID->TargetValue =speed_L - 30;
-        Motor_GOR_PID->TargetValue =speed_R + 30;
+        Motor_GOL_PID->TargetValue =speed_L - 15;
+        Motor_GOR_PID->TargetValue =speed_R - 15;
 
     }
 
