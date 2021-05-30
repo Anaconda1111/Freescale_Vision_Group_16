@@ -24,6 +24,10 @@ extern int16 encoder_value_L;
 extern int16 encoder_value_R;
 extern int16 garageout_flag;
 extern int16 Island_Flag;
+extern uint8 Camera;
+extern uint32 TridentFlag;
+extern uint8 LeftIsland;
+extern uint8 RightIsland;
 
 uint8 key_scan() {
 
@@ -63,37 +67,42 @@ void Interactive() {
     uint8 Key_State = key_scan();
     switch (Status) {
         case 0X00: {
-            oled_fill(0X00);
-            oled_p6x8str(0, 0, "adc1:");
-            oled_printf_float(50, 0, InductanceValue_Normal[0], 5, 2);
-            oled_p6x8str(0, 1, "adc2:");
-            oled_printf_float(50, 1, InductanceValue_Normal[1], 5, 2);
-            oled_p6x8str(0, 2, "adc3:");
-            oled_printf_float(50, 2, InductanceValue_Normal[2], 5, 2);
-            oled_p6x8str(0, 3, "adc4:");
-            oled_printf_float(50, 3, InductanceValue_Normal[3], 5, 2);
-            oled_p6x8str(0, 4, "adc5:");
-            oled_printf_float(50, 4, InductanceValue_Normal[4], 5, 2);
-            oled_p6x8str(0, 5, "adc6:");
-            oled_printf_float(50, 5, InductanceValue_Normal[5], 5, 2);
-            oled_p6x8str(0, 6, "CurrentValue:");
-            oled_printf_float(50, 6, Steer_PID->CurrentValue, 5, 2);
-            oled_p6x8str(0, 7, "SteerPWMDuty:");
-            oled_printf_float(50, 7, SteerPWMDuty, 5, 2);
+            // oled_fill(0X00);
+            // oled_p6x8str(0, 0, "adc1:");
+            // oled_printf_float(50, 0, InductanceValue_Normal[0], 5, 2);
+            // oled_p6x8str(0, 1, "adc2:");
+            // oled_printf_float(50, 1, InductanceValue_Normal[1], 5, 2);
+            // oled_p6x8str(0, 2, "adc3:");
+            // oled_printf_float(50, 2, InductanceValue_Normal[2], 5, 2);
+            // oled_p6x8str(0, 3, "adc4:");
+            // oled_printf_float(50, 3, InductanceValue_Normal[3], 5, 2);
+            // oled_p6x8str(0, 4, "adc5:");
+            // oled_printf_float(50, 4, InductanceValue_Normal[4], 5, 2);
+            // oled_p6x8str(0, 5, "adc6:");
+            // oled_printf_float(50, 5, InductanceValue_Normal[5], 5, 2);
+            // oled_p6x8str(0, 6, "CurrentValue:");
+            // oled_printf_float(50, 6, Steer_PID->CurrentValue, 5, 2);
+            // oled_p6x8str(0, 7, "SteerPWMDuty:");
+            // oled_printf_float(50, 7, SteerPWMDuty, 5, 2);
+            ShowInductanceValue_Normal();
 
             switch (Key_State) {
                 case key1press: {
 
-                }break;
+                }
+                    break;
                 case key2press: {
 
-                }break;
+                }
+                    break;
                 case key3press: {
 
-                }break;
+                }
+                    break;
                 case key4press: {
 
-                }break;
+                }
+                    break;
 
             }
         }
@@ -103,19 +112,27 @@ void Interactive() {
 
             oled_fill(0X00);
             oled_p6x8str(0, 0, "SteerKP:");
-            oled_printf_float(50, 0, Steer_PID->KP, 5, 2);
-            oled_p6x8str(0, 1, "SteerKI:");
-            oled_printf_float(50, 1, Steer_PID->KI, 5, 2);
-            oled_p6x8str(0, 2, "SteerKD:");
-            oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
-            oled_p6x8str(0, 3, "CurrentValue:");
-            oled_printf_float(50, 3, Steer_PID->CurrentValue, 5, 2);
-            oled_p6x8str(0, 4, "Steerpwn:");
-            oled_printf_float(50, 4, SteerPWMDuty, 5, 2);
-            oled_p6x8str(0, 5, "Island:");
-            oled_printf_float(50, 5, Island_Flag, 5, 2);
-            oled_p6x8str(0, 6, "D_diffe:");
-            oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
+            oled_int16(50, 0, (int16) Steer_PID->KP);
+            oled_p6x8str(0, 2, "EncoderL:");
+            oled_int16(50, 2, encoder_value_L);
+            oled_p6x8str(0, 3, "EncoderR:");
+            oled_int16(50, 3, encoder_value_R);
+            oled_p6x8str(0, 4, "LPWM:");
+            oled_int16(50, 4, Motor_GO_L_PWM);
+            oled_p6x8str(0, 5, "RPWM:");
+            oled_int16(50, 5, Motor_GO_R_PWM);
+            // oled_p6x8str(0, 1, "SteerKI:");
+            // oled_printf_float(50, 1, Steer_PID->KI, 5, 2);
+            // oled_p6x8str(0, 2, "SteerKD:");
+            // oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
+            // oled_p6x8str(0, 3, "CurrentValue:");
+            // oled_printf_float(50, 3, Steer_PID->CurrentValue, 5, 2);
+            // oled_p6x8str(0, 4, "Steerpwn:");
+            // oled_printf_float(50, 4, SteerPWMDuty, 5, 2);
+            // oled_p6x8str(0, 5, "Island:");
+            // oled_printf_float(50, 5, Island_Flag, 5, 2);
+            // oled_p6x8str(0, 6, "D_diffe:");
+            // oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
 
             /*           oled_fill(0X00);
                        oled_p6x8str(0, 0, "GOR_KP:");
@@ -131,14 +148,14 @@ void Interactive() {
               */
             switch (Key_State) {
                 case key1press: {
-                    Steer_PID->KP +=0.01;
+                    Steer_PID->KP += 0.5f;
                     //Motor_GOR_PID->KP +=0.01;
 
 
                 }
                     break;
                 case key2press: {
-                    Steer_PID->KP -=0.01;
+                    Steer_PID->KP -= 0.5f;
                     // Motor_GOR_PID->KP -=0.01;
 
                 }
@@ -168,9 +185,9 @@ void Interactive() {
            */
 
             oled_fill(0X00);
-            oled_p6x8str(0, 2, "SteerKD:");
-            oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
+            oled_p6x8str(0, 1, "SteerKD:");
 
+            //oled_printf_float(50, 2, Steer_PID->KD, 5, 2);
 
 
             switch (Key_State) {
@@ -184,7 +201,7 @@ void Interactive() {
                 case key2press: {
                     // Motor_GOL_PID->KP -=0.01;
 
-                    Steer_PID->KD -=0.01;
+                    Steer_PID->KD -= 0.01;
 
                 }
                     break;
@@ -198,33 +215,39 @@ void Interactive() {
                     break;
             }
         }
-        break;
+            break;
         case 0x11: {
-
+            oled_fill(0x00);
+            oled_p6x8str(0, 0, "LEFTI:");
+            oled_int16(50, 0, LeftIsland);
+            oled_p6x8str(0, 1, "RIGHTI:");
+            oled_int16(50, 1, RightIsland);
+            oled_p6x8str(0, 2, "Trident:");
+            oled_int16(50, 2, TridentFlag);
             //  pwm_duty(MotorPWM_Go_L_CH, Motor_GO_L_PWM);
             //  pwm_duty(MotorPWM_Go_R_CH, Motor_GO_R_PWM);
             //oled_int16(0, 0, SteerPWMDuty);
 
-            oled_fill(0X00);
-            oled_p6x8str(0, 0, "MotorL:");
-            oled_p6x8str(0, 1, "MotorR:");
-            oled_int16(50, 0, Motor_GO_L_PWM);
-            oled_int16(50, 1, Motor_GO_R_PWM);
-            oled_p6x8str(0, 2, "EncoderL:");
-            oled_p6x8str(0, 3, "EncoderR:");
-            oled_int16(50, 2, encoder_value_L);//L
-            oled_int16(50, 3, encoder_value_R);//R
-            oled_p6x8str(0, 4, "Angle:");
-            oled_printf_float(50, 4, Steer_PID->CurrentValue, 5, 2);
-            oled_p6x8str(0, 5, "garage:");
-            oled_printf_float(50, 5, garageout_flag, 5, 2);
-            oled_p6x8str(0, 6, "D_diffe:");
-            oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
+            // oled_fill(0X00);
+            // oled_p6x8str(0, 0, "MotorL:");
+            // oled_p6x8str(0, 1, "MotorR:");
+            // oled_int16(50, 0, Motor_GO_L_PWM);
+            // oled_int16(50, 1, Motor_GO_R_PWM);
+            // oled_p6x8str(0, 2, "EncoderL:");
+            // oled_p6x8str(0, 3, "EncoderR:");
+            // oled_int16(50, 2, encoder_value_L);//L
+            // oled_int16(50, 3, encoder_value_R);//R
+            // oled_p6x8str(0, 4, "Angle:");
+            // oled_printf_float(50, 4, Steer_PID->CurrentValue, 5, 2);
+            // oled_p6x8str(0, 5, "garage:");
+            // oled_printf_float(50, 5, garageout_flag, 5, 2);
+            // oled_p6x8str(0, 6, "D_diffe:");
+            // oled_printf_float(50, 6, FastABS(Steer_PID->Differential), 5, 2);
 
             switch (Key_State) {
                 case key1press: {
                     //Motor_GO_L_PWM +=20;
-                    garageout_flag =1;
+                    garageout_flag = 1;
 
                 }
                     break;
@@ -244,36 +267,48 @@ void Interactive() {
                     break;
             }
         }
-        break;
+            break;
     }
 }
 
 void ShowInductanceValue_Normal() {
     oled_fill(0x00);
-    oled_p6x8str(0, 0, "ADC1(L1):");
-    oled_printf_float(50, 0, InductanceValue_Normal[0], 5, 4);
-    oled_p6x8str(0, 1, "ADC2(L2):");
-    oled_printf_float(50, 1, InductanceValue_Normal[1], 5, 4);
-    oled_p6x8str(0, 2, "ADC3(R2):");
-    oled_printf_float(50, 2, InductanceValue_Normal[2], 5, 4);
-    oled_p6x8str(0, 3, "ADC4(R1):");
-    oled_printf_float(50, 3, InductanceValue_Normal[3], 5, 4);
-    oled_p6x8str(0, 4, "ADC5(Mid):");
-    oled_printf_float(50, 4, InductanceValue_Normal[4], 5, 4);
+    oled_p6x8str(0, 0, "adc1:");
+    oled_int16(50, 0, (int16) InductanceValue_Normal[0]);
+    oled_p6x8str(0, 1, "adc2:");
+    oled_int16(50, 1, (int16) InductanceValue_Normal[1]);
+    oled_p6x8str(0, 2, "adc3:");
+    oled_int16(50, 2, (int16) InductanceValue_Normal[2]);
+    oled_p6x8str(0, 3, "adc4:");
+    oled_int16(50, 3, (int16) InductanceValue_Normal[3]);
+    oled_p6x8str(0, 4, "adc5:");
+    oled_int16(50, 4, (int16) InductanceValue_Normal[4]);
+    oled_p6x8str(0, 5, "adc6:");
+    oled_int16(50, 5, (int16) InductanceValue_Normal[5]);
+    oled_p6x8str(0, 6, "CurrentError:");
+    oled_int16(50, 6, (int16) Steer_PID->CurrentValue);
+    oled_p6x8str(0, 7, "IsFlag:");
+    oled_int16(50, 7, Island_Flag);
+    // oled_p6x8str(0, 6, "TridentF:");
+    // oled_int16(50, 6, TridentFlag);
+    // oled_p6x8str(0, 7, "Camera:");
+    // oled_int16(50, 7, Camera);
 }
 
 void ShowInductanceValue_Average() {
     oled_fill(0x00);
-    oled_p6x8str(0, 0, "ADC1(L1):");
+    oled_p6x8str(0, 0, "ADC1:");
     oled_int16(50, 0, InductanceValue_Average[0]);
-    oled_p6x8str(0, 1, "ADC2(L2):");
+    oled_p6x8str(0, 1, "ADC2:");
     oled_int16(50, 1, InductanceValue_Average[1]);
-    oled_p6x8str(0, 2, "ADC3(R2):");
+    oled_p6x8str(0, 2, "ADC3:");
     oled_int16(50, 2, InductanceValue_Average[2]);
-    oled_p6x8str(0, 3, "ADC4(R1):");
+    oled_p6x8str(0, 3, "ADC4:");
     oled_int16(50, 3, InductanceValue_Average[3]);
-    oled_p6x8str(0, 4, "ADC5(Mid):");
+    oled_p6x8str(0, 4, "ADC5:");
     oled_int16(50, 4, InductanceValue_Average[4]);
+    oled_p6x8str(0, 5, "ADC6:");
+    oled_int16(50, 5, InductanceValue_Average[5]);
 }
 
 void ShowADCConvert() {
@@ -301,4 +336,4 @@ void ShowADCConvert() {
     oled_int16(50, 4, (int16) InductanceValue_Normal[4]);
     oled_p6x8str(0, 5, "Normal6:");
     oled_int16(50, 5, (int16) InductanceValue_Normal[5]);
-};
+}

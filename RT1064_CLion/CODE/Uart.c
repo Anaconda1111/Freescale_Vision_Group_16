@@ -41,8 +41,8 @@ void SendDataPackage_int16(int16 *Data, uint8 len) {
     }
 }
 
-void GetCameraMessage() {
-    uart_getchar(USART_6, &Camera);
+uint8 GetCameraMessage() {
+    return uart_query(USART_6, &Camera);
 }
 
 

@@ -15,6 +15,8 @@ struct PID_Parameter Motor_GOL_PID_Parameter = {0};
 struct PID_Parameter Motor_GOR_PID_Parameter = {0};
 struct Filter_Parameter Motor_GOL_Filter_Parameter = {0};
 struct Filter_Parameter Motor_GOR_Filter_Parameter = {0};
+struct Filter_Parameter Encoder_Filter_Parameter_L = {0};
+struct Filter_Parameter Encoder_Filter_Parameter_R = {0};
 
 PID_Struct Motor_GOL_PID = &Motor_GOL_PID_Parameter;
 PID_Struct Motor_GOR_PID = &Motor_GOR_PID_Parameter;
@@ -23,11 +25,13 @@ Filter_Struct Motor_GOL_Filter = &Motor_GOL_Filter_Parameter;
 Filter_Struct Motor_GOR_Filter = &Motor_GOR_Filter_Parameter;
 Filter_Struct Steer_Filter = &Steer_Filter_Parameter;
 
+Filter_Struct Encoder_L_Filter = &Encoder_Filter_Parameter_L;
+Filter_Struct Encoder_R_Filter = &Encoder_Filter_Parameter_R;
 
+extern int16 encoder_value_L;
+extern int16 encoder_value_R;
 
-
-int main(void)
-{
+int main(void) {
     DisableGlobalIRQ();
     board_init();
     systick_delay_ms(100);
@@ -50,7 +54,8 @@ int main(void)
     adc_init(ADC_1, Steer_ADCInput10_CH, ADC_12BIT);
     */
     //SteerPWM:
-    pwm_init(SteerPWM_CH, 50, 3800);
+    pwm_init(SteerPWM_CH, 50, MiddleSteer_PWM);
+    pwm_init(Yuntai2PWM_CH, 50, MidYunTai2SteerPWM);
 
     //MotorPWM:
     pwm_init(MotorPWM_Go_L_CH, 13 * 1000, 0);
@@ -82,47 +87,79 @@ int main(void)
 
 
     //
-    gpio_init(B9, GPO, 1, GPIO_PIN_CONFIG);
+    gpio_init(B9, GPO, 0, GPIO_PIN_CONFIG);
+    gpio_init(BEEF, GPO, 0, GPIO_PIN_CONFIG);
 
     // //UART
-    // uart_init(USART_6, 19200, ART_TXDCH, ART_RXDCH);
+    uart_init(USART_6, 115200, ART_TXDCH, ART_RXDCH);
     uart_init(USART_8, 9600, BullTooth_TXDCH, BullTooth_RXDCH);
 
 
     //PIT:
     pit_init();
-    pit_interrupt_ms(PIT_CH0, 15);
+    pit_interrupt_ms(PIT_CH0, 1);
+    pit_interrupt_ms(PIT_CH1, 20);
+    pit_interrupt_ms(PIT_CH2, 10);
     NVIC_SetPriority(PIT_IRQn, 1);
-
 
 
     Motor_PIDStruct_Init(Motor_GOL_PID, Motor_GOR_PID, Motor_GOR_Filter, Motor_GOL_Filter);
     Steer_PIDStruct_Init(Steer_PID, Steer_Filter);
-
-
-
-
-
-   // int16 data1=0,data2=0,data3=0,data4=0,data5=0,data6=0,data7=0,data8=0;
-
-
-
-
+    GarageOut();
     EnableGlobalIRQ(0);
-    while (1)
-    {
+    uint16 MotorPWM = 11000;
+    while (1) { ;
+        // ANO_DT_send_int16(USART_8, (int16) Current_Value, SteerPWMDuty, 0, 0, 0, 0, 0, 0);
+        // systick_delay_ms(10);
+        // motorctrl_test();
+        // oled_int16(0, 0, YunTaiPWM);
+        // if (gpio_get(KEY1) == 0)
+        //     YunTaiPWM += 10;
+        // if (gpio_get(KEY2) == 0)
+        //     YunTaiPWM -= 10;
+        // pwm_duty(Yuntai2PWM_CH, YunTaiPWM);
+        // for (int i = 0; i < 50; ++i) {
+        //     //Interactive();
+        //     Motor_GOL_PID->CurrentValue = encoder_value_L;
+        //     Result = (uint16) (PIDCalculate(Motor_GOL_PID, Motor_GOL_Filter));
+        //     MotorPWM = Result;
+        //     if (MotorPWM > MotorPWM_MAX)
+        //         MotorPWM = MotorPWM_MAX;
+        //     else if (MotorPWM < MotorPWM_MIN)
+        //         MotorPWM = MotorPWM_MIN;
+        //pwm_duty(MotorPWM_Go_L_CH, MotorPWM);
+        //ANO_DT_send_int16(USART_8, (int16) Motor_GOL_PID->TargetValue, (int16) encoder_value_L, (int16) /*MotorPWM, Result,*/ 0, 0, 0, 0, 0, 0);
+        // }
+        // if (Motor_GOL_PID->TargetValue == 100)
+        //     Motor_GOL_PID->TargetValue = 50;
+        // else
+        //     Motor_GOL_PID->TargetValue = 100;
+        //MotorCtrl(Motor_GOL_PID, Motor_GOR_PID, Motor_GOL_Filter, Motor_GOR_Filter);
+        //TridentMessageHandle();
+        // ShowInductanceValue_Average();
+        // systick_delay_ms(20);
+        // SteerCtrl(Steer_PID, Steer_Filter);
 
-        // LED();
 
+        // while (InductanceValue_Normal[1] < 0.5 && InductanceValue_Normal[2] < 1.0 && InductanceValue_Normal[3] < 1.0 && InductanceValue_Normal[4] < 3.0
+        //        && InductanceValue_Normal[0] < 0.5 && InductanceValue_Normal[5] < 0.5) {
+        //     pwm_duty(MotorPWM_Go_L_CH, 0);
+        //     pwm_duty(MotorPWM_Go_R_CH, 0);
+        // }
+        // MotorCtrl(Motor_GOL_PID, Motor_GOR_PID, Motor_GOL_Filter, Motor_GOR_Filter);
+        // systick_delay_ms(10);
+        // gpio_toggle(BEEF);
 
-        Interactive();
-        systick_delay_ms(50);
+        // SteerCtrl(Steer_PID, Steer_Filter);
+        // motorctrl_test();
 
-        SteerCtrl(Steer_PID, Steer_Filter);
+        // if (Camera == InLeft || Camera == InRight) {
+        //     pwm_duty(MotorPWM_Go_L_CH, 0);
+        //     pwm_duty(MotorPWM_Go_R_CH, 0);
+        //     gpio_set(B9, 1);
+        // }
         // motorctrl();
-
-        motorctrl_Faster();
-
+        //motorctrl_Faster();
         // motorctrl_test();
 
         //MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter);

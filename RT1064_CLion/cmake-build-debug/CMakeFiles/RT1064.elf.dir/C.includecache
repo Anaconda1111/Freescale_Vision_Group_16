@@ -96,7 +96,19 @@ fsl_clock.h
 fsl_reset.h
 ../nxp_libraries/drives/fsl_reset.h
 
+../nxp_libraries/drives/fsl_lpspi.h
+fsl_common.h
+../nxp_libraries/drives/fsl_common.h
+
+../nxp_libraries/drives/fsl_lpuart.h
+fsl_common.h
+../nxp_libraries/drives/fsl_common.h
+
 ../nxp_libraries/drives/fsl_pwm.h
+fsl_common.h
+../nxp_libraries/drives/fsl_common.h
+
+../nxp_libraries/drives/fsl_qtmr.h
 fsl_common.h
 ../nxp_libraries/drives/fsl_common.h
 
@@ -118,31 +130,67 @@ common.h
 fsl_pwm.h
 ../seekfree_libraries/fsl_pwm.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+../seekfree_libraries/zf_qtimer.h
+common.h
+../seekfree_libraries/common.h
+fsl_qtmr.h
+../seekfree_libraries/fsl_qtmr.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+../seekfree_libraries/zf_systick.h
+common.h
+../seekfree_libraries/common.h
+fsl_lpspi.h
+../seekfree_libraries/fsl_lpspi.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.c
+../seekfree_libraries/zf_uart.h
+common.h
+../seekfree_libraries/common.h
+fsl_lpuart.h
+../seekfree_libraries/fsl_lpuart.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ART.h
+Uart.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.c
+Motor.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.h
 Steer.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
-ADC.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
 port.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
-zf_pwm.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_pwm.h
-PID.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
+zf_systick.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_systick.h
 fastmath.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.h
+ART.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ART.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Motor.h
+ADC.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/ADC.h
+zf_pwm.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_pwm.h
+zf_qtimer.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_qtimer.h
 PID.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
 
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Steer.h
+PID.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/PID.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/Uart.h
+zf_uart.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_uart.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/fastmath.h
+
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/port.h
 zf_adc.h
-C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_adc.h
+D:/Freescale_Vision_Group_16/RT1064_CLion/CODE/zf_adc.h
 

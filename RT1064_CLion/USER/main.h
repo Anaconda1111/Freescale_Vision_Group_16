@@ -17,5 +17,6 @@
 #include "zf_pit.h"
 #include "ANO_DT.h"
 #include "fastmath.h"
+#include "ART.h"
 
 #endif // RT1064_USER_MAIN_H_

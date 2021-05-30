@@ -4,7 +4,7 @@
 
 #ifndef RT1064_MATH_H
 #define RT1064_MATH_H
-#define FastABS(x) (x > 0 ? x : x * -1.0)
+#define FastABS(x) (x > 0 ? x : x * -1.0f)
 
 float FastSqrt(float x);
 

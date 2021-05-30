@@ -7,13 +7,32 @@
 
 #include "Uart.h"
 
-#define FindAprilTagInLeft   5
-#define FindAprilTagInRight  6
 
-#define MidYunTai1SteerPWM 0
-#define MidYunTai2SteerPWM 0
+#define MidYunTai2SteerPWM 3430
+#define MaxYunTai2SteerPWM 6000
+#define MinYunTai2SteerPWM 1270
 
+#define Trident_Left 2
+#define Trident_Right 1
+#define IsFruit  3
+#define IsAnimal 4
+#define InLeft  5
+#define InRight 6
+#define Find_Trident 7
+#define TridentOut 8
+#define Reversing 9
+#define FindFinishLine 10
 
-int16 YunTaiPWMCalculate(uint8 Z_rotation);
+void TridentMessageHandle();
+
+void AprilTagMessageHandle();
+
+void SlowDown();
+
+void SlowDown2();
+
+void GarageIn();
+
+void Reversing_();
 
 #endif //RT1064_ART_H

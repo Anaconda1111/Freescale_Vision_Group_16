@@ -1,21 +1,5 @@
-"D:\clionapp\clion\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Sugar-lxn\Desktop\freeupdate\Freescale_Vision_Group_16\RT1064_CLion
--- The C compiler identification is GNU 9.3.1
--- The CXX compiler identification is GNU 9.3.1
--- The ASM compiler identification is GNU
--- Found assembler: D:/clionapp/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
--- Check for working C compiler: D:/clionapp/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
--- Check for working C compiler: D:/clionapp/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: D:/clionapp/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe
--- Check for working CXX compiler: D:/clionapp/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe - works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
+"D:\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Freescale_Vision_Group_16\RT1064_CLion
 -- Minimal optimization, debug info included
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Sugar-lxn/Desktop/freeupdate/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug
+-- Build files have been written to: D:/Freescale_Vision_Group_16/RT1064_CLion/cmake-build-debug

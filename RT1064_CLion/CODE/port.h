@@ -38,12 +38,12 @@
 
 /*****************************************PWM*************************************************************/
 #define MotorPWM_Return_R_CH PWM1_MODULE3_CHA_D0
-#define MotorPWM_Return_L_CH PWM2_MODULE3_CHA_D2
+#define MotorPWM_Return_L_CH PWM2_MODULE3_CHB_D3
 #define MotorPWM_Go_R_CH PWM1_MODULE3_CHB_D1
-#define MotorPWM_Go_L_CH PWM2_MODULE3_CHB_D3
-#define SteerPWM_CH PWM4_MODULE3_CHA_C31
+#define MotorPWM_Go_L_CH PWM2_MODULE3_CHA_D2
+#define Yuntai2PWM_CH PWM4_MODULE3_CHA_C31
 #define Yuntai1PWM_CH PWM2_MODULE1_CHB_C9
-#define Yuntai2PWM_CH PWM2_MODULE0_CHB_C7
+#define SteerPWM_CH PWM2_MODULE0_CHB_C7
 #define JiguangPWM_CH PWM1_MODULE0_CHB_D13
 /*********************************************************************************************************/
 

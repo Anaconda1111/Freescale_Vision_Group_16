@@ -56,6 +56,7 @@ float PIDCalculate(PID_Struct PID, Filter_Struct Filter) {
 
     PID->Differential = PID->D_CurrentError - PID->D_LastError; //计算微分值
     PID->D_LastError = PID->D_CurrentError;
+    PID->LastError = PID->CurrentError;
 
     PID->Result = PID->KP * PID->CurrentError + // PID位置式
                   PID->KI * PID->Integral + PID->KD * PID->Differential;
@@ -68,4 +69,21 @@ float RCFilter(Filter_Struct Filter) {
                           (1 - Filter->Coefficient) * Filter->Last_OutputValue;
     Filter->Last_OutputValue = Filter->OutputValue;
     return Filter->OutputValue;
+}
+
+float PIDCalculate_Increase(PID_Struct PID, Filter_Struct Filter) {
+    PID->CurrentError = PID->TargetValue - PID->CurrentValue;
+    PID->D_CurrentError = PID->CurrentError;
+
+    Filter->SampleValue = PID->D_CurrentError;
+    PID->D_CurrentError = RCFilter(Filter);
+
+    PID->Differential = (PID->D_CurrentError - 2 * PID->D_LastError + PID->D_LastError2);
+
+    PID->Result = PID->KP * (PID->D_CurrentError - PID->D_LastError) + PID->KI * PID->D_CurrentError + PID->KD * PID->Differential;
+
+    PID->D_LastError2 = PID->D_LastError;//这两行顺序不可以颠倒
+    PID->D_LastError = PID->D_CurrentError;
+
+    return PID->Result;
 }

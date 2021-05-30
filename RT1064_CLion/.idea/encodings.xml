@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CODE/ADC.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/ADC.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CODE/ART.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/Interactive.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/Motor.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/CODE/PID.c" charset="GBK" />
@@ -20,6 +21,7 @@
     <file url="file://$PROJECT_DIR$/seekfree_libraries/zf_uart.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_peripheral/SEEKFREE_OLED.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/seekfree_peripheral/SEEKFREE_SCC8660.c" charset="GBK" />
+    <file url="mock:///SEEKFREE_PRINTF.c" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

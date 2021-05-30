@@ -9,12 +9,18 @@
 #include "Steer.h"
 #include "Uart.h"
 #include "SEEKFREE_OLED.h"
+#include "ANO_DT.h"
+#include "ADC.h"
+
+extern uint16 Inductance_FilterValue[InductanceNum];
+extern uint16 Inductance_SampleValue[InductanceNum];
+extern uint16 InductanceValue_Average[InductanceNum];
 
 void LED() {
     gpio_set(B9, 1);
-    systick_delay_ms(100);
+    systick_delay_ms(1000);
     gpio_set(B9, 0);
-    systick_delay_ms(100);
+    systick_delay_ms(1000);
 }
 
 void MotorText() {
@@ -43,31 +49,11 @@ void MatlabText() {
 }
 
 
-// void DRAWCURVE(struct PID_Parameter T_PID, struct Filter_Parameter T_Filter) {
-//     int16 i = 50;
-//     while (1) {
-//         if (i == 50) {
-//             if (T_PID.TargetValue == 0)
-//                 T_PID.TargetValue = 100;
-//             else
-//                 T_PID.TargetValue = 0;
-//             i = 0;
-//         }
-//         T_PID.CurrentValue += PIDCalculate(T_PID, T_Filter);
-//         if (T_PID.CurrentValue > 120)
-//             T_PID.CurrentValue = 120;
-//         else if (T_PID.CurrentValue < -10)
-//             T_PID.CurrentValue = -10;
-//         int16 TargetValue = (int16) (T_PID.TargetValue);
-//         int16 CurrentValue = (int16) (T_PID.CurrentValue);
-//         int16 Data[4] = {CurrentValue, TargetValue, 0, 0};
-//         SendDataPackage_int16(Data, 4);
-//         i++;
-//         systick_delay_ms(20);
-//     }
-// }
-
 void Sendint16Data() {
-    int16 Dtat[4] = {100, -100, 200, -200};
-    SendDataPackage_int16(Dtat, 4);
+    uint8 i = 0;
+    int16 data1 = (int16) Inductance_SampleValue[i];
+    int16 data2 = (int16) Inductance_FilterValue[i];
+    int16 data3 = (int16) InductanceValue_Average[i];
+    ANO_DT_send_int16(USART_8, data1, data2, data3, 0, 0, 0, 0, 0);
 }
+
