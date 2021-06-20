@@ -1,0 +1,17 @@
+"D:\AIR飞思卡尔\arm\bin\armproc.dll" 
+
+"D:\AIR飞思卡尔\arm\bin\armJET.dll" 
+
+"C:\Users\Sugar-lxn\Desktop\SIC_zongzuanfen\Project\IAR\program\nor_sdram_zf_dtcm\Exe\RT106X.out" 
+
+--plugin="D:\AIR飞思卡尔\arm\bin\armbat.dll" 
+
+--device_macro="D:\AIR飞思卡尔\arm\config\debugger\NXP\iMXRT.dmac" 
+
+--device_macro="D:\AIR飞思卡尔\arm\config\debugger\NXP\iMXRT_Trace.dmac" 
+
+--flash_loader="D:\AIR飞思卡尔\arm\config\flashloader\NXP\FlashIMXRT1064_SIP.board" 
+
+
+
+
