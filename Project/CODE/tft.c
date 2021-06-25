@@ -64,7 +64,7 @@ void tft_show_otsu_image(uint8 width, uint8 high, uint8 dis_width, uint8 dis_hig
 void tft_show_border(uint8 width, uint8 high, uint8 dis_width, uint8 dis_high)
 {
     uint8  i=0;
-    uint8  temp1=0;;
+    uint8  temp1=0;
     uint8  temp2=0;
     
   //…Ë÷√“∫æß∆¡ƒªœ‘ æ∑∂Œß
@@ -73,7 +73,7 @@ void tft_show_border(uint8 width, uint8 high, uint8 dis_width, uint8 dis_high)
      
     for(i=0;i<dis_high;i++)
     {
-        temp1 = (uint8)(i*high/dis_width);
+        temp1 = (uint8)(i*high/dis_high);
         temp2 = (uint8)(left_border[temp1]*dis_width/width);
         
         lcd_drawpoint(dis_width - temp2-1,dis_high - i-1,YELLOW);
@@ -82,7 +82,7 @@ void tft_show_border(uint8 width, uint8 high, uint8 dis_width, uint8 dis_high)
     
     for(i=0;i<dis_high;i++)
     {
-        temp1 = (uint8)(i*high/dis_width);
+        temp1 = (uint8)(i*high/dis_high);
         temp2 = (uint8)(right_border[temp1]*dis_width/width);
         
         lcd_drawpoint(dis_width - temp2-1,dis_high - i-1,RED);
@@ -91,7 +91,7 @@ void tft_show_border(uint8 width, uint8 high, uint8 dis_width, uint8 dis_high)
 
     for(i=0;i<dis_high;i++)
     {
-        temp1 = (uint8)(i*high/dis_width);
+        temp1 = (uint8)(i*high/dis_high);
         temp2 = (uint8)(middle_line[temp1]*dis_width/width);
         
         lcd_drawpoint(dis_width - temp2-1,dis_high - i-1,BLUE);

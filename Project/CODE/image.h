@@ -63,7 +63,7 @@ uint8 width_wave(uint8 startline, uint8 endline);
 //判断边界是否连续，
 uint8 judge_continuty(uint8 type, uint8 start_point, uint8 end_point);
 
-//
+//寻找断点
 void find_break_point(uint8 type, uint8 startline, uint8 endline);   
 
 //计算方差
@@ -83,6 +83,7 @@ uint8 check_island(uint8 type);
 uint8 check_island_status1();
 
 uint8 check_forkroad();
+uint8 check_t_road();
 
 
 //图像上位机显示

@@ -23,14 +23,12 @@ extern uint8 Flag_depend_R;
 extern uint8 Flag_depend_L;
 extern float current_value;
 extern uint8 (*mt9v03x_csi_image)[MT9V03X_CSI_W];
-extern uint8 T;
+
 extern uint8 Flag_straightway;
 extern uint8 Flag_curve;
 
 extern uint8 continuity_L;
 extern uint8 continuity_R;
-extern uint8 var_R;
-extern uint8 var_L;
 extern uint8 throw_line_num_R;
 extern uint8 throw_line_num_L;
 extern uint8 middle_line_peak;
@@ -39,10 +37,6 @@ extern uint8 middle_line_high;
 extern uint8 break_point_L1[3];
 extern uint8 break_point_R1[3];
 extern uint8 flag_element_status;
-
-int num1=0;
-int num2=0;
-uint32 yuntaiPWM=25000;
 
 extern uint32 duojipwm;
 
@@ -193,7 +187,9 @@ void Interactive() {
               lcd_showstr(0,6,"current:");
               lcd_showfloat(80,6,current_value,5,2);
               
-              
+              lcd_showstr(0,7,"flag_status:");
+              lcd_showfloat(80,7,flag_element_status,5,2);
+               
  
           //  lcd_showstr(0,0,"yuntaiPWM");
           // lcd_showfloat(80,0,yuntaiPWM,5,2);
@@ -264,9 +260,11 @@ void Interactive() {
               lcd_showstr(0,4,"throw_nR:");
               lcd_showfloat(80,4,throw_line_num_R,5,2);
               
-              lcd_showstr(0,5,"duojipwm:");
-              lcd_showfloat(80,5,duojipwm,5,2);
-              
+              lcd_showstr(0,5,"high:");
+              lcd_showfloat(80,5,middle_line_high,5,2);
+              lcd_showstr(0,6,"peak:");
+              lcd_showfloat(80,6,middle_line_peak,5,2);
+               
 
  
             switch (Key_State) {

@@ -5,10 +5,7 @@
 
 #define Middle_point_w (MT9V03X_CSI_W/2 - 1)
 #define Middle_point_h (MT9V03X_CSI_H/2 - 1)
-#define Pixels_distance 10
 
-#define Stright_line_threshold 20 //待测
-#define Island_threshold 40
 
 /*
 
@@ -84,9 +81,6 @@ uint8 flag_element_status=0;
 //赛道边界连续性
 uint8 continuity_L=0;
 uint8 continuity_R=0;
-//右线方差
-uint8 var_R=0;
-uint8 var_L=0;
 
 
 
@@ -399,6 +393,7 @@ void count_throw_line(uint8 startline, uint8 endline)
         
       }
       
+      
       if(time_R==0 && flag_right_border[i]==0 && flag_right_border[i+1]==0)
       {
           throw_line_start_R=i;
@@ -411,13 +406,22 @@ void count_throw_line(uint8 startline, uint8 endline)
           time_R=2;
         
       }
+     
         
         
       
       
   }
   
+  if(time_L ==1)
+  {
+      throw_line_end_L = middle_line_peak;
+  }
   
+  if(time_R ==1)
+  {
+      throw_line_end_R = middle_line_peak;
+  }
   
 }
   
@@ -460,44 +464,10 @@ void regression(uint8 type, uint8 startline, uint8 endline)
     int i=0;
     int sumlines = endline - startline;
     
-    if (type == 0)      //拟合中线
-    {
-         
-         array_init(fitting_middleline, MT9V03X_CSI_H-1, 0); 
-         
-	for (i = startline; i < endline; i++)
-	{
-		sum_x += i;
-		sum_y += middle_line[i];
-	}
-	if (sumlines != 0)
-	{
-		average_x = sum_x / sumlines;     //x的平均值
-		average_y = sum_x / sumlines;     //y的平均值
-	}
-	else
-	{
-		average_x = 0;     //x的平均值
-		average_y = 0;     //y的平均值
-	}
-	for (i = startline; i < endline; i++)
-	{
-		sum1 += (middle_line[i] - average_y) * (i - average_x);
-		sum2 += (i - average_x) * (i - average_x);
-	}
-	if (sum2 == 0) slope = 0;
-	else slope = sum1 / sum2;
-	intercept = average_y - slope * average_x;
-        
-        for(i=0; i<MT9V03X_CSI_H-1; i++)
-        {
-            fitting_middleline[i]=(uint8)(slope * i + intercept);
-        }
-    }
-    else if (type == 1)//拟合左线
+
+    if (type == 1)//拟合左线
     {
       
-        array_init(fitting_border_L, MT9V03X_CSI_H-1, MT9V03X_CSI_W-1); 
 	for (i = startline; i < endline; i++)
 	{
 		sum_x += i;
@@ -523,7 +493,7 @@ void regression(uint8 type, uint8 startline, uint8 endline)
     }
     else if (type == 2)//拟合右线
     {
-       array_init(fitting_border_R, MT9V03X_CSI_H-1, 0); 
+
 	for (i = startline; i < endline; i++)
 	{
 		sum_x += i;
@@ -598,111 +568,6 @@ uint8 count_variance(uint8 type, uint8 start_point, uint8 end_point)
   
 	return variance;
 }
-
-/*
-
-//寻找拐点, ,边界具有连续性，通过斜率判断,否则为断点
-
-uint8 find_inflection_point(uint8 type, uint8 start_point, uint8 end_point, uint8 * inflection)
-{
-  int8 slope1=0;
-  int8 slope2=0;
-  uint8 i=0;
-  
-  if(type == 0) //判断中线的拐点   
-  {
-      if(judge_continuty(0,start_point, end_point))
-      {
-      
-        for(i=start_point;i<end_point-4;i++)          //左拐点
-        {
-          slope1=middle_line[i+2]-middle_line[i];
-          slope2=middle_line[i+4]-middle_line[i+2];
-          
-          if((slope1 * slope2)<0)  //判断出拐点
-          {
-            
-            inflection[0]=1;  //拐点标志位
-            inflection[1]=i;  //拐点横坐标
-            inflection[2]=middle_line[i+2];   //拐点纵坐标
-            
-            return 1;
-          }
-          else
-          {
-            inflection[0]=0;
-            return 0;
-          }
-          
-        }
-      
-      }
-    
-  }
-  else if(type == 1)
-  {
-      if(judge_continuty(0,start_point, end_point))
-      {
-      
-        for(i=start_point;i<end_point-4;i++)          //左拐点
-        {
-          slope1=left_border[i+2]-left_border[i];
-          slope2=left_border[i+4]-left_border[i+2];
-          
-          if((slope1 * slope2)<0)  //判断出拐点
-          {
-            
-            inflection[0]=1;  //拐点标志位
-            inflection[1]=i;  //拐点横坐标
-            inflection[2]=left_border[i+2];   //拐点纵坐标
-            
-            return 1;
-          }
-          else
-          {
-            inflection[0]=0;
-            return 0;
-          }
-          
-        }
-      
-      }    
-    
-  }
-  else if(type == 2)
-  {
-      if(judge_continuty(0,start_point, end_point))
-      {
-      
-        for(i=start_point;i<end_point-4;i++)          //左拐点
-        {
-          slope1=right_border[i+2]-right_border[i];
-          slope2=right_border[i+4]-right_border[i+2];
-          
-          if((slope1 * slope2)<0)  //判断出拐点
-          {
-            
-            inflection[0]=1;  //拐点标志位
-            inflection[1]=i;  //拐点横坐标
-            inflection[2]=right_border[i+2];   //拐点纵坐标
-            
-            return 1;
-          }
-          else
-          {
-            inflection[0]=0;
-            return 0;
-          }
-          
-        }
-      
-      }    
-    
-  }
-  return 0;
-}
-
-*/
 
 
 
@@ -818,7 +683,10 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
   {
       for(i=startline; i+1<endline; i++)
       {
-        error=abs(left_border[i+1]-left_border[i]);
+        
+         error=(left_border[i+1]-left_border[i]);
+       
+        
         
         if(error > break_point_threshold && time==1)//判断为断点
         {
@@ -828,6 +696,17 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
            time=2;
           
         }
+        else if(error < -break_point_threshold && time==1)
+        {
+           break_point_L1[0]=1;
+           break_point_L1[1]=i+1;       
+           break_point_L1[2]=left_border[i+1];
+           time=2;
+             
+            
+        }
+          
+          
         
         if(error < break_point_threshold && time==2)
         {
@@ -835,6 +714,16 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
            break_point_L2[1]=i;
            break_point_L2[2]=left_border[i];
            break;
+          
+        }
+        else if(error < -break_point_threshold && time==2)
+        {
+          
+           break_point_L2[0]=1;
+           break_point_L2[1]=i+1;
+           break_point_L2[2]=left_border[i+1];
+           break;
+          
           
         }
           
@@ -845,7 +734,7 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
   {
       for(i=startline; i+1<endline; i++)
       {
-        error=abs(right_border[i+1]-right_border[i]);
+        error=(right_border[i+1]-right_border[i]);
         
          
         if(error > break_point_threshold && time==1)//判断为断点
@@ -856,6 +745,16 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
            time=2;
           
         }
+        else if(error < -break_point_threshold && time==1)
+        {
+           break_point_R1[0]=1;
+           break_point_R1[1]=i+1;
+           break_point_R1[2]=right_border[i+1];
+           time=2;
+             
+          
+        }
+          
         
         if(error < break_point_threshold && time==2)
         {
@@ -864,6 +763,14 @@ void find_break_point(uint8 type, uint8 startline, uint8 endline)
            break_point_R2[2]=right_border[i];
            break;
           
+        }
+        else if(error < -break_point_threshold && time==2)
+        {
+           break_point_R2[0]=1;
+           break_point_R2[1]=i+1;
+           break_point_R2[2]=right_border[i+1];
+           break;
+            
         }
          
       }      
@@ -967,19 +874,34 @@ uint8 width_wave(uint8 startline, uint8 endline)
     }
   
     
-    uint8 wave_threshold = 30;
+    uint8 wave_threshold = 10;
     uint8 i;
-    uint8 error;
+    uint32 error;
+    uint8 num1;
+    uint8 num2;
     
+    num1 = endline - startline;
+    num2 = mymiddle(endline, startline);
     
-    for(i=startline;i+1<endline;i++)
-    {  
-        error = abs(track_width[i+1]-track_width[i]);
-        if(error > wave_threshold)
-        {
-            return 1;
-        }
+    if(num1==0)
+    {
+      return 0;
+      
     }
+    
+    for(i=startline;i<endline;i++)
+    {  
+        error = track_width[i];
+    }
+    
+    
+    error = (uint8)error/(num1);
+    
+    if(error > 2*track_width_normal[num2]+wave_threshold)
+    {
+      return 1;
+    }
+      
     
     return 0;
     
@@ -1053,13 +975,16 @@ void image_ctrl()
   
   //采集赛道元素 赛道边界，中线，顶点，赛道宽度，边界标志位
     scan_line_base(); 
- /*
-     regression(1, 0, middle_line_peak);
-     regression(2, 0, middle_line_peak);
+    count_throw_line(0,60);
     
-    var_L = count_variance(1, 0, middle_line_peak);
-    var_R = count_variance(2, 0, middle_line_peak);
- */
+    continuity_L=judge_continuty(1, 0, 60);
+    continuity_R=judge_continuty(2, 0, 60);
+ 
+    find_break_point(1, 0, 60);
+    find_break_point(2, 0, 60); 
+    
+   
+ 
     if(Flag_island_L !=1)
     {
  
@@ -1109,20 +1034,14 @@ void image_ctrl()
          count_middle_line(0,60); 
     }
       
+    
       
   }
 
   if(Flag_island_L)
   {
-    count_throw_line(0,60);
     
-    continuity_L=judge_continuty(1, 0, 60);
-    continuity_R=judge_continuty(2, 0, 60);
- 
-    find_break_point(1, 0, 60);
-    find_break_point(2, 0, 60); 
-    
-        
+
       
      
       
@@ -1132,86 +1051,129 @@ void image_ctrl()
   
       }
       
+      if(flag_element_status ==0 && throw_line_num_L > 40)
+      {
+          flag_element_status =1;
+        
+      }
       
-   
-      if(flag_element_status==0 && check_island_status1() && throw_line_num_L > 35)
+      if(flag_element_status ==1 && throw_line_num_L < 30)
+      {
+          flag_element_status =2;
+      }
+        
+      
+      //入口拉线
+      if(flag_element_status==2 && throw_line_num_L > 50)
       {
           Flag_depend_R =0;
-          
-          flag_element_status =1;
+         
+          flag_element_status =3;
          
       }
       
+      if(flag_element_status ==3 && middle_line_peak < 40)
+      {
+       // Flag_depend_L =1;
+        flag_element_status = 4;
+      }
       
+      //出环岛拉线
+      if(flag_element_status ==4 && check_t_road())
+      {
+       // Flag_depend_L =1;
+        flag_element_status =5;
       
+        
+      }
+        
+      if(flag_element_status ==5 && middle_line_high > 60)
+      {
+        Flag_depend_L=0;
+        Flag_depend_R =1;
+        flag_element_status =6;
+        
+      }
+      
+      if(flag_element_status ==6 && throw_line_num_L < 30)
+      {
+        Flag_island_L=0;
+        Flag_depend_R=0;
+        flag_element_status=0;
+      }
+        
    
       
   }
   
   
-  
-/*
-  
+ 
   if(Flag_island_L)
   {
+      if(flag_element_status ==3)
+      {
+        
+              inflection_lowerR[0]=1;
+              inflection_lowerR[1]=0;
+              inflection_lowerR[2]=0;
+            
+       //       inflection_lowerL[0]=1;
+       //       inflection_lowerL[1]=throw_line_end_L;
+       //       inflection_lowerL[2]=left_border[throw_line_end_L];
       
-      
+        
+              uint8 break_point_island[3]={0};
     
-    
-      //进行拉线得出，边界值
-      stayguy(2, inflection_upR, inflection_lowerR);
-      
-      count_middle_line(0, throw_line_end_L-1);
-      
-      current_value=(float)calculate_differ(0, throw_line_end_L-1);
-      
-      flag_element_status=0;
-      
-      if(flag_element_status ==0 && flag_right_border[0]==0 && flag_right_border[1]==0)
-      {
-          flag_element_status = 1;
-      }
-      
-      if(flag_element_status ==1 && flag_right_border[0]==1 && flag_right_border[1]==1)
-      {
-        
-          flag_element_status =2; 
-      }
-      if(flag_element_status ==2 && flag_right_border[0]==0 && flag_right_border[1]==0)
-      {
-          flag_element_status = 3;
-        
-      }
-      if(flag_element_status ==3 && flag_right_border[0]==1 && flag_right_border[1]==1)
-      {
-          Flag_island_L = 0;
-          flag_element_status = 0;
-      }
-        
-     
-      
-  }
+              uint8 i;
+              int16 error1=0;
+              uint8 break_point_threshold=20;
+            
+             
 
-*/
-  
- 
-  if(flag_element_status ==1)
-  {
+              for(i=0; i+1<60; i++)
+              {
+                    error1=(left_border[i] - left_border[i+1]);
+                    
+                    if(error1 > break_point_threshold)//判断为断点
+                    {
+                        break_point_island[0]=1;
+                        break_point_island[1]=i;
+                        break_point_island[2]=left_border[i];
+                      
+                    }
+                     
+              }
+              
+              stayguy(2,inflection_lowerR ,break_point_island);
+            scan_line_base(); 
+          count_middle_line(0, middle_line_peak);
+       
+      }
     
+      if(flag_element_status ==5)
+      {
+         
           inflection_lowerR[0]=1;
           inflection_lowerR[1]=0;
           inflection_lowerR[2]=0;
           
           inflection_lowerL[0]=1;
-          inflection_lowerL[1]=throw_line_end_L;
-          inflection_lowerL[2]=left_border[throw_line_end_L];
+          inflection_lowerL[1]=throw_line_end_L+1;
+          inflection_lowerL[2]=left_border[throw_line_end_L-1];
           
-          stayguy(2,inflection_lowerR ,inflection_lowerL);
-          scan_line_base();  
-    
-  }
- 
+          stayguy(2,inflection_lowerR, inflection_lowerL);
+          
+    scan_line_base(); 
+
+    count_middle_line(0, middle_line_peak);
+         
+      }
       
+ 
+  }
+
+
+  
   if(Flag_depend_L)
   {
       uint8 i=0;
@@ -1372,6 +1334,9 @@ void judge_image()
 
     }
     
+    
+    
+    //直线
     if(continuity_L ==1 && continuity_R ==1 && throw_line_num_L < 20 && throw_line_num_R < 20)
     {
         Flag_straightway = 1;
@@ -1410,7 +1375,7 @@ uint8 check_island(uint8 type)
             if(image(i, break_point_L1[2])==0 &&  flag ==0)
             {
               time_w++;
-              if(time_w >= 15)
+              if(time_w >= 10)
               {
                 flag=1;
               }
@@ -1419,7 +1384,7 @@ uint8 check_island(uint8 type)
             if(flag==1 && image(i,break_point_L1[2])==1)
             {
                 time_b++;
-                if(time_b >= 10)
+                if(time_b >= 8)
                 {
                     flag = 2;
                 }
@@ -1428,7 +1393,7 @@ uint8 check_island(uint8 type)
             if(flag==2 && image(i, break_point_L1[2])==0)
             {
                 time_w1++;
-                if(time_w1 >= 5)
+                if(time_w1 >= 3)
                 {
                   flag=3;
                   return 1;
@@ -1453,7 +1418,7 @@ uint8 check_island_status1()
   uint8 i;
   int8 error1=0;
   int8 error2=0;
-  uint8 break_point_threshold=50;
+  uint8 break_point_threshold=40;
   uint8 time =0;
  
 
@@ -1503,25 +1468,33 @@ uint8 check_island_status1()
 
 uint8 check_forkroad()
 {       
-    uint8 time=0;
-    uint8 i=0;
-    for(i=0; i< MT9V03X_CSI_H-1;i++)
-    {
-      if(image(i, Middle_point_w)==1)
-      {
-          time++;
-      }
+   find_inflection_point(1, 0, 60);
+   find_inflection_point(2, 0, 60);
+   
+   if(inflection_lowerL[0]==1 && inflection_lowerR[0]==1 && middle_line_high < 40
+      && middle_line_peak < 40)
+   {
+     
+      return 1;
       
-      if(time >= 20)
-      {
-          return 1;
-      }
-    }
+   }
     
    return 0;
 }
-  
 
+
+uint8 check_t_road()
+{
+  
+    if(middle_line_high < 60 && throw_line_num_L > 25 
+       && throw_line_num_R > 10)
+    {
+        return 1;
+    }
+    
+    return 0;
+}
+  
 
 
 //图像发送，串口发送

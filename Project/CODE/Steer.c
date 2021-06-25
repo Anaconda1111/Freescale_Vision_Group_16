@@ -37,7 +37,7 @@ void SteerCtrl(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
     //Steer_PID->KP = 5.0f + Angle * 0.85f;//10
     Angle =my_abs_float(current_value);
     
-    Steer_PID->KP = 8.0 + Angle * 0.15f; //´ý²â
+    Steer_PID->KP = 10.0 + Angle * 0.35f; //´ý²â
     
     SteerPWMDuty = MiddleSteer_PWM +(int16)(PIDCalculate(Steer_PID, Steer_Filter));
       
