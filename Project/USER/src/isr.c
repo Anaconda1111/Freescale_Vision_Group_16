@@ -19,6 +19,13 @@
 
 #include "headfile.h"
 #include "isr.h"
+#include "Steer.h"
+#include "Interactive.h"
+#include "image.h"
+#include "Motor.h"
+
+extern uint8 Flag_go;
+int time=0;
 
 
 void CSI_IRQHandler(void)
@@ -32,6 +39,12 @@ void PIT_IRQHandler(void)
     if(PIT_FLAG_GET(PIT_CH0))
     {
       
+        
+        if(Flag_go ==1)
+        {
+            Motor_value_get();
+            MotorCtrl(Motor_GOL_PID, Motor_GOR_PID,Motor_GOL_Filter,Motor_GOR_Filter); 
+        }
       
         PIT_FLAG_CLEAR(PIT_CH0);
         
@@ -39,11 +52,15 @@ void PIT_IRQHandler(void)
     
     if(PIT_FLAG_GET(PIT_CH1))
     {
+        
+        time ++;
         PIT_FLAG_CLEAR(PIT_CH1);
     }
     
     if(PIT_FLAG_GET(PIT_CH2))
     {
+        
+         
         PIT_FLAG_CLEAR(PIT_CH2);
     }
     

@@ -1203,6 +1203,18 @@
     <group>
         <name>CODE</name>
         <file>
+            <name>$PROJ_DIR$\..\..\CODE\ADC.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\CODE\ADC.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\CODE\ANO_DT.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\CODE\ANO_DT.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\CODE\Binarization.c</name>
         </file>
         <file>
@@ -1225,6 +1237,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\CODE\Interactive.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\CODE\Motor.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\CODE\Motor.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\CODE\PID.c</name>

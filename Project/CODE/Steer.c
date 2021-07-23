@@ -23,10 +23,10 @@ void Steer_PIDStruct_Init(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
     SteerPWMDuty = MiddleSteer_PWM;
     Steer_PID->KP = 10.0;
     Steer_PID->KI = 0.0;
-    Steer_PID->KD = 0.0;//1.32;
+    Steer_PID->KD = 5.6;
     Steer_PID->I_MAX =Steer_IMAX;
     Steer_PID->TargetValue = 0;
-    Steer_Filter->Coefficient = 1.0f / 4.0f;         //RC低通滤波器滤波系数、待定
+    Steer_Filter->Coefficient = 1.0f / 4.0f;         //RC低通滤波器滤波系数
 }
 
 
@@ -35,9 +35,14 @@ void SteerCtrl(PID_Struct Steer_PID, Filter_Struct Steer_Filter) {
     Steer_PID->CurrentValue = current_value;
     
     //Steer_PID->KP = 5.0f + Angle * 0.85f;//10
-    Angle =my_abs_float(current_value);
+    Angle =FastABS(Steer_PID->CurrentError);
     
-    Steer_PID->KP = 10.0 + Angle * 0.35f; //待测
+    //直道速度200，
+    Steer_PID->KP = 5.5 + Angle * 0.08f; 
+    
+    //直道速度200
+    //Steer_PID->KP = 5.5 + Angle * 0.08f;
+    
     
     SteerPWMDuty = MiddleSteer_PWM +(int16)(PIDCalculate(Steer_PID, Steer_Filter));
       

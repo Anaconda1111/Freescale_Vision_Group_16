@@ -21,4 +21,6 @@ uint8 bm_scan(void);
 
 void Interactive();
 
+void Interactive2();
+
 #endif //RT1064_INTERACTIVE_H

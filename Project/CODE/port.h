@@ -8,25 +8,20 @@
 #include "zf_adc.h"
 #include "headfile.h"
 /***************************************ADC***************************************************************/
-#define Steer_ADCInput1_CH ADC1_CH4_B15
-#define Steer_ADCInput2_CH ADC1_CH2_B13
-#define Steer_ADCInput3_CH ADC1_CH3_B14
-#define Steer_ADCInput4_CH ADC1_CH1_B12
-#define Steer_ADCInput5_CH ADC1_CH5_B16
-#define Steer_ADCInput6_CH ADC1_CH6_B17
+#define Steer_ADCInput1_CH ADC1_CH2_B13
+#define Steer_ADCInput2_CH ADC1_CH4_B15
+#define Steer_ADCInput3_CH ADC1_CH1_B12
+#define Steer_ADCInput4_CH ADC1_CH3_B14
+#define Steer_ADCInput5_CH ADC1_CH6_B17
+#define Steer_ADCInput6_CH ADC1_CH5_B16
 
-#define Steer_ADCInput7_CH ADC1_CH11_B22
-#define Steer_ADCInput8_CH ADC1_CH12_B23
-#define Steer_ADCInput9_CH ADC1_CH13_B24
-#define Steer_ADCInput10_CH ADC1_CH14_B25
 /*********************************************************************************************************/
 
 /***************************************KYE***************************************************************/
 #define KEY1 B1
 #define KEY2 B0
-
-#define KEY3 D18
-#define KEY4 D19
+#define KEY3 D15
+#define KEY4 D12
 
 /*********************************************************************************************************/
 
@@ -43,12 +38,13 @@
 
 
 /****************************************OLED*************************************************************/
-#define OLEDCS C21
-#define OLEDDC C24
-#define OLEDRES C23
-#define OLEDSDA C26
-#define OLEDSCK C25
+#define OLEDCS C27
+#define OLEDDC C26
+#define OLEDRES C25
+#define OLEDSDA C2
+#define OLEDSCK C23
 /*********************************************************************************************************/
+
 
 /*****************************************PWM*************************************************************/
 #define MotorPWM_Return_R_CH PWM1_MODULE3_CHA_D0
@@ -61,10 +57,10 @@
 /*********************************************************************************************************/
 
 /*****************************************UART************************************************************/
-#define ART_TXDCH UART6_TX_B2
-#define ART_RXDCH UART6_RX_B3
-#define BullTooth_TXDCH UART8_TX_D16
-#define BullTooth_RXDCH UART8_RX_D17
+#define ART_TXDCH UART8_TX_D16
+#define ART_RXDCH UART8_RX_D17
+#define BullTooth_TXDCH UART4_TX_C16
+#define BullTooth_RXDCH UART4_RX_C17
 /*********************************************************************************************************/
 
 /*****************************************QTIMER**********************************************************/
